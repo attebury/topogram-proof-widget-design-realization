@@ -18,6 +18,12 @@ for (const artifact of manifest.requiredArtifacts || []) {
       if (!(key in parsed)) throw new Error(`${artifact.path} is missing key ${key}`);
     }
   }
+  if (artifact.contains) {
+    const text = fs.readFileSync(filePath, "utf8");
+    for (const snippet of artifact.contains) {
+      if (!text.includes(snippet)) throw new Error(`${artifact.path} is missing expected text ${snippet}`);
+    }
+  }
 }
 
 const pinnedCli = packageJson.devDependencies?.["@topogram/cli"];

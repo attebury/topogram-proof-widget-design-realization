@@ -18,9 +18,9 @@ npm install
 npm run verify
 ```
 
-`npm run verify` checks path hygiene, Topogram validation, design coverage,
-UI realization reporting, widget slice context, proof metadata, and clean
-worktree state.
+`npm run verify` checks path hygiene, Topogram validation, JSON and Markdown
+design coverage, UI realization reporting, widget slice context, proof metadata,
+and clean worktree state.
 
 ## What To Inspect
 
@@ -29,7 +29,7 @@ worktree state.
 - `topo/design-contracts/realization-set-company-web-widgets.tg`: widget-first
   platform component mappings.
 - `proof/STEP.md`: current proof checkpoint.
-- `proof/artifacts/`: generated report and slice artifacts.
+- `proof/artifacts/`: generated report, readable design matrix, and slice artifacts.
 
 The important statuses are `rendered`, `contract_only`,
 `implementation_owned`, and `unsupported`. They are review states for

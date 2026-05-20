@@ -1,5 +1,5 @@
 {
-  "cliVersion": "0.3.109",
+  "cliVersion": "0.3.110",
   "currentStep": "proof-05-final-proof",
   "expectedTags": [
     "proof-01-semantic-widget-baseline",
@@ -13,6 +13,10 @@
       "path": "proof/artifacts/ui-design-coverage.json",
       "json": true,
       "requiredKeys": ["type", "summary", "widgets"]
+    },
+    {
+      "path": "proof/artifacts/ui-design-coverage.md",
+      "contains": ["# UI Design Coverage", "Design Matrix", "widget_data_grid"]
     },
     {
       "path": "proof/artifacts/ui-realization-report.json",

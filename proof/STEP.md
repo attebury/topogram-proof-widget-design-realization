@@ -11,7 +11,8 @@ This step contains:
 - a semantic widget (`widget_data_grid`);
 - a design contract (`design_company_web`);
 - a widget-first realization set (`realization_set_company_web_widgets`);
-- proof artifacts for design coverage, UI realization, and widget slice context;
+- proof artifacts for JSON design coverage, Markdown design matrix, UI
+  realization, and widget slice context;
 - a review-only extractor candidate example in `proof/artifacts/design-realization-candidate.example.json`.
 
 Run `npm run verify`.

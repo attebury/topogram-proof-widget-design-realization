@@ -38,6 +38,12 @@ if (coverage.summary.design_realization_sets < 1 || coverage.summary.widget_real
 }
 fs.writeFileSync(path.join(root, "proof", "artifacts", "ui-design-coverage.json"), `${JSON.stringify(coverage, null, 2)}\n`);
 
+const coverageMarkdown = runCli(["query", "ui-design-coverage", "./topo", "--projection", "proj_web_surface", "--format", "markdown"]);
+if (!coverageMarkdown.includes("Design Matrix") || !coverageMarkdown.includes("widget_data_grid")) {
+  throw new Error("Design coverage Markdown did not include the expected widget matrix.");
+}
+fs.writeFileSync(path.join(root, "proof", "artifacts", "ui-design-coverage.md"), coverageMarkdown.endsWith("\n") ? coverageMarkdown : `${coverageMarkdown}\n`);
+
 const realization = JSON.parse(runCli(["emit", "ui-realization-report", "./topo", "--projection", "proj_web_surface", "--json"]));
 if (realization.summary.design_realization_sets < 1 || realization.summary.design_realization_components < 2) {
   throw new Error("UI realization report did not include expected design mapping.");

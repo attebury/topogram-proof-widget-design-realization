@@ -194,6 +194,7 @@
         "behaviorSupport": [
           {
             "behavior": "selection",
+            "density": null,
             "designRealizationSet": {
               "id": "realization_set_company_web_widgets",
               "name": "Company Product UI Widget Realizations"
@@ -211,8 +212,12 @@
                 "offset": 254
               }
             },
+            "localeContexts": [],
             "platform": "web",
+            "roleContexts": [],
+            "stateCoverage": [],
             "status": "rendered",
+            "themeContexts": [],
             "type": "design_realization_behavior_support",
             "viewport": "wide",
             "widget": {
@@ -226,6 +231,7 @@
           },
           {
             "behavior": "sorting",
+            "density": null,
             "designRealizationSet": {
               "id": "realization_set_company_web_widgets",
               "name": "Company Product UI Widget Realizations"
@@ -243,8 +249,12 @@
                 "offset": 254
               }
             },
+            "localeContexts": [],
             "platform": "web",
+            "roleContexts": [],
+            "stateCoverage": [],
             "status": "contract_only",
+            "themeContexts": [],
             "type": "design_realization_behavior_support",
             "viewport": "wide",
             "widget": {
@@ -259,6 +269,7 @@
         ],
         "components": [
           {
+            "density": null,
             "designRealizationSet": {
               "id": "realization_set_company_web_widgets",
               "name": "Company Product UI Widget Realizations"
@@ -277,6 +288,7 @@
                 "offset": 254
               }
             },
+            "localeContexts": [],
             "pattern": "resource_table",
             "platform": "web",
             "realizes": {
@@ -288,11 +300,16 @@
               }
             },
             "ref": "company.dataGrid",
+            "reviewNotes": null,
+            "roleContexts": [],
+            "stateCoverage": [],
             "status": "rendered",
+            "themeContexts": [],
             "type": "design_realization_component",
             "viewport": "wide"
           },
           {
+            "density": null,
             "designRealizationSet": {
               "id": "realization_set_company_web_widgets",
               "name": "Company Product UI Widget Realizations"
@@ -311,6 +328,7 @@
                 "offset": 524
               }
             },
+            "localeContexts": [],
             "pattern": "resource_table",
             "platform": "web",
             "realizes": {
@@ -322,7 +340,11 @@
               }
             },
             "ref": "company.dataCards",
+            "reviewNotes": null,
+            "roleContexts": [],
+            "stateCoverage": [],
             "status": "contract_only",
+            "themeContexts": [],
             "type": "design_realization_component",
             "viewport": "narrow"
           }
@@ -352,6 +374,7 @@
                 ],
                 "behaviorsUnsupported": [],
                 "componentRef": "company.dataGrid",
+                "density": null,
                 "id": "data_grid_wide",
                 "loc": {
                   "end": {
@@ -366,9 +389,14 @@
                     "offset": 254
                   }
                 },
+                "localeContexts": [],
                 "pattern": "resource_table",
                 "platform": "web",
+                "reviewNotes": null,
+                "roleContexts": [],
+                "stateCoverage": [],
                 "status": "rendered",
+                "themeContexts": [],
                 "type": "widget_realization",
                 "viewport": "wide",
                 "widget": {
@@ -386,6 +414,7 @@
                 "behaviorsRendered": [],
                 "behaviorsUnsupported": [],
                 "componentRef": "company.dataCards",
+                "density": null,
                 "id": "data_cards_narrow",
                 "loc": {
                   "end": {
@@ -400,9 +429,14 @@
                     "offset": 524
                   }
                 },
+                "localeContexts": [],
                 "pattern": "resource_table",
                 "platform": "web",
+                "reviewNotes": null,
+                "roleContexts": [],
+                "stateCoverage": [],
                 "status": "contract_only",
+                "themeContexts": [],
                 "type": "widget_realization",
                 "viewport": "narrow",
                 "widget": {
@@ -645,6 +679,7 @@
         "behaviorSupport": [
           {
             "behavior": "selection",
+            "density": null,
             "designContract": {
               "id": "design_company_web",
               "library": "company_web",
@@ -668,8 +703,12 @@
                 "offset": 254
               }
             },
+            "localeContexts": [],
             "platform": "web",
+            "roleContexts": [],
+            "stateCoverage": [],
             "status": "rendered",
+            "themeContexts": [],
             "type": "design_realization_behavior_support",
             "viewport": "wide",
             "widget": {
@@ -683,6 +722,7 @@
           },
           {
             "behavior": "sorting",
+            "density": null,
             "designContract": {
               "id": "design_company_web",
               "library": "company_web",
@@ -706,8 +746,12 @@
                 "offset": 254
               }
             },
+            "localeContexts": [],
             "platform": "web",
+            "roleContexts": [],
+            "stateCoverage": [],
             "status": "contract_only",
+            "themeContexts": [],
             "type": "design_realization_behavior_support",
             "viewport": "wide",
             "widget": {
@@ -723,6 +767,7 @@
         "components": [
           {
             "component": {
+              "density": null,
               "designRealizationSet": {
                 "id": "realization_set_company_web_widgets",
                 "name": "Company Product UI Widget Realizations"
@@ -741,6 +786,7 @@
                   "offset": 254
                 }
               },
+              "localeContexts": [],
               "pattern": "resource_table",
               "platform": "web",
               "realizes": {
@@ -752,7 +798,11 @@
                 }
               },
               "ref": "company.dataGrid",
+              "reviewNotes": null,
+              "roleContexts": [],
+              "stateCoverage": [],
               "status": "rendered",
+              "themeContexts": [],
               "type": "design_realization_component",
               "viewport": "wide"
             },
@@ -765,6 +815,7 @@
           },
           {
             "component": {
+              "density": null,
               "designRealizationSet": {
                 "id": "realization_set_company_web_widgets",
                 "name": "Company Product UI Widget Realizations"
@@ -783,6 +834,7 @@
                   "offset": 524
                 }
               },
+              "localeContexts": [],
               "pattern": "resource_table",
               "platform": "web",
               "realizes": {
@@ -794,7 +846,11 @@
                 }
               },
               "ref": "company.dataCards",
+              "reviewNotes": null,
+              "roleContexts": [],
+              "stateCoverage": [],
               "status": "contract_only",
+              "themeContexts": [],
               "type": "design_realization_component",
               "viewport": "narrow"
             },

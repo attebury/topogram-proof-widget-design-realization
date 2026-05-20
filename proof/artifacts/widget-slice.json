@@ -173,7 +173,7 @@
       {
         "field": "ui_agent_packet",
         "id": "ui_agent_packet",
-        "item_count": 10,
+        "item_count": 11,
         "reason": "Screen, widget, accessibility, i18n, design-token, and UI proof context for UI slices.",
         "tier": "must_read",
         "title": "UI Agent Packet"
@@ -424,6 +424,7 @@
           "behaviorSupport": [
             {
               "behavior": "selection",
+              "density": null,
               "designRealizationSet": {
                 "id": "realization_set_company_web_widgets",
                 "name": "Company Product UI Widget Realizations"
@@ -441,8 +442,12 @@
                   "offset": 254
                 }
               },
+              "localeContexts": [],
               "platform": "web",
+              "roleContexts": [],
+              "stateCoverage": [],
               "status": "rendered",
+              "themeContexts": [],
               "type": "design_realization_behavior_support",
               "viewport": "wide",
               "widget": {
@@ -456,6 +461,7 @@
             },
             {
               "behavior": "sorting",
+              "density": null,
               "designRealizationSet": {
                 "id": "realization_set_company_web_widgets",
                 "name": "Company Product UI Widget Realizations"
@@ -473,8 +479,12 @@
                   "offset": 254
                 }
               },
+              "localeContexts": [],
               "platform": "web",
+              "roleContexts": [],
+              "stateCoverage": [],
               "status": "contract_only",
+              "themeContexts": [],
               "type": "design_realization_behavior_support",
               "viewport": "wide",
               "widget": {
@@ -488,6 +498,7 @@
             },
             {
               "behavior": "selection",
+              "density": null,
               "designRealizationSet": {
                 "id": "realization_set_company_web_widgets",
                 "name": "Company Product UI Widget Realizations"
@@ -505,8 +516,12 @@
                   "offset": 732
                 }
               },
+              "localeContexts": [],
               "platform": "ios",
+              "roleContexts": [],
+              "stateCoverage": [],
               "status": "rendered",
+              "themeContexts": [],
               "type": "design_realization_behavior_support",
               "viewport": "any",
               "widget": {
@@ -520,6 +535,7 @@
             },
             {
               "behavior": "sorting",
+              "density": null,
               "designRealizationSet": {
                 "id": "realization_set_company_web_widgets",
                 "name": "Company Product UI Widget Realizations"
@@ -537,8 +553,12 @@
                   "offset": 732
                 }
               },
+              "localeContexts": [],
               "platform": "ios",
+              "roleContexts": [],
+              "stateCoverage": [],
               "status": "implementation_owned",
+              "themeContexts": [],
               "type": "design_realization_behavior_support",
               "viewport": "any",
               "widget": {
@@ -552,6 +572,7 @@
             },
             {
               "behavior": "sorting",
+              "density": null,
               "designRealizationSet": {
                 "id": "realization_set_company_web_widgets",
                 "name": "Company Product UI Widget Realizations"
@@ -569,8 +590,12 @@
                   "offset": 1019
                 }
               },
+              "localeContexts": [],
               "platform": "android",
+              "roleContexts": [],
+              "stateCoverage": [],
               "status": "unsupported",
+              "themeContexts": [],
               "type": "design_realization_behavior_support",
               "viewport": "any",
               "widget": {
@@ -585,6 +610,7 @@
           ],
           "components": [
             {
+              "density": null,
               "designRealizationSet": {
                 "id": "realization_set_company_web_widgets",
                 "name": "Company Product UI Widget Realizations"
@@ -603,6 +629,7 @@
                   "offset": 254
                 }
               },
+              "localeContexts": [],
               "pattern": "resource_table",
               "platform": "web",
               "realizes": {
@@ -614,11 +641,16 @@
                 }
               },
               "ref": "company.dataGrid",
+              "reviewNotes": null,
+              "roleContexts": [],
+              "stateCoverage": [],
               "status": "rendered",
+              "themeContexts": [],
               "type": "design_realization_component",
               "viewport": "wide"
             },
             {
+              "density": null,
               "designRealizationSet": {
                 "id": "realization_set_company_web_widgets",
                 "name": "Company Product UI Widget Realizations"
@@ -637,6 +669,7 @@
                   "offset": 524
                 }
               },
+              "localeContexts": [],
               "pattern": "resource_table",
               "platform": "web",
               "realizes": {
@@ -648,11 +681,16 @@
                 }
               },
               "ref": "company.dataCards",
+              "reviewNotes": null,
+              "roleContexts": [],
+              "stateCoverage": [],
               "status": "contract_only",
+              "themeContexts": [],
               "type": "design_realization_component",
               "viewport": "narrow"
             },
             {
+              "density": null,
               "designRealizationSet": {
                 "id": "realization_set_company_web_widgets",
                 "name": "Company Product UI Widget Realizations"
@@ -671,6 +709,7 @@
                   "offset": 732
                 }
               },
+              "localeContexts": [],
               "pattern": "resource_table",
               "platform": "ios",
               "realizes": {
@@ -682,11 +721,16 @@
                 }
               },
               "ref": "company.itemList",
+              "reviewNotes": null,
+              "roleContexts": [],
+              "stateCoverage": [],
               "status": "implementation_owned",
+              "themeContexts": [],
               "type": "design_realization_component",
               "viewport": "any"
             },
             {
+              "density": null,
               "designRealizationSet": {
                 "id": "realization_set_company_web_widgets",
                 "name": "Company Product UI Widget Realizations"
@@ -705,6 +749,7 @@
                   "offset": 1019
                 }
               },
+              "localeContexts": [],
               "pattern": "resource_table",
               "platform": "android",
               "realizes": {
@@ -716,7 +761,11 @@
                 }
               },
               "ref": "company.itemCards",
+              "reviewNotes": null,
+              "roleContexts": [],
+              "stateCoverage": [],
               "status": "unsupported",
+              "themeContexts": [],
               "type": "design_realization_component",
               "viewport": "any"
             }
@@ -746,6 +795,7 @@
                   ],
                   "behaviorsUnsupported": [],
                   "componentRef": "company.dataGrid",
+                  "density": null,
                   "id": "data_grid_wide",
                   "loc": {
                     "end": {
@@ -760,9 +810,14 @@
                       "offset": 254
                     }
                   },
+                  "localeContexts": [],
                   "pattern": "resource_table",
                   "platform": "web",
+                  "reviewNotes": null,
+                  "roleContexts": [],
+                  "stateCoverage": [],
                   "status": "rendered",
+                  "themeContexts": [],
                   "type": "widget_realization",
                   "viewport": "wide",
                   "widget": {
@@ -780,6 +835,7 @@
                   "behaviorsRendered": [],
                   "behaviorsUnsupported": [],
                   "componentRef": "company.dataCards",
+                  "density": null,
                   "id": "data_cards_narrow",
                   "loc": {
                     "end": {
@@ -794,9 +850,14 @@
                       "offset": 524
                     }
                   },
+                  "localeContexts": [],
                   "pattern": "resource_table",
                   "platform": "web",
+                  "reviewNotes": null,
+                  "roleContexts": [],
+                  "stateCoverage": [],
                   "status": "contract_only",
+                  "themeContexts": [],
                   "type": "widget_realization",
                   "viewport": "narrow",
                   "widget": {
@@ -818,6 +879,7 @@
                   ],
                   "behaviorsUnsupported": [],
                   "componentRef": "company.itemList",
+                  "density": null,
                   "id": "data_list_ios",
                   "loc": {
                     "end": {
@@ -832,9 +894,14 @@
                       "offset": 732
                     }
                   },
+                  "localeContexts": [],
                   "pattern": "resource_table",
                   "platform": "ios",
+                  "reviewNotes": null,
+                  "roleContexts": [],
+                  "stateCoverage": [],
                   "status": "implementation_owned",
+                  "themeContexts": [],
                   "type": "widget_realization",
                   "viewport": "any",
                   "widget": {
@@ -854,6 +921,7 @@
                     "sorting"
                   ],
                   "componentRef": "company.itemCards",
+                  "density": null,
                   "id": "data_cards_android",
                   "loc": {
                     "end": {
@@ -868,9 +936,14 @@
                       "offset": 1019
                     }
                   },
+                  "localeContexts": [],
                   "pattern": "resource_table",
                   "platform": "android",
+                  "reviewNotes": null,
+                  "roleContexts": [],
+                  "stateCoverage": [],
                   "status": "unsupported",
+                  "themeContexts": [],
                   "type": "widget_realization",
                   "viewport": "any",
                   "widget": {
@@ -1009,6 +1082,298 @@
       },
       "source": "design_contract records own design-system scope and token mappings; design_realization_set records map semantic widgets to platform component refs and behavior support.",
       "status": "mapped"
+    },
+    "designReview": {
+      "diagnostics": [
+        "Behavior 'sorting' is 'unsupported'.",
+        "Realization 'data_cards_android' does not declare 'loading' state coverage.",
+        "Realization 'data_cards_android' does not declare 'empty' state coverage.",
+        "Realization 'data_cards_android' does not declare 'error' state coverage.",
+        "Realization 'data_cards_android' is 'unsupported'.",
+        "Realization 'data_list_ios' does not declare 'loading' state coverage.",
+        "Realization 'data_list_ios' does not declare 'empty' state coverage.",
+        "Realization 'data_list_ios' does not declare 'error' state coverage.",
+        "Behavior 'sorting' is 'contract_only'.",
+        "Realization 'data_cards_narrow' does not declare 'loading' state coverage.",
+        "Realization 'data_cards_narrow' does not declare 'empty' state coverage.",
+        "Realization 'data_cards_narrow' does not declare 'error' state coverage.",
+        "Realization 'data_grid_wide' does not declare 'loading' state coverage.",
+        "Realization 'data_grid_wide' does not declare 'empty' state coverage.",
+        "Realization 'data_grid_wide' does not declare 'error' state coverage.",
+        "Realization 'data_cards_narrow' is 'contract_only'."
+      ],
+      "gaps": {
+        "behavior_review_items": 4,
+        "missing_accessibility": 0,
+        "missing_i18n": 0,
+        "missing_platforms": 0,
+        "missing_states": 12,
+        "missing_token_mappings": 0
+      },
+      "matrix": {
+        "review_rows": [
+          {
+            "code": "design_behavior_review_required",
+            "component_ref": "company.itemCards",
+            "message": "Behavior 'sorting' is 'unsupported'.",
+            "platform": "android",
+            "status": "unsupported",
+            "viewport": "any",
+            "widget": "widget_data_grid"
+          },
+          {
+            "code": "design_missing_state",
+            "component_ref": "company.itemCards",
+            "message": "Realization 'data_cards_android' does not declare 'loading' state coverage.",
+            "platform": "android",
+            "status": "missing_state",
+            "viewport": "any",
+            "widget": "widget_data_grid"
+          },
+          {
+            "code": "design_missing_state",
+            "component_ref": "company.itemCards",
+            "message": "Realization 'data_cards_android' does not declare 'empty' state coverage.",
+            "platform": "android",
+            "status": "missing_state",
+            "viewport": "any",
+            "widget": "widget_data_grid"
+          },
+          {
+            "code": "design_missing_state",
+            "component_ref": "company.itemCards",
+            "message": "Realization 'data_cards_android' does not declare 'error' state coverage.",
+            "platform": "android",
+            "status": "missing_state",
+            "viewport": "any",
+            "widget": "widget_data_grid"
+          },
+          {
+            "code": "design_realization_status_review",
+            "component_ref": "company.itemCards",
+            "message": "Realization 'data_cards_android' is 'unsupported'.",
+            "platform": "android",
+            "status": "unsupported",
+            "viewport": "any",
+            "widget": "widget_data_grid"
+          },
+          {
+            "code": "design_missing_state",
+            "component_ref": "company.itemList",
+            "message": "Realization 'data_list_ios' does not declare 'loading' state coverage.",
+            "platform": "ios",
+            "status": "missing_state",
+            "viewport": "any",
+            "widget": "widget_data_grid"
+          },
+          {
+            "code": "design_missing_state",
+            "component_ref": "company.itemList",
+            "message": "Realization 'data_list_ios' does not declare 'empty' state coverage.",
+            "platform": "ios",
+            "status": "missing_state",
+            "viewport": "any",
+            "widget": "widget_data_grid"
+          },
+          {
+            "code": "design_missing_state",
+            "component_ref": "company.itemList",
+            "message": "Realization 'data_list_ios' does not declare 'error' state coverage.",
+            "platform": "ios",
+            "status": "missing_state",
+            "viewport": "any",
+            "widget": "widget_data_grid"
+          },
+          {
+            "code": "design_behavior_review_required",
+            "component_ref": "company.dataGrid",
+            "message": "Behavior 'sorting' is 'contract_only'.",
+            "platform": "web",
+            "status": "contract_only",
+            "viewport": "wide",
+            "widget": "widget_data_grid"
+          },
+          {
+            "code": "design_missing_state",
+            "component_ref": "company.dataCards",
+            "message": "Realization 'data_cards_narrow' does not declare 'loading' state coverage.",
+            "platform": "web",
+            "status": "missing_state",
+            "viewport": "narrow",
+            "widget": "widget_data_grid"
+          },
+          {
+            "code": "design_missing_state",
+            "component_ref": "company.dataCards",
+            "message": "Realization 'data_cards_narrow' does not declare 'empty' state coverage.",
+            "platform": "web",
+            "status": "missing_state",
+            "viewport": "narrow",
+            "widget": "widget_data_grid"
+          },
+          {
+            "code": "design_missing_state",
+            "component_ref": "company.dataCards",
+            "message": "Realization 'data_cards_narrow' does not declare 'error' state coverage.",
+            "platform": "web",
+            "status": "missing_state",
+            "viewport": "narrow",
+            "widget": "widget_data_grid"
+          },
+          {
+            "code": "design_missing_state",
+            "component_ref": "company.dataGrid",
+            "message": "Realization 'data_grid_wide' does not declare 'loading' state coverage.",
+            "platform": "web",
+            "status": "missing_state",
+            "viewport": "wide",
+            "widget": "widget_data_grid"
+          },
+          {
+            "code": "design_missing_state",
+            "component_ref": "company.dataGrid",
+            "message": "Realization 'data_grid_wide' does not declare 'empty' state coverage.",
+            "platform": "web",
+            "status": "missing_state",
+            "viewport": "wide",
+            "widget": "widget_data_grid"
+          },
+          {
+            "code": "design_missing_state",
+            "component_ref": "company.dataGrid",
+            "message": "Realization 'data_grid_wide' does not declare 'error' state coverage.",
+            "platform": "web",
+            "status": "missing_state",
+            "viewport": "wide",
+            "widget": "widget_data_grid"
+          },
+          {
+            "code": "design_realization_status_review",
+            "component_ref": "company.dataCards",
+            "message": "Realization 'data_cards_narrow' is 'contract_only'.",
+            "platform": "web",
+            "status": "contract_only",
+            "viewport": "narrow",
+            "widget": "widget_data_grid"
+          }
+        ],
+        "rows": [
+          {
+            "accessibility_status": "authored",
+            "behavior_statuses": [
+              {
+                "behavior": "sorting",
+                "status": "unsupported"
+              }
+            ],
+            "component_ref": "company.itemCards",
+            "density": "unspecified",
+            "i18n_status": "authored",
+            "missing_states": [
+              "loading",
+              "empty",
+              "error"
+            ],
+            "pattern": "resource_table",
+            "platform": "android",
+            "review_status": "review_required",
+            "state_coverage": [],
+            "status": "unsupported",
+            "token_status": "mapped",
+            "viewport": "any",
+            "widget": "widget_data_grid"
+          },
+          {
+            "accessibility_status": "authored",
+            "behavior_statuses": [
+              {
+                "behavior": "selection",
+                "status": "rendered"
+              },
+              {
+                "behavior": "sorting",
+                "status": "implementation_owned"
+              }
+            ],
+            "component_ref": "company.itemList",
+            "density": "unspecified",
+            "i18n_status": "authored",
+            "missing_states": [
+              "loading",
+              "empty",
+              "error"
+            ],
+            "pattern": "resource_table",
+            "platform": "ios",
+            "review_status": "review_required",
+            "state_coverage": [],
+            "status": "implementation_owned",
+            "token_status": "mapped",
+            "viewport": "any",
+            "widget": "widget_data_grid"
+          },
+          {
+            "accessibility_status": "authored",
+            "behavior_statuses": [],
+            "component_ref": "company.dataCards",
+            "density": "unspecified",
+            "i18n_status": "authored",
+            "missing_states": [
+              "loading",
+              "empty",
+              "error"
+            ],
+            "pattern": "resource_table",
+            "platform": "web",
+            "review_status": "review_required",
+            "state_coverage": [],
+            "status": "contract_only",
+            "token_status": "mapped",
+            "viewport": "narrow",
+            "widget": "widget_data_grid"
+          },
+          {
+            "accessibility_status": "authored",
+            "behavior_statuses": [
+              {
+                "behavior": "selection",
+                "status": "rendered"
+              },
+              {
+                "behavior": "sorting",
+                "status": "contract_only"
+              }
+            ],
+            "component_ref": "company.dataGrid",
+            "density": "unspecified",
+            "i18n_status": "authored",
+            "missing_states": [
+              "loading",
+              "empty",
+              "error"
+            ],
+            "pattern": "resource_table",
+            "platform": "web",
+            "review_status": "review_required",
+            "state_coverage": [],
+            "status": "rendered",
+            "token_status": "mapped",
+            "viewport": "wide",
+            "widget": "widget_data_grid"
+          }
+        ]
+      },
+      "proofCommands": [
+        "topogram query ui-design-coverage ./topo --widget widget_data_grid --json",
+        "topogram query ui-design-coverage ./topo --widget widget_data_grid --format markdown"
+      ],
+      "scope": {
+        "projectionId": null,
+        "screenId": null,
+        "widgetId": "widget_data_grid"
+      },
+      "source": "ui-design-coverage design_matrix rows from design_contract and design_realization_set records",
+      "status": "review_required"
     },
     "inheritedBy": [
       "proj_web_surface",

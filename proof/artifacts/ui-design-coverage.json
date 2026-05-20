@@ -1,4 +1,1130 @@
 {
+  "design_matrix": {
+    "gaps": {
+      "missing_accessibility": [],
+      "missing_i18n": [],
+      "missing_platforms": [],
+      "missing_states": [
+        {
+          "code": "design_missing_state",
+          "component_ref": "company.itemCards",
+          "density": "unspecified",
+          "design_contract": "design_company_web",
+          "design_realization_set": "realization_set_company_web_widgets",
+          "message": "Realization 'data_cards_android' does not declare 'loading' state coverage.",
+          "nextCommands": [
+            "topogram query ui-design-coverage ./topo --json",
+            "topogram query slice ./topo --widget widget_data_grid --json",
+            "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+          ],
+          "platform": "android",
+          "realization_id": "data_cards_android",
+          "severity": "warning",
+          "state": "loading",
+          "status": "missing_state",
+          "viewport": "any",
+          "widget": "widget_data_grid"
+        },
+        {
+          "code": "design_missing_state",
+          "component_ref": "company.itemCards",
+          "density": "unspecified",
+          "design_contract": "design_company_web",
+          "design_realization_set": "realization_set_company_web_widgets",
+          "message": "Realization 'data_cards_android' does not declare 'empty' state coverage.",
+          "nextCommands": [
+            "topogram query ui-design-coverage ./topo --json",
+            "topogram query slice ./topo --widget widget_data_grid --json",
+            "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+          ],
+          "platform": "android",
+          "realization_id": "data_cards_android",
+          "severity": "warning",
+          "state": "empty",
+          "status": "missing_state",
+          "viewport": "any",
+          "widget": "widget_data_grid"
+        },
+        {
+          "code": "design_missing_state",
+          "component_ref": "company.itemCards",
+          "density": "unspecified",
+          "design_contract": "design_company_web",
+          "design_realization_set": "realization_set_company_web_widgets",
+          "message": "Realization 'data_cards_android' does not declare 'error' state coverage.",
+          "nextCommands": [
+            "topogram query ui-design-coverage ./topo --json",
+            "topogram query slice ./topo --widget widget_data_grid --json",
+            "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+          ],
+          "platform": "android",
+          "realization_id": "data_cards_android",
+          "severity": "warning",
+          "state": "error",
+          "status": "missing_state",
+          "viewport": "any",
+          "widget": "widget_data_grid"
+        },
+        {
+          "code": "design_missing_state",
+          "component_ref": "company.itemList",
+          "density": "unspecified",
+          "design_contract": "design_company_web",
+          "design_realization_set": "realization_set_company_web_widgets",
+          "message": "Realization 'data_list_ios' does not declare 'loading' state coverage.",
+          "nextCommands": [
+            "topogram query ui-design-coverage ./topo --json",
+            "topogram query slice ./topo --widget widget_data_grid --json",
+            "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+          ],
+          "platform": "ios",
+          "realization_id": "data_list_ios",
+          "severity": "warning",
+          "state": "loading",
+          "status": "missing_state",
+          "viewport": "any",
+          "widget": "widget_data_grid"
+        },
+        {
+          "code": "design_missing_state",
+          "component_ref": "company.itemList",
+          "density": "unspecified",
+          "design_contract": "design_company_web",
+          "design_realization_set": "realization_set_company_web_widgets",
+          "message": "Realization 'data_list_ios' does not declare 'empty' state coverage.",
+          "nextCommands": [
+            "topogram query ui-design-coverage ./topo --json",
+            "topogram query slice ./topo --widget widget_data_grid --json",
+            "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+          ],
+          "platform": "ios",
+          "realization_id": "data_list_ios",
+          "severity": "warning",
+          "state": "empty",
+          "status": "missing_state",
+          "viewport": "any",
+          "widget": "widget_data_grid"
+        },
+        {
+          "code": "design_missing_state",
+          "component_ref": "company.itemList",
+          "density": "unspecified",
+          "design_contract": "design_company_web",
+          "design_realization_set": "realization_set_company_web_widgets",
+          "message": "Realization 'data_list_ios' does not declare 'error' state coverage.",
+          "nextCommands": [
+            "topogram query ui-design-coverage ./topo --json",
+            "topogram query slice ./topo --widget widget_data_grid --json",
+            "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+          ],
+          "platform": "ios",
+          "realization_id": "data_list_ios",
+          "severity": "warning",
+          "state": "error",
+          "status": "missing_state",
+          "viewport": "any",
+          "widget": "widget_data_grid"
+        },
+        {
+          "code": "design_missing_state",
+          "component_ref": "company.dataCards",
+          "density": "unspecified",
+          "design_contract": "design_company_web",
+          "design_realization_set": "realization_set_company_web_widgets",
+          "message": "Realization 'data_cards_narrow' does not declare 'loading' state coverage.",
+          "nextCommands": [
+            "topogram query ui-design-coverage ./topo --json",
+            "topogram query slice ./topo --widget widget_data_grid --json",
+            "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+          ],
+          "platform": "web",
+          "realization_id": "data_cards_narrow",
+          "severity": "warning",
+          "state": "loading",
+          "status": "missing_state",
+          "viewport": "narrow",
+          "widget": "widget_data_grid"
+        },
+        {
+          "code": "design_missing_state",
+          "component_ref": "company.dataCards",
+          "density": "unspecified",
+          "design_contract": "design_company_web",
+          "design_realization_set": "realization_set_company_web_widgets",
+          "message": "Realization 'data_cards_narrow' does not declare 'empty' state coverage.",
+          "nextCommands": [
+            "topogram query ui-design-coverage ./topo --json",
+            "topogram query slice ./topo --widget widget_data_grid --json",
+            "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+          ],
+          "platform": "web",
+          "realization_id": "data_cards_narrow",
+          "severity": "warning",
+          "state": "empty",
+          "status": "missing_state",
+          "viewport": "narrow",
+          "widget": "widget_data_grid"
+        },
+        {
+          "code": "design_missing_state",
+          "component_ref": "company.dataCards",
+          "density": "unspecified",
+          "design_contract": "design_company_web",
+          "design_realization_set": "realization_set_company_web_widgets",
+          "message": "Realization 'data_cards_narrow' does not declare 'error' state coverage.",
+          "nextCommands": [
+            "topogram query ui-design-coverage ./topo --json",
+            "topogram query slice ./topo --widget widget_data_grid --json",
+            "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+          ],
+          "platform": "web",
+          "realization_id": "data_cards_narrow",
+          "severity": "warning",
+          "state": "error",
+          "status": "missing_state",
+          "viewport": "narrow",
+          "widget": "widget_data_grid"
+        },
+        {
+          "code": "design_missing_state",
+          "component_ref": "company.dataGrid",
+          "density": "unspecified",
+          "design_contract": "design_company_web",
+          "design_realization_set": "realization_set_company_web_widgets",
+          "message": "Realization 'data_grid_wide' does not declare 'loading' state coverage.",
+          "nextCommands": [
+            "topogram query ui-design-coverage ./topo --json",
+            "topogram query slice ./topo --widget widget_data_grid --json",
+            "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+          ],
+          "platform": "web",
+          "realization_id": "data_grid_wide",
+          "severity": "warning",
+          "state": "loading",
+          "status": "missing_state",
+          "viewport": "wide",
+          "widget": "widget_data_grid"
+        },
+        {
+          "code": "design_missing_state",
+          "component_ref": "company.dataGrid",
+          "density": "unspecified",
+          "design_contract": "design_company_web",
+          "design_realization_set": "realization_set_company_web_widgets",
+          "message": "Realization 'data_grid_wide' does not declare 'empty' state coverage.",
+          "nextCommands": [
+            "topogram query ui-design-coverage ./topo --json",
+            "topogram query slice ./topo --widget widget_data_grid --json",
+            "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+          ],
+          "platform": "web",
+          "realization_id": "data_grid_wide",
+          "severity": "warning",
+          "state": "empty",
+          "status": "missing_state",
+          "viewport": "wide",
+          "widget": "widget_data_grid"
+        },
+        {
+          "code": "design_missing_state",
+          "component_ref": "company.dataGrid",
+          "density": "unspecified",
+          "design_contract": "design_company_web",
+          "design_realization_set": "realization_set_company_web_widgets",
+          "message": "Realization 'data_grid_wide' does not declare 'error' state coverage.",
+          "nextCommands": [
+            "topogram query ui-design-coverage ./topo --json",
+            "topogram query slice ./topo --widget widget_data_grid --json",
+            "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+          ],
+          "platform": "web",
+          "realization_id": "data_grid_wide",
+          "severity": "warning",
+          "state": "error",
+          "status": "missing_state",
+          "viewport": "wide",
+          "widget": "widget_data_grid"
+        }
+      ],
+      "missing_token_mappings": []
+    },
+    "review_rows": [
+      {
+        "behavior": "sorting",
+        "code": "design_behavior_review_required",
+        "component_ref": "company.itemCards",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Behavior 'sorting' is 'unsupported'.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "android",
+        "realization_id": "data_cards_android",
+        "severity": "warning",
+        "status": "unsupported",
+        "viewport": "any",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_missing_state",
+        "component_ref": "company.itemCards",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_cards_android' does not declare 'loading' state coverage.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "android",
+        "realization_id": "data_cards_android",
+        "severity": "warning",
+        "state": "loading",
+        "status": "missing_state",
+        "viewport": "any",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_missing_state",
+        "component_ref": "company.itemCards",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_cards_android' does not declare 'empty' state coverage.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "android",
+        "realization_id": "data_cards_android",
+        "severity": "warning",
+        "state": "empty",
+        "status": "missing_state",
+        "viewport": "any",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_missing_state",
+        "component_ref": "company.itemCards",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_cards_android' does not declare 'error' state coverage.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "android",
+        "realization_id": "data_cards_android",
+        "severity": "warning",
+        "state": "error",
+        "status": "missing_state",
+        "viewport": "any",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_realization_status_review",
+        "component_ref": "company.itemCards",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_cards_android' is 'unsupported'.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "android",
+        "realization_id": "data_cards_android",
+        "severity": "warning",
+        "status": "unsupported",
+        "viewport": "any",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_missing_state",
+        "component_ref": "company.itemList",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_list_ios' does not declare 'loading' state coverage.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "ios",
+        "realization_id": "data_list_ios",
+        "severity": "warning",
+        "state": "loading",
+        "status": "missing_state",
+        "viewport": "any",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_missing_state",
+        "component_ref": "company.itemList",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_list_ios' does not declare 'empty' state coverage.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "ios",
+        "realization_id": "data_list_ios",
+        "severity": "warning",
+        "state": "empty",
+        "status": "missing_state",
+        "viewport": "any",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_missing_state",
+        "component_ref": "company.itemList",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_list_ios' does not declare 'error' state coverage.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "ios",
+        "realization_id": "data_list_ios",
+        "severity": "warning",
+        "state": "error",
+        "status": "missing_state",
+        "viewport": "any",
+        "widget": "widget_data_grid"
+      },
+      {
+        "behavior": "sorting",
+        "code": "design_behavior_review_required",
+        "component_ref": "company.dataGrid",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Behavior 'sorting' is 'contract_only'.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "web",
+        "realization_id": "data_grid_wide",
+        "severity": "warning",
+        "status": "contract_only",
+        "viewport": "wide",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_missing_state",
+        "component_ref": "company.dataCards",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_cards_narrow' does not declare 'loading' state coverage.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "web",
+        "realization_id": "data_cards_narrow",
+        "severity": "warning",
+        "state": "loading",
+        "status": "missing_state",
+        "viewport": "narrow",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_missing_state",
+        "component_ref": "company.dataCards",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_cards_narrow' does not declare 'empty' state coverage.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "web",
+        "realization_id": "data_cards_narrow",
+        "severity": "warning",
+        "state": "empty",
+        "status": "missing_state",
+        "viewport": "narrow",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_missing_state",
+        "component_ref": "company.dataCards",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_cards_narrow' does not declare 'error' state coverage.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "web",
+        "realization_id": "data_cards_narrow",
+        "severity": "warning",
+        "state": "error",
+        "status": "missing_state",
+        "viewport": "narrow",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_missing_state",
+        "component_ref": "company.dataGrid",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_grid_wide' does not declare 'loading' state coverage.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "web",
+        "realization_id": "data_grid_wide",
+        "severity": "warning",
+        "state": "loading",
+        "status": "missing_state",
+        "viewport": "wide",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_missing_state",
+        "component_ref": "company.dataGrid",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_grid_wide' does not declare 'empty' state coverage.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "web",
+        "realization_id": "data_grid_wide",
+        "severity": "warning",
+        "state": "empty",
+        "status": "missing_state",
+        "viewport": "wide",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_missing_state",
+        "component_ref": "company.dataGrid",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_grid_wide' does not declare 'error' state coverage.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "web",
+        "realization_id": "data_grid_wide",
+        "severity": "warning",
+        "state": "error",
+        "status": "missing_state",
+        "viewport": "wide",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_realization_status_review",
+        "component_ref": "company.dataCards",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_cards_narrow' is 'contract_only'.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "web",
+        "realization_id": "data_cards_narrow",
+        "severity": "warning",
+        "status": "contract_only",
+        "viewport": "narrow",
+        "widget": "widget_data_grid"
+      }
+    ],
+    "rows": [
+      {
+        "accessibility_status": "authored",
+        "behavior_statuses": [
+          {
+            "behavior": "sorting",
+            "status": "unsupported"
+          }
+        ],
+        "component_ref": "company.itemCards",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_contract_name": "Company Product UI Design Contract",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "i18n_status": "authored",
+        "locale_contexts": [],
+        "missing_states": [
+          "loading",
+          "empty",
+          "error"
+        ],
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "pattern": "resource_table",
+        "platform": "android",
+        "realization_id": "data_cards_android",
+        "review_items": [
+          {
+            "code": "design_realization_status_review",
+            "component_ref": "company.itemCards",
+            "density": "unspecified",
+            "design_contract": "design_company_web",
+            "design_realization_set": "realization_set_company_web_widgets",
+            "message": "Realization 'data_cards_android' is 'unsupported'.",
+            "nextCommands": [
+              "topogram query ui-design-coverage ./topo --json",
+              "topogram query slice ./topo --widget widget_data_grid --json",
+              "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+            ],
+            "platform": "android",
+            "realization_id": "data_cards_android",
+            "severity": "warning",
+            "status": "unsupported",
+            "viewport": "any",
+            "widget": "widget_data_grid"
+          },
+          {
+            "code": "design_missing_state",
+            "component_ref": "company.itemCards",
+            "density": "unspecified",
+            "design_contract": "design_company_web",
+            "design_realization_set": "realization_set_company_web_widgets",
+            "message": "Realization 'data_cards_android' does not declare 'loading' state coverage.",
+            "nextCommands": [
+              "topogram query ui-design-coverage ./topo --json",
+              "topogram query slice ./topo --widget widget_data_grid --json",
+              "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+            ],
+            "platform": "android",
+            "realization_id": "data_cards_android",
+            "severity": "warning",
+            "state": "loading",
+            "status": "missing_state",
+            "viewport": "any",
+            "widget": "widget_data_grid"
+          },
+          {
+            "code": "design_missing_state",
+            "component_ref": "company.itemCards",
+            "density": "unspecified",
+            "design_contract": "design_company_web",
+            "design_realization_set": "realization_set_company_web_widgets",
+            "message": "Realization 'data_cards_android' does not declare 'empty' state coverage.",
+            "nextCommands": [
+              "topogram query ui-design-coverage ./topo --json",
+              "topogram query slice ./topo --widget widget_data_grid --json",
+              "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+            ],
+            "platform": "android",
+            "realization_id": "data_cards_android",
+            "severity": "warning",
+            "state": "empty",
+            "status": "missing_state",
+            "viewport": "any",
+            "widget": "widget_data_grid"
+          },
+          {
+            "code": "design_missing_state",
+            "component_ref": "company.itemCards",
+            "density": "unspecified",
+            "design_contract": "design_company_web",
+            "design_realization_set": "realization_set_company_web_widgets",
+            "message": "Realization 'data_cards_android' does not declare 'error' state coverage.",
+            "nextCommands": [
+              "topogram query ui-design-coverage ./topo --json",
+              "topogram query slice ./topo --widget widget_data_grid --json",
+              "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+            ],
+            "platform": "android",
+            "realization_id": "data_cards_android",
+            "severity": "warning",
+            "state": "error",
+            "status": "missing_state",
+            "viewport": "any",
+            "widget": "widget_data_grid"
+          },
+          {
+            "behavior": "sorting",
+            "code": "design_behavior_review_required",
+            "component_ref": "company.itemCards",
+            "density": "unspecified",
+            "design_contract": "design_company_web",
+            "design_realization_set": "realization_set_company_web_widgets",
+            "message": "Behavior 'sorting' is 'unsupported'.",
+            "nextCommands": [
+              "topogram query ui-design-coverage ./topo --json",
+              "topogram query slice ./topo --widget widget_data_grid --json",
+              "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+            ],
+            "platform": "android",
+            "realization_id": "data_cards_android",
+            "severity": "warning",
+            "status": "unsupported",
+            "viewport": "any",
+            "widget": "widget_data_grid"
+          }
+        ],
+        "review_notes": null,
+        "review_status": "review_required",
+        "role_contexts": [],
+        "state_coverage": [],
+        "status": "unsupported",
+        "theme_contexts": [],
+        "token_status": "mapped",
+        "type": "widget_realization",
+        "usage": {
+          "patterns": [
+            "resource_table"
+          ],
+          "projections": [
+            "proj_web_surface"
+          ],
+          "regions": [
+            "results"
+          ],
+          "screens": [
+            "item_list"
+          ]
+        },
+        "viewport": "any",
+        "widget": "widget_data_grid"
+      },
+      {
+        "accessibility_status": "authored",
+        "behavior_statuses": [
+          {
+            "behavior": "selection",
+            "status": "rendered"
+          },
+          {
+            "behavior": "sorting",
+            "status": "implementation_owned"
+          }
+        ],
+        "component_ref": "company.itemList",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_contract_name": "Company Product UI Design Contract",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "i18n_status": "authored",
+        "locale_contexts": [],
+        "missing_states": [
+          "loading",
+          "empty",
+          "error"
+        ],
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "pattern": "resource_table",
+        "platform": "ios",
+        "realization_id": "data_list_ios",
+        "review_items": [
+          {
+            "code": "design_missing_state",
+            "component_ref": "company.itemList",
+            "density": "unspecified",
+            "design_contract": "design_company_web",
+            "design_realization_set": "realization_set_company_web_widgets",
+            "message": "Realization 'data_list_ios' does not declare 'loading' state coverage.",
+            "nextCommands": [
+              "topogram query ui-design-coverage ./topo --json",
+              "topogram query slice ./topo --widget widget_data_grid --json",
+              "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+            ],
+            "platform": "ios",
+            "realization_id": "data_list_ios",
+            "severity": "warning",
+            "state": "loading",
+            "status": "missing_state",
+            "viewport": "any",
+            "widget": "widget_data_grid"
+          },
+          {
+            "code": "design_missing_state",
+            "component_ref": "company.itemList",
+            "density": "unspecified",
+            "design_contract": "design_company_web",
+            "design_realization_set": "realization_set_company_web_widgets",
+            "message": "Realization 'data_list_ios' does not declare 'empty' state coverage.",
+            "nextCommands": [
+              "topogram query ui-design-coverage ./topo --json",
+              "topogram query slice ./topo --widget widget_data_grid --json",
+              "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+            ],
+            "platform": "ios",
+            "realization_id": "data_list_ios",
+            "severity": "warning",
+            "state": "empty",
+            "status": "missing_state",
+            "viewport": "any",
+            "widget": "widget_data_grid"
+          },
+          {
+            "code": "design_missing_state",
+            "component_ref": "company.itemList",
+            "density": "unspecified",
+            "design_contract": "design_company_web",
+            "design_realization_set": "realization_set_company_web_widgets",
+            "message": "Realization 'data_list_ios' does not declare 'error' state coverage.",
+            "nextCommands": [
+              "topogram query ui-design-coverage ./topo --json",
+              "topogram query slice ./topo --widget widget_data_grid --json",
+              "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+            ],
+            "platform": "ios",
+            "realization_id": "data_list_ios",
+            "severity": "warning",
+            "state": "error",
+            "status": "missing_state",
+            "viewport": "any",
+            "widget": "widget_data_grid"
+          }
+        ],
+        "review_notes": null,
+        "review_status": "review_required",
+        "role_contexts": [],
+        "state_coverage": [],
+        "status": "implementation_owned",
+        "theme_contexts": [],
+        "token_status": "mapped",
+        "type": "widget_realization",
+        "usage": {
+          "patterns": [
+            "resource_table"
+          ],
+          "projections": [
+            "proj_web_surface"
+          ],
+          "regions": [
+            "results"
+          ],
+          "screens": [
+            "item_list"
+          ]
+        },
+        "viewport": "any",
+        "widget": "widget_data_grid"
+      },
+      {
+        "accessibility_status": "authored",
+        "behavior_statuses": [],
+        "component_ref": "company.dataCards",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_contract_name": "Company Product UI Design Contract",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "i18n_status": "authored",
+        "locale_contexts": [],
+        "missing_states": [
+          "loading",
+          "empty",
+          "error"
+        ],
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "pattern": "resource_table",
+        "platform": "web",
+        "realization_id": "data_cards_narrow",
+        "review_items": [
+          {
+            "code": "design_realization_status_review",
+            "component_ref": "company.dataCards",
+            "density": "unspecified",
+            "design_contract": "design_company_web",
+            "design_realization_set": "realization_set_company_web_widgets",
+            "message": "Realization 'data_cards_narrow' is 'contract_only'.",
+            "nextCommands": [
+              "topogram query ui-design-coverage ./topo --json",
+              "topogram query slice ./topo --widget widget_data_grid --json",
+              "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+            ],
+            "platform": "web",
+            "realization_id": "data_cards_narrow",
+            "severity": "warning",
+            "status": "contract_only",
+            "viewport": "narrow",
+            "widget": "widget_data_grid"
+          },
+          {
+            "code": "design_missing_state",
+            "component_ref": "company.dataCards",
+            "density": "unspecified",
+            "design_contract": "design_company_web",
+            "design_realization_set": "realization_set_company_web_widgets",
+            "message": "Realization 'data_cards_narrow' does not declare 'loading' state coverage.",
+            "nextCommands": [
+              "topogram query ui-design-coverage ./topo --json",
+              "topogram query slice ./topo --widget widget_data_grid --json",
+              "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+            ],
+            "platform": "web",
+            "realization_id": "data_cards_narrow",
+            "severity": "warning",
+            "state": "loading",
+            "status": "missing_state",
+            "viewport": "narrow",
+            "widget": "widget_data_grid"
+          },
+          {
+            "code": "design_missing_state",
+            "component_ref": "company.dataCards",
+            "density": "unspecified",
+            "design_contract": "design_company_web",
+            "design_realization_set": "realization_set_company_web_widgets",
+            "message": "Realization 'data_cards_narrow' does not declare 'empty' state coverage.",
+            "nextCommands": [
+              "topogram query ui-design-coverage ./topo --json",
+              "topogram query slice ./topo --widget widget_data_grid --json",
+              "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+            ],
+            "platform": "web",
+            "realization_id": "data_cards_narrow",
+            "severity": "warning",
+            "state": "empty",
+            "status": "missing_state",
+            "viewport": "narrow",
+            "widget": "widget_data_grid"
+          },
+          {
+            "code": "design_missing_state",
+            "component_ref": "company.dataCards",
+            "density": "unspecified",
+            "design_contract": "design_company_web",
+            "design_realization_set": "realization_set_company_web_widgets",
+            "message": "Realization 'data_cards_narrow' does not declare 'error' state coverage.",
+            "nextCommands": [
+              "topogram query ui-design-coverage ./topo --json",
+              "topogram query slice ./topo --widget widget_data_grid --json",
+              "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+            ],
+            "platform": "web",
+            "realization_id": "data_cards_narrow",
+            "severity": "warning",
+            "state": "error",
+            "status": "missing_state",
+            "viewport": "narrow",
+            "widget": "widget_data_grid"
+          }
+        ],
+        "review_notes": null,
+        "review_status": "review_required",
+        "role_contexts": [],
+        "state_coverage": [],
+        "status": "contract_only",
+        "theme_contexts": [],
+        "token_status": "mapped",
+        "type": "widget_realization",
+        "usage": {
+          "patterns": [
+            "resource_table"
+          ],
+          "projections": [
+            "proj_web_surface"
+          ],
+          "regions": [
+            "results"
+          ],
+          "screens": [
+            "item_list"
+          ]
+        },
+        "viewport": "narrow",
+        "widget": "widget_data_grid"
+      },
+      {
+        "accessibility_status": "authored",
+        "behavior_statuses": [
+          {
+            "behavior": "selection",
+            "status": "rendered"
+          },
+          {
+            "behavior": "sorting",
+            "status": "contract_only"
+          }
+        ],
+        "component_ref": "company.dataGrid",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_contract_name": "Company Product UI Design Contract",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "i18n_status": "authored",
+        "locale_contexts": [],
+        "missing_states": [
+          "loading",
+          "empty",
+          "error"
+        ],
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "pattern": "resource_table",
+        "platform": "web",
+        "realization_id": "data_grid_wide",
+        "review_items": [
+          {
+            "code": "design_missing_state",
+            "component_ref": "company.dataGrid",
+            "density": "unspecified",
+            "design_contract": "design_company_web",
+            "design_realization_set": "realization_set_company_web_widgets",
+            "message": "Realization 'data_grid_wide' does not declare 'loading' state coverage.",
+            "nextCommands": [
+              "topogram query ui-design-coverage ./topo --json",
+              "topogram query slice ./topo --widget widget_data_grid --json",
+              "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+            ],
+            "platform": "web",
+            "realization_id": "data_grid_wide",
+            "severity": "warning",
+            "state": "loading",
+            "status": "missing_state",
+            "viewport": "wide",
+            "widget": "widget_data_grid"
+          },
+          {
+            "code": "design_missing_state",
+            "component_ref": "company.dataGrid",
+            "density": "unspecified",
+            "design_contract": "design_company_web",
+            "design_realization_set": "realization_set_company_web_widgets",
+            "message": "Realization 'data_grid_wide' does not declare 'empty' state coverage.",
+            "nextCommands": [
+              "topogram query ui-design-coverage ./topo --json",
+              "topogram query slice ./topo --widget widget_data_grid --json",
+              "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+            ],
+            "platform": "web",
+            "realization_id": "data_grid_wide",
+            "severity": "warning",
+            "state": "empty",
+            "status": "missing_state",
+            "viewport": "wide",
+            "widget": "widget_data_grid"
+          },
+          {
+            "code": "design_missing_state",
+            "component_ref": "company.dataGrid",
+            "density": "unspecified",
+            "design_contract": "design_company_web",
+            "design_realization_set": "realization_set_company_web_widgets",
+            "message": "Realization 'data_grid_wide' does not declare 'error' state coverage.",
+            "nextCommands": [
+              "topogram query ui-design-coverage ./topo --json",
+              "topogram query slice ./topo --widget widget_data_grid --json",
+              "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+            ],
+            "platform": "web",
+            "realization_id": "data_grid_wide",
+            "severity": "warning",
+            "state": "error",
+            "status": "missing_state",
+            "viewport": "wide",
+            "widget": "widget_data_grid"
+          },
+          {
+            "behavior": "sorting",
+            "code": "design_behavior_review_required",
+            "component_ref": "company.dataGrid",
+            "density": "unspecified",
+            "design_contract": "design_company_web",
+            "design_realization_set": "realization_set_company_web_widgets",
+            "message": "Behavior 'sorting' is 'contract_only'.",
+            "nextCommands": [
+              "topogram query ui-design-coverage ./topo --json",
+              "topogram query slice ./topo --widget widget_data_grid --json",
+              "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+            ],
+            "platform": "web",
+            "realization_id": "data_grid_wide",
+            "severity": "warning",
+            "status": "contract_only",
+            "viewport": "wide",
+            "widget": "widget_data_grid"
+          }
+        ],
+        "review_notes": null,
+        "review_status": "review_required",
+        "role_contexts": [],
+        "state_coverage": [],
+        "status": "rendered",
+        "theme_contexts": [],
+        "token_status": "mapped",
+        "type": "widget_realization",
+        "usage": {
+          "patterns": [
+            "resource_table"
+          ],
+          "projections": [
+            "proj_web_surface"
+          ],
+          "regions": [
+            "results"
+          ],
+          "screens": [
+            "item_list"
+          ]
+        },
+        "viewport": "wide",
+        "widget": "widget_data_grid"
+      }
+    ],
+    "summary": {
+      "component_refs": 4,
+      "missing_accessibility": 0,
+      "missing_i18n": 0,
+      "missing_platforms": 0,
+      "missing_states": 12,
+      "missing_token_mappings": 0,
+      "review_rows": 16,
+      "rows": 4,
+      "widgets": 1
+    },
+    "type": "design_matrix",
+    "version": 1
+  },
   "diagnostics": [
     {
       "behavior": "sorting",
@@ -31,10 +1157,575 @@
         "widget": "widget_data_grid"
       }
     ],
+    "designReviewRows": [
+      {
+        "behavior": "sorting",
+        "code": "design_behavior_review_required",
+        "component_ref": "company.itemCards",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Behavior 'sorting' is 'unsupported'.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "android",
+        "realization_id": "data_cards_android",
+        "severity": "warning",
+        "status": "unsupported",
+        "viewport": "any",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_missing_state",
+        "component_ref": "company.itemCards",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_cards_android' does not declare 'loading' state coverage.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "android",
+        "realization_id": "data_cards_android",
+        "severity": "warning",
+        "state": "loading",
+        "status": "missing_state",
+        "viewport": "any",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_missing_state",
+        "component_ref": "company.itemCards",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_cards_android' does not declare 'empty' state coverage.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "android",
+        "realization_id": "data_cards_android",
+        "severity": "warning",
+        "state": "empty",
+        "status": "missing_state",
+        "viewport": "any",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_missing_state",
+        "component_ref": "company.itemCards",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_cards_android' does not declare 'error' state coverage.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "android",
+        "realization_id": "data_cards_android",
+        "severity": "warning",
+        "state": "error",
+        "status": "missing_state",
+        "viewport": "any",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_realization_status_review",
+        "component_ref": "company.itemCards",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_cards_android' is 'unsupported'.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "android",
+        "realization_id": "data_cards_android",
+        "severity": "warning",
+        "status": "unsupported",
+        "viewport": "any",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_missing_state",
+        "component_ref": "company.itemList",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_list_ios' does not declare 'loading' state coverage.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "ios",
+        "realization_id": "data_list_ios",
+        "severity": "warning",
+        "state": "loading",
+        "status": "missing_state",
+        "viewport": "any",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_missing_state",
+        "component_ref": "company.itemList",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_list_ios' does not declare 'empty' state coverage.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "ios",
+        "realization_id": "data_list_ios",
+        "severity": "warning",
+        "state": "empty",
+        "status": "missing_state",
+        "viewport": "any",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_missing_state",
+        "component_ref": "company.itemList",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_list_ios' does not declare 'error' state coverage.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "ios",
+        "realization_id": "data_list_ios",
+        "severity": "warning",
+        "state": "error",
+        "status": "missing_state",
+        "viewport": "any",
+        "widget": "widget_data_grid"
+      },
+      {
+        "behavior": "sorting",
+        "code": "design_behavior_review_required",
+        "component_ref": "company.dataGrid",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Behavior 'sorting' is 'contract_only'.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "web",
+        "realization_id": "data_grid_wide",
+        "severity": "warning",
+        "status": "contract_only",
+        "viewport": "wide",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_missing_state",
+        "component_ref": "company.dataCards",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_cards_narrow' does not declare 'loading' state coverage.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "web",
+        "realization_id": "data_cards_narrow",
+        "severity": "warning",
+        "state": "loading",
+        "status": "missing_state",
+        "viewport": "narrow",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_missing_state",
+        "component_ref": "company.dataCards",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_cards_narrow' does not declare 'empty' state coverage.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "web",
+        "realization_id": "data_cards_narrow",
+        "severity": "warning",
+        "state": "empty",
+        "status": "missing_state",
+        "viewport": "narrow",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_missing_state",
+        "component_ref": "company.dataCards",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_cards_narrow' does not declare 'error' state coverage.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "web",
+        "realization_id": "data_cards_narrow",
+        "severity": "warning",
+        "state": "error",
+        "status": "missing_state",
+        "viewport": "narrow",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_missing_state",
+        "component_ref": "company.dataGrid",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_grid_wide' does not declare 'loading' state coverage.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "web",
+        "realization_id": "data_grid_wide",
+        "severity": "warning",
+        "state": "loading",
+        "status": "missing_state",
+        "viewport": "wide",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_missing_state",
+        "component_ref": "company.dataGrid",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_grid_wide' does not declare 'empty' state coverage.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "web",
+        "realization_id": "data_grid_wide",
+        "severity": "warning",
+        "state": "empty",
+        "status": "missing_state",
+        "viewport": "wide",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_missing_state",
+        "component_ref": "company.dataGrid",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_grid_wide' does not declare 'error' state coverage.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "web",
+        "realization_id": "data_grid_wide",
+        "severity": "warning",
+        "state": "error",
+        "status": "missing_state",
+        "viewport": "wide",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_realization_status_review",
+        "component_ref": "company.dataCards",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_cards_narrow' is 'contract_only'.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "web",
+        "realization_id": "data_cards_narrow",
+        "severity": "warning",
+        "status": "contract_only",
+        "viewport": "narrow",
+        "widget": "widget_data_grid"
+      }
+    ],
+    "missingAccessibility": [],
+    "missingI18n": [],
     "missingPlatforms": [
       "ios",
       "android"
     ],
+    "missingStates": [
+      {
+        "code": "design_missing_state",
+        "component_ref": "company.itemCards",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_cards_android' does not declare 'loading' state coverage.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "android",
+        "realization_id": "data_cards_android",
+        "severity": "warning",
+        "state": "loading",
+        "status": "missing_state",
+        "viewport": "any",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_missing_state",
+        "component_ref": "company.itemCards",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_cards_android' does not declare 'empty' state coverage.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "android",
+        "realization_id": "data_cards_android",
+        "severity": "warning",
+        "state": "empty",
+        "status": "missing_state",
+        "viewport": "any",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_missing_state",
+        "component_ref": "company.itemCards",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_cards_android' does not declare 'error' state coverage.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "android",
+        "realization_id": "data_cards_android",
+        "severity": "warning",
+        "state": "error",
+        "status": "missing_state",
+        "viewport": "any",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_missing_state",
+        "component_ref": "company.itemList",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_list_ios' does not declare 'loading' state coverage.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "ios",
+        "realization_id": "data_list_ios",
+        "severity": "warning",
+        "state": "loading",
+        "status": "missing_state",
+        "viewport": "any",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_missing_state",
+        "component_ref": "company.itemList",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_list_ios' does not declare 'empty' state coverage.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "ios",
+        "realization_id": "data_list_ios",
+        "severity": "warning",
+        "state": "empty",
+        "status": "missing_state",
+        "viewport": "any",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_missing_state",
+        "component_ref": "company.itemList",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_list_ios' does not declare 'error' state coverage.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "ios",
+        "realization_id": "data_list_ios",
+        "severity": "warning",
+        "state": "error",
+        "status": "missing_state",
+        "viewport": "any",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_missing_state",
+        "component_ref": "company.dataCards",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_cards_narrow' does not declare 'loading' state coverage.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "web",
+        "realization_id": "data_cards_narrow",
+        "severity": "warning",
+        "state": "loading",
+        "status": "missing_state",
+        "viewport": "narrow",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_missing_state",
+        "component_ref": "company.dataCards",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_cards_narrow' does not declare 'empty' state coverage.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "web",
+        "realization_id": "data_cards_narrow",
+        "severity": "warning",
+        "state": "empty",
+        "status": "missing_state",
+        "viewport": "narrow",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_missing_state",
+        "component_ref": "company.dataCards",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_cards_narrow' does not declare 'error' state coverage.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "web",
+        "realization_id": "data_cards_narrow",
+        "severity": "warning",
+        "state": "error",
+        "status": "missing_state",
+        "viewport": "narrow",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_missing_state",
+        "component_ref": "company.dataGrid",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_grid_wide' does not declare 'loading' state coverage.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "web",
+        "realization_id": "data_grid_wide",
+        "severity": "warning",
+        "state": "loading",
+        "status": "missing_state",
+        "viewport": "wide",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_missing_state",
+        "component_ref": "company.dataGrid",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_grid_wide' does not declare 'empty' state coverage.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "web",
+        "realization_id": "data_grid_wide",
+        "severity": "warning",
+        "state": "empty",
+        "status": "missing_state",
+        "viewport": "wide",
+        "widget": "widget_data_grid"
+      },
+      {
+        "code": "design_missing_state",
+        "component_ref": "company.dataGrid",
+        "density": "unspecified",
+        "design_contract": "design_company_web",
+        "design_realization_set": "realization_set_company_web_widgets",
+        "message": "Realization 'data_grid_wide' does not declare 'error' state coverage.",
+        "nextCommands": [
+          "topogram query ui-design-coverage ./topo --json",
+          "topogram query slice ./topo --widget widget_data_grid --json",
+          "topogram emit ui-realization-report ./topo --projection <projection-id> --json"
+        ],
+        "platform": "web",
+        "realization_id": "data_grid_wide",
+        "severity": "warning",
+        "state": "error",
+        "status": "missing_state",
+        "viewport": "wide",
+        "widget": "widget_data_grid"
+      }
+    ],
+    "missingTokenMappings": [],
     "unmappedWidgetUsages": []
   },
   "nextCommands": [
@@ -93,11 +1784,17 @@
   "summary": {
     "behavior_review_items": 1,
     "design_contracts": 1,
+    "design_matrix_rows": 4,
     "design_realization_sets": 1,
+    "design_review_rows": 16,
     "diagnostics": 1,
     "errors": 0,
     "mapped_widget_usages": 1,
+    "missing_accessibility": 0,
+    "missing_i18n": 0,
     "missing_platforms": 2,
+    "missing_states": 12,
+    "missing_token_mappings": 0,
     "platforms": 1,
     "surfaces": 1,
     "token_mappings": 4,
@@ -108,11 +1805,52 @@
   },
   "surfaces": [
     {
+      "accessibility": {
+        "obligations": [
+          {
+            "focus": "visible",
+            "keyboard": "standard",
+            "live": "off",
+            "nameFrom": {
+              "source": "message",
+              "value": "msg_item_list_title"
+            },
+            "role": "main",
+            "targetId": "item_list",
+            "targetKind": "screen"
+          },
+          {
+            "focus": "roving_tabindex",
+            "keyboard": "data_grid",
+            "live": "off",
+            "nameFrom": {
+              "source": "message",
+              "value": "msg_items_table_label"
+            },
+            "role": "grid",
+            "targetId": "widget_data_grid",
+            "targetKind": "widget"
+          },
+          {
+            "focus": "visible",
+            "keyboard": "button",
+            "live": "off",
+            "nameFrom": {
+              "source": "message",
+              "value": "msg_create_item_label"
+            },
+            "role": "button",
+            "targetId": "cap_create_item",
+            "targetKind": "action"
+          }
+        ]
+      },
       "designContracts": [
         {
           "behaviorSupport": [
             {
               "behavior": "selection",
+              "density": null,
               "designRealizationSet": {
                 "id": "realization_set_company_web_widgets",
                 "name": "Company Product UI Widget Realizations"
@@ -130,8 +1868,12 @@
                   "offset": 254
                 }
               },
+              "localeContexts": [],
               "platform": "web",
+              "roleContexts": [],
+              "stateCoverage": [],
               "status": "rendered",
+              "themeContexts": [],
               "type": "design_realization_behavior_support",
               "viewport": "wide",
               "widget": {
@@ -145,6 +1887,7 @@
             },
             {
               "behavior": "sorting",
+              "density": null,
               "designRealizationSet": {
                 "id": "realization_set_company_web_widgets",
                 "name": "Company Product UI Widget Realizations"
@@ -162,8 +1905,12 @@
                   "offset": 254
                 }
               },
+              "localeContexts": [],
               "platform": "web",
+              "roleContexts": [],
+              "stateCoverage": [],
               "status": "contract_only",
+              "themeContexts": [],
               "type": "design_realization_behavior_support",
               "viewport": "wide",
               "widget": {
@@ -178,6 +1925,7 @@
           ],
           "components": [
             {
+              "density": null,
               "designRealizationSet": {
                 "id": "realization_set_company_web_widgets",
                 "name": "Company Product UI Widget Realizations"
@@ -196,6 +1944,7 @@
                   "offset": 254
                 }
               },
+              "localeContexts": [],
               "pattern": "resource_table",
               "platform": "web",
               "realizes": {
@@ -207,11 +1956,16 @@
                 }
               },
               "ref": "company.dataGrid",
+              "reviewNotes": null,
+              "roleContexts": [],
+              "stateCoverage": [],
               "status": "rendered",
+              "themeContexts": [],
               "type": "design_realization_component",
               "viewport": "wide"
             },
             {
+              "density": null,
               "designRealizationSet": {
                 "id": "realization_set_company_web_widgets",
                 "name": "Company Product UI Widget Realizations"
@@ -230,6 +1984,7 @@
                   "offset": 524
                 }
               },
+              "localeContexts": [],
               "pattern": "resource_table",
               "platform": "web",
               "realizes": {
@@ -241,7 +1996,11 @@
                 }
               },
               "ref": "company.dataCards",
+              "reviewNotes": null,
+              "roleContexts": [],
+              "stateCoverage": [],
               "status": "contract_only",
+              "themeContexts": [],
               "type": "design_realization_component",
               "viewport": "narrow"
             }
@@ -271,6 +2030,7 @@
                   ],
                   "behaviorsUnsupported": [],
                   "componentRef": "company.dataGrid",
+                  "density": null,
                   "id": "data_grid_wide",
                   "loc": {
                     "end": {
@@ -285,9 +2045,14 @@
                       "offset": 254
                     }
                   },
+                  "localeContexts": [],
                   "pattern": "resource_table",
                   "platform": "web",
+                  "reviewNotes": null,
+                  "roleContexts": [],
+                  "stateCoverage": [],
                   "status": "rendered",
+                  "themeContexts": [],
                   "type": "widget_realization",
                   "viewport": "wide",
                   "widget": {
@@ -305,6 +2070,7 @@
                   "behaviorsRendered": [],
                   "behaviorsUnsupported": [],
                   "componentRef": "company.dataCards",
+                  "density": null,
                   "id": "data_cards_narrow",
                   "loc": {
                     "end": {
@@ -319,9 +2085,14 @@
                       "offset": 524
                     }
                   },
+                  "localeContexts": [],
                   "pattern": "resource_table",
                   "platform": "web",
+                  "reviewNotes": null,
+                  "roleContexts": [],
+                  "stateCoverage": [],
                   "status": "contract_only",
+                  "themeContexts": [],
                   "type": "widget_realization",
                   "viewport": "narrow",
                   "widget": {
@@ -449,6 +2220,27 @@
           ]
         }
       ],
+      "designTokens": {
+        "accessibility": {
+          "contrast": "aa",
+          "focus": "visible"
+        },
+        "actionRoles": {
+          "destructive": "danger",
+          "primary": "prominent"
+        },
+        "colorRoles": {
+          "danger": "critical",
+          "primary": "accent"
+        },
+        "density": "compact",
+        "radiusScale": "medium",
+        "tone": "operational",
+        "typographyRoles": {
+          "body": "readable",
+          "heading": "prominent"
+        }
+      },
       "diagnostics": [
         {
           "behavior": "sorting",
@@ -465,6 +2257,51 @@
         }
       ],
       "id": "proj_web_surface",
+      "messages": {
+        "localePolicy": {
+          "defaultLocale": "en-US",
+          "direction": "ltr",
+          "fallbackLocale": "en-US",
+          "supportedLocales": [
+            "en-US"
+          ]
+        },
+        "messages": [
+          {
+            "actionId": null,
+            "context": "screen_title",
+            "defaultText": "Items",
+            "id": "msg_item_list_title",
+            "key": "items.list.title",
+            "screenId": "item_list",
+            "terms": [],
+            "variables": [],
+            "widgetId": null
+          },
+          {
+            "actionId": null,
+            "context": "widget_label",
+            "defaultText": "Items table",
+            "id": "msg_items_table_label",
+            "key": "items.table.label",
+            "screenId": null,
+            "terms": [],
+            "variables": [],
+            "widgetId": "widget_data_grid"
+          },
+          {
+            "actionId": "cap_create_item",
+            "context": "action_label",
+            "defaultText": "Create item",
+            "id": "msg_create_item_label",
+            "key": "items.create.label",
+            "screenId": null,
+            "terms": [],
+            "variables": [],
+            "widgetId": null
+          }
+        ]
+      },
       "name": "Sample Workspace Web UI",
       "platform": "web",
       "summary": {
@@ -487,6 +2324,7 @@
           "behaviorSupport": [
             {
               "behavior": "selection",
+              "density": null,
               "designContract": {
                 "id": "design_company_web",
                 "library": "company_web",
@@ -510,8 +2348,12 @@
                   "offset": 254
                 }
               },
+              "localeContexts": [],
               "platform": "web",
+              "roleContexts": [],
+              "stateCoverage": [],
               "status": "rendered",
+              "themeContexts": [],
               "type": "design_realization_behavior_support",
               "viewport": "wide",
               "widget": {
@@ -525,6 +2367,7 @@
             },
             {
               "behavior": "sorting",
+              "density": null,
               "designContract": {
                 "id": "design_company_web",
                 "library": "company_web",
@@ -548,8 +2391,12 @@
                   "offset": 254
                 }
               },
+              "localeContexts": [],
               "platform": "web",
+              "roleContexts": [],
+              "stateCoverage": [],
               "status": "contract_only",
+              "themeContexts": [],
               "type": "design_realization_behavior_support",
               "viewport": "wide",
               "widget": {
@@ -565,6 +2412,7 @@
           "components": [
             {
               "component": {
+                "density": null,
                 "designRealizationSet": {
                   "id": "realization_set_company_web_widgets",
                   "name": "Company Product UI Widget Realizations"
@@ -583,6 +2431,7 @@
                     "offset": 254
                   }
                 },
+                "localeContexts": [],
                 "pattern": "resource_table",
                 "platform": "web",
                 "realizes": {
@@ -594,7 +2443,11 @@
                   }
                 },
                 "ref": "company.dataGrid",
+                "reviewNotes": null,
+                "roleContexts": [],
+                "stateCoverage": [],
                 "status": "rendered",
+                "themeContexts": [],
                 "type": "design_realization_component",
                 "viewport": "wide"
               },
@@ -607,6 +2460,7 @@
             },
             {
               "component": {
+                "density": null,
                 "designRealizationSet": {
                   "id": "realization_set_company_web_widgets",
                   "name": "Company Product UI Widget Realizations"
@@ -625,6 +2479,7 @@
                     "offset": 524
                   }
                 },
+                "localeContexts": [],
                 "pattern": "resource_table",
                 "platform": "web",
                 "realizes": {
@@ -636,7 +2491,11 @@
                   }
                 },
                 "ref": "company.dataCards",
+                "reviewNotes": null,
+                "roleContexts": [],
+                "stateCoverage": [],
                 "status": "contract_only",
+                "themeContexts": [],
                 "type": "design_realization_component",
                 "viewport": "narrow"
               },
