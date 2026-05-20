@@ -8,5 +8,8 @@
     "verify": "node ./scripts/verify.mjs",
     "proof:audit": "node ./scripts/proof-audit.mjs",
     "proof:check-paths": "node ./scripts/check-paths.mjs"
+  },
+  "devDependencies": {
+    "@topogram/cli": "0.3.109"
   }
 }

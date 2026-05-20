@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const manifestPath = path.join(root, "proof", "manifest.json");
 const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
+const packageJson = JSON.parse(fs.readFileSync(path.join(root, "package.json"), "utf8"));
 
 for (const artifact of manifest.requiredArtifacts || []) {
   const filePath = path.join(root, artifact.path);
@@ -19,8 +20,9 @@ for (const artifact of manifest.requiredArtifacts || []) {
   }
 }
 
-if (!process.env.TOPOGRAM_CLI && manifest.cliVersion === "topogram-main-until-cli-patch") {
-  throw new Error("TOPOGRAM_CLI must point at a Topogram checkout until this feature is published in @topogram/cli.");
+const pinnedCli = packageJson.devDependencies?.["@topogram/cli"];
+if (pinnedCli !== manifest.cliVersion) {
+  throw new Error(`Expected @topogram/cli devDependency ${manifest.cliVersion}, got ${pinnedCli || "missing"}.`);
 }
 
 console.log("Proof audit passed.");

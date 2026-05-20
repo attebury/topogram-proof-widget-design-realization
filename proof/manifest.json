@@ -1,5 +1,5 @@
 {
-  "cliVersion": "topogram-main-until-cli-patch",
+  "cliVersion": "0.3.109",
   "currentStep": "proof-05-final-proof",
   "expectedTags": [
     "proof-01-semantic-widget-baseline",

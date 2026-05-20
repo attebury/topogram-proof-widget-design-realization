@@ -26,7 +26,7 @@ function runCli(args) {
 }
 
 if (!fs.existsSync(cliPath)) {
-  throw new Error("Set TOPOGRAM_CLI=/path/to/topogram/engine/src/cli.js or install a compatible @topogram/cli.");
+  throw new Error("Install the pinned @topogram/cli devDependency or set TOPOGRAM_CLI=/path/to/topogram/engine/src/cli.js for local development.");
 }
 
 run(process.execPath, ["./scripts/check-paths.mjs"]);
@@ -50,12 +50,7 @@ if (slice.focus?.id !== "widget_data_grid" || slice.ui_agent_packet?.designContr
 }
 fs.writeFileSync(path.join(root, "proof", "artifacts", "widget-slice.json"), `${JSON.stringify(slice, null, 2)}\n`);
 
-run(process.execPath, ["./scripts/proof-audit.mjs"], {
-  env: {
-    ...process.env,
-    TOPOGRAM_CLI: cliPath
-  }
-});
+run(process.execPath, ["./scripts/proof-audit.mjs"]);
 
 const status = run("git", ["status", "--short"]).trim();
 if (status) {
