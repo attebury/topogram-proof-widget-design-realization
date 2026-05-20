@@ -912,7 +912,7 @@
   "diagnostics": [
     {
       "behavior": "sorting",
-      "code": "ui_design_realization_behavior_review_required",
+      "code": "design_realization_behavior_review_required",
       "designContract": "design_company_web",
       "message": "Widget 'widget_data_grid' behavior 'sorting' is 'contract_only' in design contract 'design_company_web'.",
       "region": "results",

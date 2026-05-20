@@ -2,7 +2,7 @@
   "diagnostics": [
     {
       "behavior": "sorting",
-      "code": "ui_design_coverage_behavior_review_required",
+      "code": "design_coverage_behavior_review_required",
       "designContract": "design_company_web",
       "message": "Widget 'widget_data_grid' behavior 'sorting' is 'contract_only' for 'proj_web_surface'.",
       "platform": "web",
@@ -452,7 +452,7 @@
       "diagnostics": [
         {
           "behavior": "sorting",
-          "code": "ui_design_coverage_behavior_review_required",
+          "code": "design_coverage_behavior_review_required",
           "designContract": "design_company_web",
           "message": "Widget 'widget_data_grid' behavior 'sorting' is 'contract_only' for 'proj_web_surface'.",
           "platform": "web",
@@ -666,7 +666,7 @@
       ]
     }
   ],
-  "type": "ui_design_coverage",
+  "type": "design_coverage",
   "version": 1,
   "widgets": [
     {
