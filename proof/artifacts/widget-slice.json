@@ -1,0 +1,1317 @@
+{
+  "agent_guidance": {
+    "completion_command": "topogram sdlc prep commit . --json",
+    "mode": "implementation",
+    "next_commands": [
+      "topogram query slice ./topo --mode implementation --widget widget_data_grid --detail compact --json",
+      "topogram query single-agent-plan ./topo --mode implementation --widget widget_data_grid --json",
+      "topogram query sdlc-proof-gaps ./topo --json",
+      "topogram check . --json",
+      "topogram sdlc check . --strict",
+      "topogram sdlc prep commit . --json"
+    ],
+    "next_queries": [
+      "topogram query slice ./topo --mode implementation --widget widget_data_grid --detail compact --json",
+      "topogram query single-agent-plan ./topo --mode implementation --widget widget_data_grid --json"
+    ],
+    "proof_commands": [
+      "topogram check . --json",
+      "topogram sdlc check . --strict",
+      "topogram sdlc prep commit . --json"
+    ],
+    "read_first": [
+      "focus",
+      "summary",
+      "agent_guidance",
+      "review_boundary",
+      "ownership_boundary",
+      "write_scope",
+      "ui_agent_packet"
+    ],
+    "read_order": [
+      "focus",
+      "summary",
+      "agent_guidance",
+      "review_boundary",
+      "ownership_boundary",
+      "write_scope",
+      "ui_agent_packet"
+    ],
+    "required_commands": [
+      "topogram query sdlc-proof-gaps ./topo --json",
+      "topogram check . --json",
+      "topogram sdlc check . --strict",
+      "topogram sdlc prep commit . --json"
+    ],
+    "warnings": [],
+    "write_scope_summary": "Edit the canonical Topogram source and project-owned files only; generated-owned outputs should be regenerated."
+  },
+  "depends_on": {
+    "capabilities": [],
+    "entities": [],
+    "projections": [
+      "proj_ui_contract",
+      "proj_web_surface",
+      "proj_web_surface_react"
+    ],
+    "shapes": [
+      "shape_output_item_card"
+    ],
+    "verifications": [],
+    "widgets": []
+  },
+  "detail_level": "compact",
+  "focus": {
+    "id": "widget_data_grid",
+    "kind": "widget"
+  },
+  "ownership_boundary": {
+    "canonical_topogram": {
+      "agent_mode": "propose_review_adopt",
+      "owner": "human"
+    },
+    "generated_artifacts": {
+      "agent_mode": "regenerate_or_compare",
+      "owner": "engine"
+    },
+    "maintained_code": {
+      "agent_mode": "bounded_edit_only",
+      "owner": "human"
+    },
+    "proposal_surfaces": {
+      "agent_mode": "stage_map_customize_reject",
+      "owner": "human"
+    }
+  },
+  "related": {},
+  "related_summary": {
+    "projections": {
+      "count": 3,
+      "ids": [
+        "proj_ui_contract",
+        "proj_web_surface",
+        "proj_web_surface_react"
+      ]
+    },
+    "shapes": {
+      "count": 1,
+      "ids": [
+        "shape_output_item_card"
+      ]
+    }
+  },
+  "review_boundary": {
+    "automation_class": "review_required",
+    "reasons": [
+      "widget_surface"
+    ]
+  },
+  "slice_manifest": {
+    "detail_level": "compact",
+    "note": "Read must_read sections first; use reference sections only as needed; run proof commands before completing work.",
+    "proof_sections": [
+      "verification_targets"
+    ],
+    "read_order": [
+      "focus",
+      "summary",
+      "agent_guidance",
+      "review_boundary",
+      "ownership_boundary",
+      "write_scope",
+      "ui_agent_packet"
+    ],
+    "sections": [
+      {
+        "field": "focus",
+        "id": "focus",
+        "item_count": 2,
+        "reason": "The selected graph surface this packet is scoped to.",
+        "tier": "must_read",
+        "title": "Focus"
+      },
+      {
+        "field": "summary",
+        "id": "summary",
+        "item_count": 18,
+        "reason": "The shortest human-readable description of the selected work or surface.",
+        "tier": "must_read",
+        "title": "Summary"
+      },
+      {
+        "field": "agent_guidance",
+        "id": "agent_guidance",
+        "item_count": 10,
+        "reason": "Mode, read order, follow-up queries, and required proof commands.",
+        "tier": "must_read",
+        "title": "Agent Guidance"
+      },
+      {
+        "field": "review_boundary",
+        "id": "review_boundary",
+        "item_count": 2,
+        "reason": "Automation and human-review expectations for this scope.",
+        "tier": "must_read",
+        "title": "Review Boundary"
+      },
+      {
+        "field": "ownership_boundary",
+        "id": "ownership_boundary",
+        "item_count": 4,
+        "reason": "Generated, maintained, and human-owned boundaries that constrain edits.",
+        "tier": "must_read",
+        "title": "Ownership Boundary"
+      },
+      {
+        "field": "write_scope",
+        "id": "write_scope",
+        "item_count": 4,
+        "reason": "Files and surfaces that are safe, risky, or out of bounds to edit.",
+        "tier": "must_read",
+        "title": "Write Scope"
+      },
+      {
+        "field": "ui_agent_packet",
+        "id": "ui_agent_packet",
+        "item_count": 10,
+        "reason": "Screen, widget, accessibility, i18n, design-token, and UI proof context for UI slices.",
+        "tier": "must_read",
+        "title": "UI Agent Packet"
+      },
+      {
+        "field": "depends_on",
+        "id": "depends_on",
+        "item_count": 6,
+        "reason": "IDs that define the semantic closure without embedding every full record.",
+        "tier": "reference",
+        "title": "Depends On"
+      },
+      {
+        "field": "related_summary",
+        "id": "related_summary",
+        "item_count": 2,
+        "reason": "Compact counts and IDs for related records omitted from compact detail.",
+        "tier": "reference",
+        "title": "Related Summary"
+      },
+      {
+        "field": "verification_targets",
+        "id": "verification_targets",
+        "item_count": 4,
+        "reason": "Smallest verification set recommended for this change.",
+        "tier": "proof",
+        "title": "Verification Targets"
+      }
+    ]
+  },
+  "standing_rules": [],
+  "summary": {
+    "approvals": [],
+    "behavior": [
+      "selection",
+      "sorting"
+    ],
+    "behaviors": [
+      {
+        "directives": {
+          "emits": "row_select",
+          "mode": "multi",
+          "state": "selected_ids"
+        },
+        "kind": "selection",
+        "source": "structured"
+      },
+      {
+        "directives": {
+          "default": [
+            "created_at",
+            "desc"
+          ],
+          "fields": [
+            "title",
+            "status",
+            "created_at"
+          ]
+        },
+        "kind": "sorting",
+        "source": "structured"
+      }
+    ],
+    "category": "collection",
+    "dependencies": [],
+    "description": "Reusable tabular display for item rows",
+    "events": [
+      {
+        "id": "row_select",
+        "shape": "shape_output_item_card"
+      }
+    ],
+    "id": "widget_data_grid",
+    "kind": "widget",
+    "lookups": [],
+    "name": "Data Grid",
+    "ownership_boundary": {
+      "canonical_topogram": {
+        "agent_mode": "propose_review_adopt",
+        "owner": "human"
+      },
+      "generated_artifacts": {
+        "agent_mode": "regenerate_or_compare",
+        "owner": "engine"
+      },
+      "maintained_code": {
+        "agent_mode": "bounded_edit_only",
+        "owner": "human"
+      },
+      "proposal_surfaces": {
+        "agent_mode": "stage_map_customize_reject",
+        "owner": "human"
+      }
+    },
+    "patterns": [
+      "data_grid_view",
+      "resource_table"
+    ],
+    "props": [
+      {
+        "defaultValue": null,
+        "name": "rows",
+        "requiredness": "required",
+        "type": "array"
+      },
+      {
+        "defaultValue": [],
+        "name": "selected_ids",
+        "requiredness": "optional",
+        "type": "array"
+      },
+      {
+        "defaultValue": false,
+        "name": "loading",
+        "requiredness": "optional",
+        "type": "boolean"
+      }
+    ],
+    "regions": [
+      "results",
+      "toolbar"
+    ],
+    "slots": [
+      {
+        "description": "Toolbar actions",
+        "id": "toolbar"
+      },
+      {
+        "description": "Empty-state content",
+        "id": "empty_state"
+      }
+    ],
+    "status": "active",
+    "version": "1.0"
+  },
+  "type": "context_slice",
+  "ui_agent_packet": {
+    "accessibility": {
+      "authoredObligations": [
+        {
+          "focus": "roving_tabindex",
+          "keyboard": "data_grid",
+          "live": "off",
+          "nameFrom": {
+            "source": "message",
+            "value": "msg_items_table_label"
+          },
+          "role": "grid",
+          "targetId": "widget_data_grid",
+          "targetKind": "widget"
+        }
+      ],
+      "currentSignals": {
+        "authoredContract": {
+          "obligations": [
+            {
+              "focus": "roving_tabindex",
+              "keyboard": "data_grid",
+              "live": "off",
+              "nameFrom": {
+                "source": "message",
+                "value": "msg_items_table_label"
+              },
+              "role": "grid",
+              "targetId": "widget_data_grid",
+              "targetKind": "widget"
+            }
+          ],
+          "totalObligations": 3
+        },
+        "designTokens": null
+      },
+      "decisions": [
+        {
+          "found": false,
+          "id": "decision_aria_attributes_are_implementation_evidence",
+          "kind": null,
+          "name": "decision_aria_attributes_are_implementation_evidence",
+          "status": null
+        }
+      ],
+      "diagnostics": [],
+      "obligations": [
+        "Prefer semantic role, accessible-name source, keyboard model, focus behavior, live-region need, and proof command over raw aria-* snapshots.",
+        "Treat raw aria-* attributes as generated or maintained implementation evidence, not the contract source."
+      ],
+      "proofCommands": [
+        "topogram widget check --json",
+        "topogram widget behavior --json"
+      ],
+      "requirements": [
+        {
+          "found": false,
+          "id": "req_aria_accessibility_contract_v1",
+          "kind": null,
+          "name": "req_aria_accessibility_contract_v1",
+          "status": null
+        }
+      ],
+      "scope": {
+        "projectionId": null,
+        "screenId": null,
+        "widgetId": "widget_data_grid"
+      },
+      "source": "ui_contract accessibility block, design-token evidence, terms, decisions, and requirements",
+      "status": "authored_contract",
+      "terms": [
+        {
+          "found": false,
+          "id": "term_accessibility_obligation",
+          "kind": null,
+          "name": "term_accessibility_obligation",
+          "status": null
+        },
+        {
+          "found": false,
+          "id": "term_accessible_name",
+          "kind": null,
+          "name": "term_accessible_name",
+          "status": null
+        },
+        {
+          "found": false,
+          "id": "term_semantic_role",
+          "kind": null,
+          "name": "term_semantic_role",
+          "status": null
+        },
+        {
+          "found": false,
+          "id": "term_keyboard_interaction",
+          "kind": null,
+          "name": "term_keyboard_interaction",
+          "status": null
+        },
+        {
+          "found": false,
+          "id": "term_live_region",
+          "kind": null,
+          "name": "term_live_region",
+          "status": null
+        }
+      ]
+    },
+    "designContracts": {
+      "contracts": [
+        {
+          "behaviorSupport": [
+            {
+              "behavior": "selection",
+              "designRealizationSet": {
+                "id": "realization_set_company_web_widgets",
+                "name": "Company Product UI Widget Realizations"
+              },
+              "loc": {
+                "end": {
+                  "column": 4,
+                  "line": 17,
+                  "offset": 520
+                },
+                "file": "topo/design-contracts/realization-set-company-web-widgets.tg",
+                "start": {
+                  "column": 3,
+                  "line": 7,
+                  "offset": 254
+                }
+              },
+              "platform": "web",
+              "status": "rendered",
+              "type": "design_realization_behavior_support",
+              "viewport": "wide",
+              "widget": {
+                "id": "widget_data_grid",
+                "kind": "widget",
+                "target": {
+                  "id": "widget_data_grid",
+                  "kind": "widget"
+                }
+              }
+            },
+            {
+              "behavior": "sorting",
+              "designRealizationSet": {
+                "id": "realization_set_company_web_widgets",
+                "name": "Company Product UI Widget Realizations"
+              },
+              "loc": {
+                "end": {
+                  "column": 4,
+                  "line": 17,
+                  "offset": 520
+                },
+                "file": "topo/design-contracts/realization-set-company-web-widgets.tg",
+                "start": {
+                  "column": 3,
+                  "line": 7,
+                  "offset": 254
+                }
+              },
+              "platform": "web",
+              "status": "contract_only",
+              "type": "design_realization_behavior_support",
+              "viewport": "wide",
+              "widget": {
+                "id": "widget_data_grid",
+                "kind": "widget",
+                "target": {
+                  "id": "widget_data_grid",
+                  "kind": "widget"
+                }
+              }
+            },
+            {
+              "behavior": "selection",
+              "designRealizationSet": {
+                "id": "realization_set_company_web_widgets",
+                "name": "Company Product UI Widget Realizations"
+              },
+              "loc": {
+                "end": {
+                  "column": 4,
+                  "line": 39,
+                  "offset": 1015
+                },
+                "file": "topo/design-contracts/realization-set-company-web-widgets.tg",
+                "start": {
+                  "column": 3,
+                  "line": 29,
+                  "offset": 732
+                }
+              },
+              "platform": "ios",
+              "status": "rendered",
+              "type": "design_realization_behavior_support",
+              "viewport": "any",
+              "widget": {
+                "id": "widget_data_grid",
+                "kind": "widget",
+                "target": {
+                  "id": "widget_data_grid",
+                  "kind": "widget"
+                }
+              }
+            },
+            {
+              "behavior": "sorting",
+              "designRealizationSet": {
+                "id": "realization_set_company_web_widgets",
+                "name": "Company Product UI Widget Realizations"
+              },
+              "loc": {
+                "end": {
+                  "column": 4,
+                  "line": 39,
+                  "offset": 1015
+                },
+                "file": "topo/design-contracts/realization-set-company-web-widgets.tg",
+                "start": {
+                  "column": 3,
+                  "line": 29,
+                  "offset": 732
+                }
+              },
+              "platform": "ios",
+              "status": "implementation_owned",
+              "type": "design_realization_behavior_support",
+              "viewport": "any",
+              "widget": {
+                "id": "widget_data_grid",
+                "kind": "widget",
+                "target": {
+                  "id": "widget_data_grid",
+                  "kind": "widget"
+                }
+              }
+            },
+            {
+              "behavior": "sorting",
+              "designRealizationSet": {
+                "id": "realization_set_company_web_widgets",
+                "name": "Company Product UI Widget Realizations"
+              },
+              "loc": {
+                "end": {
+                  "column": 4,
+                  "line": 50,
+                  "offset": 1259
+                },
+                "file": "topo/design-contracts/realization-set-company-web-widgets.tg",
+                "start": {
+                  "column": 3,
+                  "line": 41,
+                  "offset": 1019
+                }
+              },
+              "platform": "android",
+              "status": "unsupported",
+              "type": "design_realization_behavior_support",
+              "viewport": "any",
+              "widget": {
+                "id": "widget_data_grid",
+                "kind": "widget",
+                "target": {
+                  "id": "widget_data_grid",
+                  "kind": "widget"
+                }
+              }
+            }
+          ],
+          "components": [
+            {
+              "designRealizationSet": {
+                "id": "realization_set_company_web_widgets",
+                "name": "Company Product UI Widget Realizations"
+              },
+              "id": "data_grid_wide",
+              "loc": {
+                "end": {
+                  "column": 4,
+                  "line": 17,
+                  "offset": 520
+                },
+                "file": "topo/design-contracts/realization-set-company-web-widgets.tg",
+                "start": {
+                  "column": 3,
+                  "line": 7,
+                  "offset": 254
+                }
+              },
+              "pattern": "resource_table",
+              "platform": "web",
+              "realizes": {
+                "id": "widget_data_grid",
+                "kind": "widget",
+                "target": {
+                  "id": "widget_data_grid",
+                  "kind": "widget"
+                }
+              },
+              "ref": "company.dataGrid",
+              "status": "rendered",
+              "type": "design_realization_component",
+              "viewport": "wide"
+            },
+            {
+              "designRealizationSet": {
+                "id": "realization_set_company_web_widgets",
+                "name": "Company Product UI Widget Realizations"
+              },
+              "id": "data_cards_narrow",
+              "loc": {
+                "end": {
+                  "column": 4,
+                  "line": 27,
+                  "offset": 728
+                },
+                "file": "topo/design-contracts/realization-set-company-web-widgets.tg",
+                "start": {
+                  "column": 3,
+                  "line": 19,
+                  "offset": 524
+                }
+              },
+              "pattern": "resource_table",
+              "platform": "web",
+              "realizes": {
+                "id": "widget_data_grid",
+                "kind": "widget",
+                "target": {
+                  "id": "widget_data_grid",
+                  "kind": "widget"
+                }
+              },
+              "ref": "company.dataCards",
+              "status": "contract_only",
+              "type": "design_realization_component",
+              "viewport": "narrow"
+            },
+            {
+              "designRealizationSet": {
+                "id": "realization_set_company_web_widgets",
+                "name": "Company Product UI Widget Realizations"
+              },
+              "id": "data_list_ios",
+              "loc": {
+                "end": {
+                  "column": 4,
+                  "line": 39,
+                  "offset": 1015
+                },
+                "file": "topo/design-contracts/realization-set-company-web-widgets.tg",
+                "start": {
+                  "column": 3,
+                  "line": 29,
+                  "offset": 732
+                }
+              },
+              "pattern": "resource_table",
+              "platform": "ios",
+              "realizes": {
+                "id": "widget_data_grid",
+                "kind": "widget",
+                "target": {
+                  "id": "widget_data_grid",
+                  "kind": "widget"
+                }
+              },
+              "ref": "company.itemList",
+              "status": "implementation_owned",
+              "type": "design_realization_component",
+              "viewport": "any"
+            },
+            {
+              "designRealizationSet": {
+                "id": "realization_set_company_web_widgets",
+                "name": "Company Product UI Widget Realizations"
+              },
+              "id": "data_cards_android",
+              "loc": {
+                "end": {
+                  "column": 4,
+                  "line": 50,
+                  "offset": 1259
+                },
+                "file": "topo/design-contracts/realization-set-company-web-widgets.tg",
+                "start": {
+                  "column": 3,
+                  "line": 41,
+                  "offset": 1019
+                }
+              },
+              "pattern": "resource_table",
+              "platform": "android",
+              "realizes": {
+                "id": "widget_data_grid",
+                "kind": "widget",
+                "target": {
+                  "id": "widget_data_grid",
+                  "kind": "widget"
+                }
+              },
+              "ref": "company.itemCards",
+              "status": "unsupported",
+              "type": "design_realization_component",
+              "viewport": "any"
+            }
+          ],
+          "id": "design_company_web",
+          "library": "company_web",
+          "name": "Company Product UI Design Contract",
+          "packageName": "@company/ui",
+          "platforms": [
+            "web",
+            "ios",
+            "android"
+          ],
+          "realizationSets": [
+            {
+              "id": "realization_set_company_web_widgets",
+              "name": "Company Product UI Widget Realizations",
+              "status": "active",
+              "widgetRealizations": [
+                {
+                  "behaviorsContractOnly": [
+                    "sorting"
+                  ],
+                  "behaviorsImplementationOwned": [],
+                  "behaviorsRendered": [
+                    "selection"
+                  ],
+                  "behaviorsUnsupported": [],
+                  "componentRef": "company.dataGrid",
+                  "id": "data_grid_wide",
+                  "loc": {
+                    "end": {
+                      "column": 4,
+                      "line": 17,
+                      "offset": 520
+                    },
+                    "file": "topo/design-contracts/realization-set-company-web-widgets.tg",
+                    "start": {
+                      "column": 3,
+                      "line": 7,
+                      "offset": 254
+                    }
+                  },
+                  "pattern": "resource_table",
+                  "platform": "web",
+                  "status": "rendered",
+                  "type": "widget_realization",
+                  "viewport": "wide",
+                  "widget": {
+                    "id": "widget_data_grid",
+                    "kind": "widget",
+                    "target": {
+                      "id": "widget_data_grid",
+                      "kind": "widget"
+                    }
+                  }
+                },
+                {
+                  "behaviorsContractOnly": [],
+                  "behaviorsImplementationOwned": [],
+                  "behaviorsRendered": [],
+                  "behaviorsUnsupported": [],
+                  "componentRef": "company.dataCards",
+                  "id": "data_cards_narrow",
+                  "loc": {
+                    "end": {
+                      "column": 4,
+                      "line": 27,
+                      "offset": 728
+                    },
+                    "file": "topo/design-contracts/realization-set-company-web-widgets.tg",
+                    "start": {
+                      "column": 3,
+                      "line": 19,
+                      "offset": 524
+                    }
+                  },
+                  "pattern": "resource_table",
+                  "platform": "web",
+                  "status": "contract_only",
+                  "type": "widget_realization",
+                  "viewport": "narrow",
+                  "widget": {
+                    "id": "widget_data_grid",
+                    "kind": "widget",
+                    "target": {
+                      "id": "widget_data_grid",
+                      "kind": "widget"
+                    }
+                  }
+                },
+                {
+                  "behaviorsContractOnly": [],
+                  "behaviorsImplementationOwned": [
+                    "sorting"
+                  ],
+                  "behaviorsRendered": [
+                    "selection"
+                  ],
+                  "behaviorsUnsupported": [],
+                  "componentRef": "company.itemList",
+                  "id": "data_list_ios",
+                  "loc": {
+                    "end": {
+                      "column": 4,
+                      "line": 39,
+                      "offset": 1015
+                    },
+                    "file": "topo/design-contracts/realization-set-company-web-widgets.tg",
+                    "start": {
+                      "column": 3,
+                      "line": 29,
+                      "offset": 732
+                    }
+                  },
+                  "pattern": "resource_table",
+                  "platform": "ios",
+                  "status": "implementation_owned",
+                  "type": "widget_realization",
+                  "viewport": "any",
+                  "widget": {
+                    "id": "widget_data_grid",
+                    "kind": "widget",
+                    "target": {
+                      "id": "widget_data_grid",
+                      "kind": "widget"
+                    }
+                  }
+                },
+                {
+                  "behaviorsContractOnly": [],
+                  "behaviorsImplementationOwned": [],
+                  "behaviorsRendered": [],
+                  "behaviorsUnsupported": [
+                    "sorting"
+                  ],
+                  "componentRef": "company.itemCards",
+                  "id": "data_cards_android",
+                  "loc": {
+                    "end": {
+                      "column": 4,
+                      "line": 50,
+                      "offset": 1259
+                    },
+                    "file": "topo/design-contracts/realization-set-company-web-widgets.tg",
+                    "start": {
+                      "column": 3,
+                      "line": 41,
+                      "offset": 1019
+                    }
+                  },
+                  "pattern": "resource_table",
+                  "platform": "android",
+                  "status": "unsupported",
+                  "type": "widget_realization",
+                  "viewport": "any",
+                  "widget": {
+                    "id": "widget_data_grid",
+                    "kind": "widget",
+                    "target": {
+                      "id": "widget_data_grid",
+                      "kind": "widget"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "status": "active",
+          "surfaces": [
+            "proj_web_surface",
+            "proj_web_surface_react"
+          ],
+          "tokenMappings": [
+            {
+              "loc": {
+                "end": {
+                  "column": 51,
+                  "line": 10,
+                  "offset": 380
+                },
+                "file": "topo/design-contracts/design-company-web.tg",
+                "start": {
+                  "column": 5,
+                  "line": 10,
+                  "offset": 334
+                }
+              },
+              "platform": null,
+              "raw": [
+                "color_role",
+                "danger",
+                "token",
+                "company.color.danger"
+              ],
+              "role": "danger",
+              "roleKind": "color_role",
+              "token": "company.color.danger",
+              "type": "design_contract_token_mapping"
+            },
+            {
+              "loc": {
+                "end": {
+                  "column": 53,
+                  "line": 11,
+                  "offset": 433
+                },
+                "file": "topo/design-contracts/design-company-web.tg",
+                "start": {
+                  "column": 5,
+                  "line": 11,
+                  "offset": 385
+                }
+              },
+              "platform": null,
+              "raw": [
+                "color_role",
+                "surface",
+                "token",
+                "company.color.surface"
+              ],
+              "role": "surface",
+              "roleKind": "color_role",
+              "token": "company.color.surface",
+              "type": "design_contract_token_mapping"
+            },
+            {
+              "loc": {
+                "end": {
+                  "column": 57,
+                  "line": 12,
+                  "offset": 490
+                },
+                "file": "topo/design-contracts/design-company-web.tg",
+                "start": {
+                  "column": 5,
+                  "line": 12,
+                  "offset": 438
+                }
+              },
+              "platform": null,
+              "raw": [
+                "typography_role",
+                "body",
+                "token",
+                "company.typography.body"
+              ],
+              "role": "body",
+              "roleKind": "typography_role",
+              "token": "company.typography.body",
+              "type": "design_contract_token_mapping"
+            },
+            {
+              "loc": {
+                "end": {
+                  "column": 63,
+                  "line": 13,
+                  "offset": 553
+                },
+                "file": "topo/design-contracts/design-company-web.tg",
+                "start": {
+                  "column": 5,
+                  "line": 13,
+                  "offset": 495
+                }
+              },
+              "platform": null,
+              "raw": [
+                "action_role",
+                "destructive",
+                "token",
+                "company.button.destructive"
+              ],
+              "role": "destructive",
+              "roleKind": "action_role",
+              "token": "company.button.destructive",
+              "type": "design_contract_token_mapping"
+            }
+          ]
+        }
+      ],
+      "diagnostics": [],
+      "proofCommands": [
+        "topogram query slice ./topo --widget widget_data_grid --json"
+      ],
+      "scope": {
+        "projectionId": null,
+        "screenId": null,
+        "widgetId": "widget_data_grid"
+      },
+      "source": "design_contract records own design-system scope and token mappings; design_realization_set records map semantic widgets to platform component refs and behavior support.",
+      "status": "mapped"
+    },
+    "inheritedBy": [
+      "proj_web_surface",
+      "proj_web_surface_react"
+    ],
+    "internationalization": {
+      "currentSignals": {
+        "authoredContract": {
+          "messages": [
+            {
+              "actionId": null,
+              "context": "widget_label",
+              "defaultText": "Items table",
+              "id": "msg_items_table_label",
+              "key": "items.table.label",
+              "screenId": null,
+              "terms": [],
+              "variables": [],
+              "widgetId": "widget_data_grid"
+            }
+          ],
+          "totalMessages": 3
+        },
+        "localePolicy": {
+          "defaultLocale": "en-US",
+          "direction": "ltr",
+          "fallbackLocale": "en-US",
+          "supportedLocales": [
+            "en-US"
+          ]
+        },
+        "messageKeys": [
+          "items.table.label"
+        ]
+      },
+      "decisions": [
+        {
+          "found": false,
+          "id": "decision_i18n_messages_are_separate_from_glossary_terms",
+          "kind": null,
+          "name": "decision_i18n_messages_are_separate_from_glossary_terms",
+          "status": null
+        }
+      ],
+      "diagnostics": [],
+      "messages": [
+        {
+          "actionId": null,
+          "context": "widget_label",
+          "defaultText": "Items table",
+          "id": "msg_items_table_label",
+          "key": "items.table.label",
+          "screenId": null,
+          "terms": [],
+          "variables": [],
+          "widgetId": "widget_data_grid"
+        }
+      ],
+      "obligations": [
+        "Use glossary terms for canonical meaning and message keys for translated wording.",
+        "Keep concrete locale catalogs in generated or maintained app code until a message contract DSL exists."
+      ],
+      "proofCommands": [
+        "topogram emit glossary ./topo --json"
+      ],
+      "requirements": [
+        {
+          "found": false,
+          "id": "req_i18n_message_contract_v1",
+          "kind": null,
+          "name": "req_i18n_message_contract_v1",
+          "status": null
+        }
+      ],
+      "scope": {
+        "projectionId": null,
+        "screenId": null,
+        "widgetId": "widget_data_grid"
+      },
+      "source": "ui_contract messages block, glossary terms, decisions, and requirements",
+      "status": "authored_contract",
+      "terms": [
+        {
+          "found": false,
+          "id": "term_translatable_message",
+          "kind": null,
+          "name": "term_translatable_message",
+          "status": null
+        },
+        {
+          "found": false,
+          "id": "term_message_key",
+          "kind": null,
+          "name": "term_message_key",
+          "status": null
+        },
+        {
+          "found": false,
+          "id": "term_locale_policy",
+          "kind": null,
+          "name": "term_locale_policy",
+          "status": null
+        },
+        {
+          "found": false,
+          "id": "term_source_text",
+          "kind": null,
+          "name": "term_source_text",
+          "status": null
+        }
+      ]
+    },
+    "ownership": {
+      "concreteSurfacesInherit": true,
+      "widgetContract": "widget",
+      "widgetPlacement": "ui_contract"
+    },
+    "requiredGates": [
+      {
+        "command": "topogram check",
+        "reason": "Validate shared UI ownership, taxonomy, references, and topology."
+      },
+      {
+        "command": "topogram widget check --widget widget_data_grid",
+        "reason": "Validate widget placement, props, events, regions, and patterns."
+      },
+      {
+        "command": "topogram widget behavior --widget widget_data_grid",
+        "reason": "Inspect behavior realizations and partial bindings before code changes."
+      },
+      {
+        "command": "topogram emit ui-realization-report --json",
+        "reason": "Confirm screens, regions, widgets, display fields, behavior, and design tokens are realizable by the web generator."
+      }
+    ],
+    "sourceUsages": [
+      {
+        "designTokens": [
+          {
+            "key": "density",
+            "role": "compact",
+            "value": null
+          },
+          {
+            "key": "tone",
+            "role": "operational",
+            "value": null
+          },
+          {
+            "key": "radius_scale",
+            "role": "medium",
+            "value": null
+          },
+          {
+            "key": "color_role",
+            "role": "primary",
+            "value": "accent"
+          },
+          {
+            "key": "color_role",
+            "role": "danger",
+            "value": "critical"
+          },
+          {
+            "key": "typography_role",
+            "role": "body",
+            "value": "readable"
+          },
+          {
+            "key": "typography_role",
+            "role": "heading",
+            "value": "prominent"
+          },
+          {
+            "key": "action_role",
+            "role": "primary",
+            "value": "prominent"
+          },
+          {
+            "key": "action_role",
+            "role": "destructive",
+            "value": "danger"
+          },
+          {
+            "key": "accessibility",
+            "role": "contrast",
+            "value": "aa"
+          },
+          {
+            "key": "accessibility",
+            "role": "focus",
+            "value": "visible"
+          }
+        ],
+        "projection": {
+          "id": "proj_ui_contract",
+          "ownership": "owner",
+          "type": "ui_contract"
+        },
+        "usage": {
+          "behaviorRealizations": [],
+          "dataBindings": [
+            {
+              "prop": "rows",
+              "source": "cap_list_items"
+            }
+          ],
+          "display": null,
+          "displayFields": [],
+          "eventBindings": [
+            {
+              "action": "navigate",
+              "event": "row_select",
+              "target": "item_detail"
+            }
+          ],
+          "region": "results",
+          "regionContract": {
+            "name": "results",
+            "pattern": "resource_table",
+            "placement": "primary",
+            "state": null,
+            "title": null,
+            "variant": null
+          },
+          "route": null,
+          "screen": {
+            "id": "item_list",
+            "kind": "list",
+            "title": "Items"
+          },
+          "screenId": "item_list",
+          "widgetId": "widget_data_grid"
+        }
+      }
+    ],
+    "type": "ui_agent_packet",
+    "version": 1,
+    "widget": {
+      "behaviors": [
+        {
+          "directives": {
+            "emits": "row_select",
+            "mode": "multi",
+            "state": "selected_ids"
+          },
+          "kind": "selection",
+          "source": "structured"
+        },
+        {
+          "directives": {
+            "default": [
+              "created_at",
+              "desc"
+            ],
+            "fields": [
+              "title",
+              "status",
+              "created_at"
+            ]
+          },
+          "kind": "sorting",
+          "source": "structured"
+        }
+      ],
+      "category": "collection",
+      "id": "widget_data_grid",
+      "name": "Data Grid",
+      "patterns": [
+        "resource_table",
+        "data_grid_view"
+      ],
+      "regions": [
+        "results",
+        "toolbar"
+      ]
+    }
+  },
+  "verification": [],
+  "verification_targets": {
+    "generated_checks": [
+      "compile-check"
+    ],
+    "maintained_app_checks": [],
+    "rationale": "Widget changes affect every related projection, so verification should follow the widget contract closure.",
+    "verification_ids": []
+  },
+  "version": 1,
+  "write_scope": {
+    "generator_owned": [
+      "artifacts/**",
+      "apps/**"
+    ],
+    "human_owned_review_required": [
+      "examples/maintained/proof-app/**"
+    ],
+    "out_of_bounds": [
+      ".git/**",
+      "node_modules/**"
+    ],
+    "safe_to_edit": [
+      "topo/**",
+      "candidates/**"
+    ]
+  }
+}

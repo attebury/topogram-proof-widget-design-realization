@@ -1,0 +1,47 @@
+projection proj_db_sqlite {
+  name "Sample Workspace SQLite DB"
+  description "SQLite persistence realization for the work tracking domain"
+
+  type db_contract
+  realizes [entity_item, entity_collection, entity_member]
+  outputs [db_contract, sql_schema]
+
+  tables {
+    entity_item table items
+    entity_collection table collections
+    entity_member table members
+  }
+
+  keys {
+    entity_item primary [id]
+    entity_collection primary [id]
+    entity_member primary [id]
+  }
+
+  indexes {
+    entity_item index [collection_id, status]
+    entity_item index [owner_id, status]
+    entity_collection unique [name]
+    entity_collection index [owner_id, status]
+    entity_member unique [email]
+  }
+
+  relations {
+    entity_item foreign_key owner_id references entity_member.id on_delete set_null
+    entity_item foreign_key collection_id references entity_collection.id on_delete cascade
+    entity_collection foreign_key owner_id references entity_member.id on_delete set_null
+  }
+
+  lifecycle {
+    entity_item soft_delete field status value archived
+    entity_item timestamps created_at created_at updated_at updated_at
+  }
+
+  generator_defaults {
+    profile sqlite_sql
+    language sql
+    styling css
+  }
+
+  status active
+}

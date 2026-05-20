@@ -1,0 +1,29 @@
+name: Proof Verification
+
+on:
+  push:
+    branches:
+      - main
+      - "step/**"
+    tags:
+      - "proof-*"
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/checkout@v4
+        with:
+          repository: attebury/topogram
+          path: .topogram-engine
+      - run: npm run verify
+        env:
+          TOPOGRAM_CLI: ${{ github.workspace }}/.topogram-engine/engine/src/cli.js

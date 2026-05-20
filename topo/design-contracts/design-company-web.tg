@@ -1,0 +1,17 @@
+design_contract design_company_web {
+  name "Company Product UI Design Contract"
+  description "Defines sample workspace design-system scope, platform support, and token names."
+  platforms [web, ios, android]
+  surfaces [proj_web_surface, proj_web_surface_react]
+  library company_web
+  package "@company/ui"
+
+  token_mappings {
+    color_role danger token "company.color.danger"
+    color_role surface token "company.color.surface"
+    typography_role body token "company.typography.body"
+    action_role destructive token "company.button.destructive"
+  }
+
+  status active
+}

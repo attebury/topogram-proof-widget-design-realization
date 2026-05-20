@@ -1,0 +1,12 @@
+{
+  "name": "topogram-proof-widget-design-realization",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Focused Topogram proof for widget-first design realization sets.",
+  "scripts": {
+    "test": "npm run verify",
+    "verify": "node ./scripts/verify.mjs",
+    "proof:audit": "node ./scripts/proof-audit.mjs",
+    "proof:check-paths": "node ./scripts/check-paths.mjs"
+  }
+}

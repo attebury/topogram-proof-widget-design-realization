@@ -1,0 +1,81 @@
+{
+  "version": "1",
+  "trustPolicy": "topogram-template-executable-implementation-v1",
+  "trustedAt": "2026-05-07T15:33:34.761Z",
+  "template": {
+    "id": null,
+    "version": null,
+    "source": null,
+    "sourceSpec": null,
+    "requested": null,
+    "sourceRoot": null,
+    "catalog": null
+  },
+  "implementation": {
+    "id": "app-basic-fixture",
+    "module": "./implementation/index.js",
+    "export": "APP_BASIC_IMPLEMENTATION"
+  },
+  "content": {
+    "algorithm": "sha256",
+    "root": "implementation",
+    "digest": "140b2b56f8bad7b8781d11b4a6880cc6c42f749ff874cc1bc76248a2039934e4",
+    "files": [
+      {
+        "path": "backend/reference.js",
+        "sha256": "f6edf7c0350c9297f61f8027da57cf3a3a13855edaf6e58056b6e434a0039e0e",
+        "size": 6204
+      },
+      {
+        "path": "backend/repository-reference.js",
+        "sha256": "6da36549f215e4d156e4590eed9ed74e4c099d919eb8358a029a31b5ddf2aa4a",
+        "size": 2635
+      },
+      {
+        "path": "backend/repository-renderers.js",
+        "sha256": "faf19939e20bf1d71b1cd388170076a569d240339fa2e6a3e57596cbd450fd1b",
+        "size": 24484
+      },
+      {
+        "path": "index.js",
+        "sha256": "0eee85d0fa783d6987a3bcd1f5f2ec50c77bfbd09fc2c660c463b9540b302949",
+        "size": 1960
+      },
+      {
+        "path": "README.md",
+        "sha256": "d7f32b034f23a3cc2cf533db4b19a6794dbfcd79109d10011b3ea7ca5324482f",
+        "size": 322
+      },
+      {
+        "path": "runtime/check-renderers.js",
+        "sha256": "86d05b7880194ad5e9a569f530ac9ac125e6ce2f75540619d7f6b143c45f8ee5",
+        "size": 12993
+      },
+      {
+        "path": "runtime/checks.js",
+        "sha256": "bf9215219e1523b8c5e78a0bf330777ca8678c82666da558a10b982bac2ba959",
+        "size": 5402
+      },
+      {
+        "path": "runtime/reference.js",
+        "sha256": "d1dee55023386520839ea6a677c0e6c9ae98a99bc0a590ff35ae7d088710351e",
+        "size": 3364
+      },
+      {
+        "path": "web/reference.js",
+        "sha256": "42b0a9dfcbfed36f56629ee9f8fa02d8ec453546448b0a576d97c7da231f7f6a",
+        "size": 1777
+      },
+      {
+        "path": "web/renderers.js",
+        "sha256": "18090250815e6da18cd1294bfc47f4b336c0387d3c7532ee9d18174804fe3d4c",
+        "size": 46123
+      },
+      {
+        "path": "web/screens-reference.js",
+        "sha256": "f13b1c703a12c8ffb1163f4d50c7b0cb6822f43fb811fa7a1812ad17d7ebef96",
+        "size": 553
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "cliVersion": "topogram-main-until-cli-patch",
+  "currentStep": "proof-05-final-proof",
+  "expectedTags": [
+    "proof-01-semantic-widget-baseline",
+    "proof-02-design-contract-realization-set",
+    "proof-03-report-slice-proof",
+    "proof-04-review-only-candidate-example",
+    "proof-05-final-proof"
+  ],
+  "requiredArtifacts": [
+    {
+      "path": "proof/artifacts/ui-design-coverage.json",
+      "json": true,
+      "requiredKeys": ["type", "summary", "widgets"]
+    },
+    {
+      "path": "proof/artifacts/ui-realization-report.json",
+      "json": true,
+      "requiredKeys": ["type", "summary", "widgetUsages"]
+    },
+    {
+      "path": "proof/artifacts/widget-slice.json",
+      "json": true,
+      "requiredKeys": ["type", "focus", "ui_agent_packet"]
+    },
+    {
+      "path": "proof/artifacts/design-realization-candidate.example.json",
+      "json": true,
+      "requiredKeys": ["candidates"]
+    }
+  ]
+}

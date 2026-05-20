@@ -1,0 +1,27 @@
+{
+  "candidates": {
+    "design_realizations": [
+      {
+        "id_hint": "review_queue_web_grid",
+        "realization_set_id_hint": "realization_set_review_queue",
+        "design_contract_id_hint": "design_acme_product_ui",
+        "widget_id": "widget_review_queue",
+        "platform": "web",
+        "viewport": "wide",
+        "component_ref": "acme.reviewQueue.grid",
+        "pattern": "resource_table",
+        "status": "rendered",
+        "behaviors_rendered": ["selection"],
+        "behaviors_contract_only": ["bulk_action"],
+        "confidence": "medium",
+        "evidence": [
+          {
+            "file": "src/review/ReviewQueue.tsx",
+            "reason": "Uses Acme ReviewQueueGrid for the review queue."
+          }
+        ],
+        "missing_decisions": ["Confirm bulk action support."]
+      }
+    ]
+  }
+}

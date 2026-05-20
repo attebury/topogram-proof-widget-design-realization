@@ -1,0 +1,30 @@
+widget widget_data_grid {
+  name "Data Grid"
+  description "Reusable tabular display for item rows"
+  category collection
+
+  props {
+    rows array required
+    selected_ids array optional default []
+    loading boolean optional default false
+  }
+
+  events {
+    row_select shape_output_item_card
+  }
+
+  slots {
+    toolbar "Toolbar actions"
+    empty_state "Empty-state content"
+  }
+
+  behavior [selection, sorting]
+  behaviors {
+    selection mode multi state selected_ids emits row_select
+    sorting fields [title, status, created_at] default [created_at, desc]
+  }
+  patterns [resource_table, data_grid_view]
+  regions [results, toolbar]
+  version "1.0"
+  status active
+}

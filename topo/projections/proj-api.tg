@@ -1,0 +1,177 @@
+projection proj_api {
+  name "API"
+  description "HTTP API realization for the sample-workspace fixture"
+  type api_contract
+
+  realizes [cap_create_item, cap_get_item, cap_update_item, cap_complete_item, cap_list_items, cap_delete_item, cap_export_items, cap_get_item_export_job, cap_download_item_export, cap_list_collections, cap_get_collection, cap_create_collection, cap_update_collection, cap_list_members, cap_get_member, cap_create_member, cap_update_member]
+
+  outputs [
+    database_schema,
+    entity_models,
+    request_contracts,
+    response_contracts,
+    validation_handlers,
+    endpoints
+  ]
+
+  endpoints {
+    cap_create_item method POST path /items success 201 auth user request body
+    cap_get_item method GET path /items/:id success 200 auth user request path
+    cap_update_item method PATCH path /items/:id success 200 auth user request body
+    cap_complete_item method POST path /items/:id/complete success 200 auth user request body
+    cap_list_items method GET path /items success 200 auth user request query
+    cap_delete_item method DELETE path /items/:id success 200 auth user request path
+    cap_create_collection method POST path /collections success 201 auth user request body
+    cap_get_collection method GET path /collections/:id success 200 auth user request path
+    cap_update_collection method PATCH path /collections/:id success 200 auth user request body
+    cap_list_collections method GET path /collections success 200 auth user request query
+    cap_create_member method POST path /members success 201 auth user request body
+    cap_get_member method GET path /members/:id success 200 auth user request path
+    cap_update_member method PATCH path /members/:id success 200 auth user request body
+    cap_list_members method GET path /members success 200 auth user request query
+    cap_export_items method POST path /items/export success 202 auth user request body
+    cap_get_item_export_job method GET path /item-exports/:job_id success 200 auth user request path
+    cap_download_item_export method GET path /item-exports/:job_id/download success 200 auth user request path
+  }
+
+  error_responses {
+    cap_create_item rule_no_item_creation_in_archived_collection 409
+    cap_create_item rule_only_active_members_may_own_items 400
+    cap_create_item cap_create_item_invalid_request 400
+    cap_get_item cap_get_item_not_found 404
+    cap_get_collection cap_get_collection_not_found 404
+    cap_update_collection cap_get_collection_not_found 404
+    cap_get_member cap_get_member_not_found 404
+    cap_update_member cap_get_member_not_found 404
+    cap_delete_item cap_delete_item_not_found 404
+    cap_get_item_export_job cap_get_item_export_job_not_found 404
+    cap_download_item_export cap_download_item_export_not_found 404
+    cap_download_item_export cap_download_item_export_not_ready 409
+  }
+
+  wire_fields {
+    cap_create_item input title in body
+    cap_create_item input description in body
+    cap_create_item input priority in body
+    cap_create_item input owner_id in body
+    cap_create_item input collection_id in body
+    cap_create_item input due_at in body
+
+    cap_update_item input item_id in path as id
+    cap_update_item input title in body
+    cap_update_item input description in body
+    cap_update_item input priority in body
+    cap_update_item input owner_id in body
+    cap_update_item input due_at in body
+    cap_update_item input status in body
+
+    cap_complete_item input item_id in path as id
+    cap_complete_item input completed_at in body
+
+    cap_get_item input item_id in path as id
+
+    cap_delete_item input item_id in path as id
+    cap_get_collection input collection_id in path as id
+    cap_update_collection input collection_id in path as id
+    cap_get_member input member_id in path as id
+    cap_update_member input member_id in path as id
+    cap_get_item_export_job input job_id in path as job_id
+    cap_download_item_export input job_id in path as job_id
+
+    cap_list_items input collection_id in query
+    cap_list_items input owner_id in query
+    cap_list_items input status in query
+    cap_list_items input after in query
+    cap_list_items input limit in query
+    cap_list_collections input after in query
+    cap_list_collections input limit in query
+    cap_list_members input after in query
+    cap_list_members input limit in query
+
+    cap_create_collection input name in body
+    cap_create_collection input description in body
+    cap_create_collection input status in body
+    cap_create_collection input owner_id in body
+
+    cap_update_collection input name in body
+    cap_update_collection input description in body
+    cap_update_collection input status in body
+    cap_update_collection input owner_id in body
+
+    cap_create_member input email in body
+    cap_create_member input display_name in body
+    cap_create_member input is_active in body
+
+    cap_update_member input email in body
+    cap_update_member input display_name in body
+    cap_update_member input is_active in body
+
+    cap_export_items input collection_id in body
+    cap_export_items input owner_id in body
+    cap_export_items input status in body
+    cap_export_items input callback_url in body
+  }
+
+  responses {
+    cap_list_items mode cursor item shape_output_item_detail cursor request_after after response_next next_cursor limit field limit default 25 max 100 sort by created_at direction desc total included false
+    cap_list_collections mode cursor item shape_output_collection_detail cursor request_after after response_next next_cursor limit field limit default 25 max 100 sort by created_at direction desc total included false
+    cap_list_members mode cursor item shape_output_member_detail cursor request_after after response_next next_cursor limit field limit default 25 max 100 sort by created_at direction desc total included false
+  }
+
+  preconditions {
+    cap_update_item header If-Match required true error 412 source updated_at code cap_update_item_precondition_failed
+    cap_complete_item header If-Match required true error 412 source updated_at code cap_complete_item_precondition_failed
+    cap_delete_item header If-Match required true error 412 source updated_at code cap_delete_item_precondition_failed
+  }
+
+  idempotency {
+    cap_create_item header Idempotency-Key required true error 409 code cap_create_item_idempotency_conflict
+    cap_complete_item header Idempotency-Key required true error 409 code cap_complete_item_idempotency_conflict
+  }
+
+  cache {
+    cap_get_item response_header ETag request_header If-None-Match required false not_modified 304 source updated_at code cap_get_item_not_modified
+  }
+
+  delete_semantics {
+    cap_delete_item mode soft field status value archived response body
+  }
+
+  async_jobs {
+    cap_export_items mode job accepted 202 location_header Location retry_after_header Retry-After status_path /item-exports/:job_id status_capability cap_get_item_export_job job shape_output_item_export_job
+  }
+
+  async_status {
+    cap_get_item_export_job async_for cap_export_items state_field status completed completed failed failed expired expired download_capability cap_download_item_export download_field download_url error_field error_message
+  }
+
+  downloads {
+    cap_download_item_export async_for cap_export_items media application/zip filename item-export.zip disposition attachment
+  }
+
+  authorization {
+    cap_create_item permission items.create
+    cap_get_item ownership owner_or_admin ownership_field owner_id
+    cap_update_item ownership owner_or_admin ownership_field owner_id permission items.update
+    cap_complete_item ownership owner_or_admin ownership_field owner_id permission items.complete
+    cap_list_items permission items.read
+    cap_delete_item role manager permission items.delete
+    cap_create_collection permission collections.create
+    cap_get_collection permission collections.read
+    cap_update_collection permission collections.update
+    cap_list_collections permission collections.read
+    cap_create_member permission members.create
+    cap_get_member permission members.read
+    cap_update_member permission members.update
+    cap_list_members permission members.read
+    cap_export_items permission items.export
+    cap_get_item_export_job permission items.export.read ownership owner_or_admin ownership_field owner_id
+    cap_download_item_export permission items.export.download ownership owner_or_admin ownership_field owner_id
+  }
+
+  callbacks {
+    cap_export_items event export_completed target_field callback_url method POST payload shape_output_item_export_callback success 202
+  }
+
+  status active
+}

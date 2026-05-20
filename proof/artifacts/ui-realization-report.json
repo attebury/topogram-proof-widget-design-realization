@@ -1,0 +1,3327 @@
+{
+  "accessibility": {
+    "obligations": [
+      {
+        "focus": "visible",
+        "keyboard": "standard",
+        "live": "off",
+        "nameFrom": {
+          "source": "message",
+          "value": "msg_item_list_title"
+        },
+        "role": "main",
+        "targetId": "item_list",
+        "targetKind": "screen"
+      },
+      {
+        "focus": "roving_tabindex",
+        "keyboard": "data_grid",
+        "live": "off",
+        "nameFrom": {
+          "source": "message",
+          "value": "msg_items_table_label"
+        },
+        "role": "grid",
+        "targetId": "widget_data_grid",
+        "targetKind": "widget"
+      },
+      {
+        "focus": "visible",
+        "keyboard": "button",
+        "live": "off",
+        "nameFrom": {
+          "source": "message",
+          "value": "msg_create_item_label"
+        },
+        "role": "button",
+        "targetId": "cap_create_item",
+        "targetKind": "action"
+      }
+    ]
+  },
+  "accessibilityRealization": {
+    "obligations": [
+      {
+        "focus": "visible",
+        "keyboard": "standard",
+        "live": "off",
+        "nameFrom": {
+          "source": "message",
+          "value": "msg_item_list_title"
+        },
+        "proof": "static_generated_markup",
+        "requiredMarkers": {
+          "focus": "data-topogram-focus-model=\"visible\"",
+          "keyboard": "data-topogram-keyboard-model=\"standard\"",
+          "live": "data-topogram-live=\"off\"",
+          "target": "data-topogram-accessibility-target=\"screen:item_list\""
+        },
+        "role": "main",
+        "scope": {
+          "scope": "screen",
+          "screen": "item_list"
+        },
+        "status": "rendered",
+        "targetId": "item_list",
+        "targetKind": "screen"
+      },
+      {
+        "focus": "roving_tabindex",
+        "keyboard": "data_grid",
+        "live": "off",
+        "nameFrom": {
+          "source": "message",
+          "value": "msg_items_table_label"
+        },
+        "proof": "static_markers_only_behavior_requires_runtime_or_manual_audit",
+        "requiredMarkers": {
+          "focus": "data-topogram-focus-model=\"roving_tabindex\"",
+          "keyboard": "data-topogram-keyboard-model=\"data_grid\"",
+          "live": "data-topogram-live=\"off\"",
+          "target": "data-topogram-accessibility-target=\"widget:widget_data_grid\""
+        },
+        "role": "grid",
+        "scope": {
+          "scope": "screen",
+          "screen": "item_list"
+        },
+        "status": "contract_only",
+        "targetId": "widget_data_grid",
+        "targetKind": "widget"
+      },
+      {
+        "focus": "visible",
+        "keyboard": "button",
+        "live": "off",
+        "nameFrom": {
+          "source": "message",
+          "value": "msg_create_item_label"
+        },
+        "proof": "static_generated_markup",
+        "requiredMarkers": {
+          "focus": "data-topogram-focus-model=\"visible\"",
+          "keyboard": "data-topogram-keyboard-model=\"button\"",
+          "live": "data-topogram-live=\"off\"",
+          "target": "data-topogram-accessibility-target=\"action:cap_create_item\""
+        },
+        "role": "button",
+        "scope": {
+          "scope": "screen",
+          "screen": "item_list"
+        },
+        "status": "rendered",
+        "targetId": "cap_create_item",
+        "targetKind": "action"
+      },
+      {
+        "focus": "visible",
+        "keyboard": "button",
+        "live": "off",
+        "nameFrom": {
+          "source": "message",
+          "value": "msg_create_item_label"
+        },
+        "proof": "static_generated_markup",
+        "requiredMarkers": {
+          "focus": "data-topogram-focus-model=\"visible\"",
+          "keyboard": "data-topogram-keyboard-model=\"button\"",
+          "live": "data-topogram-live=\"off\"",
+          "target": "data-topogram-accessibility-target=\"action:cap_create_item\""
+        },
+        "role": "button",
+        "scope": {
+          "scope": "screen",
+          "screen": "item_board"
+        },
+        "status": "rendered",
+        "targetId": "cap_create_item",
+        "targetKind": "action"
+      },
+      {
+        "focus": "visible",
+        "keyboard": "button",
+        "live": "off",
+        "nameFrom": {
+          "source": "message",
+          "value": "msg_create_item_label"
+        },
+        "proof": "static_generated_markup",
+        "requiredMarkers": {
+          "focus": "data-topogram-focus-model=\"visible\"",
+          "keyboard": "data-topogram-keyboard-model=\"button\"",
+          "live": "data-topogram-live=\"off\"",
+          "target": "data-topogram-accessibility-target=\"action:cap_create_item\""
+        },
+        "role": "button",
+        "scope": {
+          "scope": "screen",
+          "screen": "item_calendar"
+        },
+        "status": "rendered",
+        "targetId": "cap_create_item",
+        "targetKind": "action"
+      },
+      {
+        "focus": "roving_tabindex",
+        "keyboard": "data_grid",
+        "live": "off",
+        "nameFrom": {
+          "source": "message",
+          "value": "msg_items_table_label"
+        },
+        "proof": "static_markers_only_behavior_requires_runtime_or_manual_audit",
+        "requiredMarkers": {
+          "focus": "data-topogram-focus-model=\"roving_tabindex\"",
+          "keyboard": "data-topogram-keyboard-model=\"data_grid\"",
+          "live": "data-topogram-live=\"off\"",
+          "target": "data-topogram-accessibility-target=\"widget:widget_data_grid\""
+        },
+        "role": "grid",
+        "scope": {
+          "scope": "widget_usage",
+          "screen": "item_list",
+          "widget": "widget_data_grid"
+        },
+        "status": "contract_only",
+        "targetId": "widget_data_grid",
+        "targetKind": "widget"
+      }
+    ]
+  },
+  "designContracts": {
+    "contracts": [
+      {
+        "behaviorSupport": [
+          {
+            "behavior": "selection",
+            "designRealizationSet": {
+              "id": "realization_set_company_web_widgets",
+              "name": "Company Product UI Widget Realizations"
+            },
+            "loc": {
+              "end": {
+                "column": 4,
+                "line": 17,
+                "offset": 520
+              },
+              "file": "<workspace>/design-contracts/realization-set-company-web-widgets.tg",
+              "start": {
+                "column": 3,
+                "line": 7,
+                "offset": 254
+              }
+            },
+            "platform": "web",
+            "status": "rendered",
+            "type": "design_realization_behavior_support",
+            "viewport": "wide",
+            "widget": {
+              "id": "widget_data_grid",
+              "kind": "widget",
+              "target": {
+                "id": "widget_data_grid",
+                "kind": "widget"
+              }
+            }
+          },
+          {
+            "behavior": "sorting",
+            "designRealizationSet": {
+              "id": "realization_set_company_web_widgets",
+              "name": "Company Product UI Widget Realizations"
+            },
+            "loc": {
+              "end": {
+                "column": 4,
+                "line": 17,
+                "offset": 520
+              },
+              "file": "<workspace>/design-contracts/realization-set-company-web-widgets.tg",
+              "start": {
+                "column": 3,
+                "line": 7,
+                "offset": 254
+              }
+            },
+            "platform": "web",
+            "status": "contract_only",
+            "type": "design_realization_behavior_support",
+            "viewport": "wide",
+            "widget": {
+              "id": "widget_data_grid",
+              "kind": "widget",
+              "target": {
+                "id": "widget_data_grid",
+                "kind": "widget"
+              }
+            }
+          }
+        ],
+        "components": [
+          {
+            "designRealizationSet": {
+              "id": "realization_set_company_web_widgets",
+              "name": "Company Product UI Widget Realizations"
+            },
+            "id": "data_grid_wide",
+            "loc": {
+              "end": {
+                "column": 4,
+                "line": 17,
+                "offset": 520
+              },
+              "file": "<workspace>/design-contracts/realization-set-company-web-widgets.tg",
+              "start": {
+                "column": 3,
+                "line": 7,
+                "offset": 254
+              }
+            },
+            "pattern": "resource_table",
+            "platform": "web",
+            "realizes": {
+              "id": "widget_data_grid",
+              "kind": "widget",
+              "target": {
+                "id": "widget_data_grid",
+                "kind": "widget"
+              }
+            },
+            "ref": "company.dataGrid",
+            "status": "rendered",
+            "type": "design_realization_component",
+            "viewport": "wide"
+          },
+          {
+            "designRealizationSet": {
+              "id": "realization_set_company_web_widgets",
+              "name": "Company Product UI Widget Realizations"
+            },
+            "id": "data_cards_narrow",
+            "loc": {
+              "end": {
+                "column": 4,
+                "line": 27,
+                "offset": 728
+              },
+              "file": "<workspace>/design-contracts/realization-set-company-web-widgets.tg",
+              "start": {
+                "column": 3,
+                "line": 19,
+                "offset": 524
+              }
+            },
+            "pattern": "resource_table",
+            "platform": "web",
+            "realizes": {
+              "id": "widget_data_grid",
+              "kind": "widget",
+              "target": {
+                "id": "widget_data_grid",
+                "kind": "widget"
+              }
+            },
+            "ref": "company.dataCards",
+            "status": "contract_only",
+            "type": "design_realization_component",
+            "viewport": "narrow"
+          }
+        ],
+        "id": "design_company_web",
+        "library": "company_web",
+        "name": "Company Product UI Design Contract",
+        "packageName": "@company/ui",
+        "platforms": [
+          "web",
+          "ios",
+          "android"
+        ],
+        "realizationSets": [
+          {
+            "id": "realization_set_company_web_widgets",
+            "name": "Company Product UI Widget Realizations",
+            "status": "active",
+            "widgetRealizations": [
+              {
+                "behaviorsContractOnly": [
+                  "sorting"
+                ],
+                "behaviorsImplementationOwned": [],
+                "behaviorsRendered": [
+                  "selection"
+                ],
+                "behaviorsUnsupported": [],
+                "componentRef": "company.dataGrid",
+                "id": "data_grid_wide",
+                "loc": {
+                  "end": {
+                    "column": 4,
+                    "line": 17,
+                    "offset": 520
+                  },
+                  "file": "<workspace>/design-contracts/realization-set-company-web-widgets.tg",
+                  "start": {
+                    "column": 3,
+                    "line": 7,
+                    "offset": 254
+                  }
+                },
+                "pattern": "resource_table",
+                "platform": "web",
+                "status": "rendered",
+                "type": "widget_realization",
+                "viewport": "wide",
+                "widget": {
+                  "id": "widget_data_grid",
+                  "kind": "widget",
+                  "target": {
+                    "id": "widget_data_grid",
+                    "kind": "widget"
+                  }
+                }
+              },
+              {
+                "behaviorsContractOnly": [],
+                "behaviorsImplementationOwned": [],
+                "behaviorsRendered": [],
+                "behaviorsUnsupported": [],
+                "componentRef": "company.dataCards",
+                "id": "data_cards_narrow",
+                "loc": {
+                  "end": {
+                    "column": 4,
+                    "line": 27,
+                    "offset": 728
+                  },
+                  "file": "<workspace>/design-contracts/realization-set-company-web-widgets.tg",
+                  "start": {
+                    "column": 3,
+                    "line": 19,
+                    "offset": 524
+                  }
+                },
+                "pattern": "resource_table",
+                "platform": "web",
+                "status": "contract_only",
+                "type": "widget_realization",
+                "viewport": "narrow",
+                "widget": {
+                  "id": "widget_data_grid",
+                  "kind": "widget",
+                  "target": {
+                    "id": "widget_data_grid",
+                    "kind": "widget"
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "status": "active",
+        "surfaces": [
+          "proj_web_surface",
+          "proj_web_surface_react"
+        ],
+        "tokenMappings": [
+          {
+            "loc": {
+              "end": {
+                "column": 51,
+                "line": 10,
+                "offset": 380
+              },
+              "file": "<workspace>/design-contracts/design-company-web.tg",
+              "start": {
+                "column": 5,
+                "line": 10,
+                "offset": 334
+              }
+            },
+            "platform": null,
+            "raw": [
+              "color_role",
+              "danger",
+              "token",
+              "company.color.danger"
+            ],
+            "role": "danger",
+            "roleKind": "color_role",
+            "token": "company.color.danger",
+            "type": "design_contract_token_mapping"
+          },
+          {
+            "loc": {
+              "end": {
+                "column": 53,
+                "line": 11,
+                "offset": 433
+              },
+              "file": "<workspace>/design-contracts/design-company-web.tg",
+              "start": {
+                "column": 5,
+                "line": 11,
+                "offset": 385
+              }
+            },
+            "platform": null,
+            "raw": [
+              "color_role",
+              "surface",
+              "token",
+              "company.color.surface"
+            ],
+            "role": "surface",
+            "roleKind": "color_role",
+            "token": "company.color.surface",
+            "type": "design_contract_token_mapping"
+          },
+          {
+            "loc": {
+              "end": {
+                "column": 57,
+                "line": 12,
+                "offset": 490
+              },
+              "file": "<workspace>/design-contracts/design-company-web.tg",
+              "start": {
+                "column": 5,
+                "line": 12,
+                "offset": 438
+              }
+            },
+            "platform": null,
+            "raw": [
+              "typography_role",
+              "body",
+              "token",
+              "company.typography.body"
+            ],
+            "role": "body",
+            "roleKind": "typography_role",
+            "token": "company.typography.body",
+            "type": "design_contract_token_mapping"
+          },
+          {
+            "loc": {
+              "end": {
+                "column": 63,
+                "line": 13,
+                "offset": 553
+              },
+              "file": "<workspace>/design-contracts/design-company-web.tg",
+              "start": {
+                "column": 5,
+                "line": 13,
+                "offset": 495
+              }
+            },
+            "platform": null,
+            "raw": [
+              "action_role",
+              "destructive",
+              "token",
+              "company.button.destructive"
+            ],
+            "role": "destructive",
+            "roleKind": "action_role",
+            "token": "company.button.destructive",
+            "type": "design_contract_token_mapping"
+          }
+        ]
+      }
+    ],
+    "tokenMappings": [
+      {
+        "designContract": "design_company_web",
+        "loc": {
+          "end": {
+            "column": 51,
+            "line": 10,
+            "offset": 380
+          },
+          "file": "<workspace>/design-contracts/design-company-web.tg",
+          "start": {
+            "column": 5,
+            "line": 10,
+            "offset": 334
+          }
+        },
+        "platform": null,
+        "raw": [
+          "color_role",
+          "danger",
+          "token",
+          "company.color.danger"
+        ],
+        "role": "danger",
+        "roleKind": "color_role",
+        "token": "company.color.danger",
+        "type": "design_contract_token_mapping"
+      },
+      {
+        "designContract": "design_company_web",
+        "loc": {
+          "end": {
+            "column": 53,
+            "line": 11,
+            "offset": 433
+          },
+          "file": "<workspace>/design-contracts/design-company-web.tg",
+          "start": {
+            "column": 5,
+            "line": 11,
+            "offset": 385
+          }
+        },
+        "platform": null,
+        "raw": [
+          "color_role",
+          "surface",
+          "token",
+          "company.color.surface"
+        ],
+        "role": "surface",
+        "roleKind": "color_role",
+        "token": "company.color.surface",
+        "type": "design_contract_token_mapping"
+      },
+      {
+        "designContract": "design_company_web",
+        "loc": {
+          "end": {
+            "column": 57,
+            "line": 12,
+            "offset": 490
+          },
+          "file": "<workspace>/design-contracts/design-company-web.tg",
+          "start": {
+            "column": 5,
+            "line": 12,
+            "offset": 438
+          }
+        },
+        "platform": null,
+        "raw": [
+          "typography_role",
+          "body",
+          "token",
+          "company.typography.body"
+        ],
+        "role": "body",
+        "roleKind": "typography_role",
+        "token": "company.typography.body",
+        "type": "design_contract_token_mapping"
+      },
+      {
+        "designContract": "design_company_web",
+        "loc": {
+          "end": {
+            "column": 63,
+            "line": 13,
+            "offset": 553
+          },
+          "file": "<workspace>/design-contracts/design-company-web.tg",
+          "start": {
+            "column": 5,
+            "line": 13,
+            "offset": 495
+          }
+        },
+        "platform": null,
+        "raw": [
+          "action_role",
+          "destructive",
+          "token",
+          "company.button.destructive"
+        ],
+        "role": "destructive",
+        "roleKind": "action_role",
+        "token": "company.button.destructive",
+        "type": "design_contract_token_mapping"
+      }
+    ],
+    "widgetUsages": [
+      {
+        "behaviorSupport": [
+          {
+            "behavior": "selection",
+            "designContract": {
+              "id": "design_company_web",
+              "library": "company_web",
+              "name": "Company Product UI Design Contract",
+              "packageName": "@company/ui"
+            },
+            "designRealizationSet": {
+              "id": "realization_set_company_web_widgets",
+              "name": "Company Product UI Widget Realizations"
+            },
+            "loc": {
+              "end": {
+                "column": 4,
+                "line": 17,
+                "offset": 520
+              },
+              "file": "<workspace>/design-contracts/realization-set-company-web-widgets.tg",
+              "start": {
+                "column": 3,
+                "line": 7,
+                "offset": 254
+              }
+            },
+            "platform": "web",
+            "status": "rendered",
+            "type": "design_realization_behavior_support",
+            "viewport": "wide",
+            "widget": {
+              "id": "widget_data_grid",
+              "kind": "widget",
+              "target": {
+                "id": "widget_data_grid",
+                "kind": "widget"
+              }
+            }
+          },
+          {
+            "behavior": "sorting",
+            "designContract": {
+              "id": "design_company_web",
+              "library": "company_web",
+              "name": "Company Product UI Design Contract",
+              "packageName": "@company/ui"
+            },
+            "designRealizationSet": {
+              "id": "realization_set_company_web_widgets",
+              "name": "Company Product UI Widget Realizations"
+            },
+            "loc": {
+              "end": {
+                "column": 4,
+                "line": 17,
+                "offset": 520
+              },
+              "file": "<workspace>/design-contracts/realization-set-company-web-widgets.tg",
+              "start": {
+                "column": 3,
+                "line": 7,
+                "offset": 254
+              }
+            },
+            "platform": "web",
+            "status": "contract_only",
+            "type": "design_realization_behavior_support",
+            "viewport": "wide",
+            "widget": {
+              "id": "widget_data_grid",
+              "kind": "widget",
+              "target": {
+                "id": "widget_data_grid",
+                "kind": "widget"
+              }
+            }
+          }
+        ],
+        "components": [
+          {
+            "component": {
+              "designRealizationSet": {
+                "id": "realization_set_company_web_widgets",
+                "name": "Company Product UI Widget Realizations"
+              },
+              "id": "data_grid_wide",
+              "loc": {
+                "end": {
+                  "column": 4,
+                  "line": 17,
+                  "offset": 520
+                },
+                "file": "<workspace>/design-contracts/realization-set-company-web-widgets.tg",
+                "start": {
+                  "column": 3,
+                  "line": 7,
+                  "offset": 254
+                }
+              },
+              "pattern": "resource_table",
+              "platform": "web",
+              "realizes": {
+                "id": "widget_data_grid",
+                "kind": "widget",
+                "target": {
+                  "id": "widget_data_grid",
+                  "kind": "widget"
+                }
+              },
+              "ref": "company.dataGrid",
+              "status": "rendered",
+              "type": "design_realization_component",
+              "viewport": "wide"
+            },
+            "designContract": {
+              "id": "design_company_web",
+              "library": "company_web",
+              "name": "Company Product UI Design Contract",
+              "packageName": "@company/ui"
+            }
+          },
+          {
+            "component": {
+              "designRealizationSet": {
+                "id": "realization_set_company_web_widgets",
+                "name": "Company Product UI Widget Realizations"
+              },
+              "id": "data_cards_narrow",
+              "loc": {
+                "end": {
+                  "column": 4,
+                  "line": 27,
+                  "offset": 728
+                },
+                "file": "<workspace>/design-contracts/realization-set-company-web-widgets.tg",
+                "start": {
+                  "column": 3,
+                  "line": 19,
+                  "offset": 524
+                }
+              },
+              "pattern": "resource_table",
+              "platform": "web",
+              "realizes": {
+                "id": "widget_data_grid",
+                "kind": "widget",
+                "target": {
+                  "id": "widget_data_grid",
+                  "kind": "widget"
+                }
+              },
+              "ref": "company.dataCards",
+              "status": "contract_only",
+              "type": "design_realization_component",
+              "viewport": "narrow"
+            },
+            "designContract": {
+              "id": "design_company_web",
+              "library": "company_web",
+              "name": "Company Product UI Design Contract",
+              "packageName": "@company/ui"
+            }
+          }
+        ],
+        "pattern": "resource_table",
+        "region": "results",
+        "route": "/items",
+        "screen": "item_list",
+        "status": "rendered",
+        "widget": "widget_data_grid"
+      }
+    ]
+  },
+  "designTokenMapping": {
+    "css_path": "src/app.css",
+    "mapped": [
+      {
+        "category": "density",
+        "marker": "--topogram-design-density",
+        "role": null,
+        "value": "compact"
+      },
+      {
+        "category": "tone",
+        "marker": "--topogram-design-tone",
+        "role": null,
+        "value": "operational"
+      },
+      {
+        "category": "radius_scale",
+        "marker": "--topogram-design-radius-scale",
+        "role": null,
+        "value": "medium"
+      },
+      {
+        "category": "color_roles",
+        "marker": "--topogram-design-color-primary",
+        "role": "primary",
+        "value": "accent"
+      },
+      {
+        "category": "color_roles",
+        "marker": "--topogram-design-color-danger",
+        "role": "danger",
+        "value": "critical"
+      },
+      {
+        "category": "typography_roles",
+        "marker": "--topogram-design-typography-body",
+        "role": "body",
+        "value": "readable"
+      },
+      {
+        "category": "typography_roles",
+        "marker": "--topogram-design-typography-heading",
+        "role": "heading",
+        "value": "prominent"
+      },
+      {
+        "category": "action_roles",
+        "marker": "--topogram-design-action-primary",
+        "role": "primary",
+        "value": "prominent"
+      },
+      {
+        "category": "action_roles",
+        "marker": "--topogram-design-action-destructive",
+        "role": "destructive",
+        "value": "danger"
+      },
+      {
+        "category": "accessibility",
+        "marker": "--topogram-design-accessibility-contrast",
+        "role": "contrast",
+        "value": "aa"
+      },
+      {
+        "category": "accessibility",
+        "marker": "--topogram-design-accessibility-focus",
+        "role": "focus",
+        "value": "visible"
+      }
+    ],
+    "missing": [],
+    "status": "mapped",
+    "tokens": {
+      "accessibility": {
+        "contrast": "aa",
+        "focus": "visible"
+      },
+      "action_roles": {
+        "destructive": "danger",
+        "primary": "prominent"
+      },
+      "color_roles": {
+        "danger": "critical",
+        "primary": "accent"
+      },
+      "density": "compact",
+      "radius_scale": "medium",
+      "tone": "operational",
+      "typography_roles": {
+        "body": "readable",
+        "heading": "prominent"
+      }
+    }
+  },
+  "diagnostics": [
+    {
+      "behavior": "sorting",
+      "code": "ui_design_realization_behavior_review_required",
+      "designContract": "design_company_web",
+      "message": "Widget 'widget_data_grid' behavior 'sorting' is 'contract_only' in design contract 'design_company_web'.",
+      "region": "results",
+      "route": "/items",
+      "screen": "item_list",
+      "severity": "warning",
+      "status": "contract_only",
+      "suggested_fix": "Treat contract-only or unsupported behavior as developer/agent review work before claiming platform parity.",
+      "widget": "widget_data_grid"
+    }
+  ],
+  "generator": "topogram/sveltekit",
+  "i18nRealization": {
+    "localePolicy": {
+      "defaultLocale": "en-US",
+      "direction": "ltr",
+      "fallbackLocale": "en-US",
+      "supportedLocales": [
+        "en-US"
+      ]
+    },
+    "messages": [
+      {
+        "actionId": null,
+        "context": "screen_title",
+        "id": "msg_item_list_title",
+        "key": "items.list.title",
+        "proof": "static_generated_marker",
+        "requiredMarkers": {
+          "messageId": "data-topogram-message-id=\"msg_item_list_title\"",
+          "messageKey": "data-topogram-message-key=\"items.list.title\""
+        },
+        "screenId": "item_list",
+        "status": "rendered",
+        "widgetId": null
+      },
+      {
+        "actionId": null,
+        "context": "widget_label",
+        "id": "msg_items_table_label",
+        "key": "items.table.label",
+        "proof": "static_generated_marker",
+        "requiredMarkers": {
+          "messageId": "data-topogram-message-id=\"msg_items_table_label\"",
+          "messageKey": "data-topogram-message-key=\"items.table.label\""
+        },
+        "screenId": "item_list",
+        "status": "rendered",
+        "widgetId": "widget_data_grid"
+      },
+      {
+        "actionId": "cap_create_item",
+        "context": "action_label",
+        "id": "msg_create_item_label",
+        "key": "items.create.label",
+        "proof": "static_generated_marker",
+        "requiredMarkers": {
+          "messageId": "data-topogram-message-id=\"msg_create_item_label\"",
+          "messageKey": "data-topogram-message-key=\"items.create.label\""
+        },
+        "screenId": "item_list",
+        "status": "rendered",
+        "widgetId": null
+      },
+      {
+        "actionId": "cap_create_item",
+        "context": "action_label",
+        "id": "msg_create_item_label",
+        "key": "items.create.label",
+        "proof": "static_generated_marker",
+        "requiredMarkers": {
+          "messageId": "data-topogram-message-id=\"msg_create_item_label\"",
+          "messageKey": "data-topogram-message-key=\"items.create.label\""
+        },
+        "screenId": "item_board",
+        "status": "rendered",
+        "widgetId": null
+      },
+      {
+        "actionId": "cap_create_item",
+        "context": "action_label",
+        "id": "msg_create_item_label",
+        "key": "items.create.label",
+        "proof": "static_generated_marker",
+        "requiredMarkers": {
+          "messageId": "data-topogram-message-id=\"msg_create_item_label\"",
+          "messageKey": "data-topogram-message-key=\"items.create.label\""
+        },
+        "screenId": "item_calendar",
+        "status": "rendered",
+        "widgetId": null
+      }
+    ]
+  },
+  "messages": {
+    "localePolicy": {
+      "defaultLocale": "en-US",
+      "direction": "ltr",
+      "fallbackLocale": "en-US",
+      "supportedLocales": [
+        "en-US"
+      ]
+    },
+    "messages": [
+      {
+        "actionId": null,
+        "context": "screen_title",
+        "defaultText": "Items",
+        "id": "msg_item_list_title",
+        "key": "items.list.title",
+        "screenId": "item_list",
+        "terms": [],
+        "variables": [],
+        "widgetId": null
+      },
+      {
+        "actionId": null,
+        "context": "widget_label",
+        "defaultText": "Items table",
+        "id": "msg_items_table_label",
+        "key": "items.table.label",
+        "screenId": null,
+        "terms": [],
+        "variables": [],
+        "widgetId": "widget_data_grid"
+      },
+      {
+        "actionId": "cap_create_item",
+        "context": "action_label",
+        "defaultText": "Create item",
+        "id": "msg_create_item_label",
+        "key": "items.create.label",
+        "screenId": null,
+        "terms": [],
+        "variables": [],
+        "widgetId": null
+      }
+    ]
+  },
+  "ownership": {
+    "accessibility": "ui_contract",
+    "concreteSurfaceOwns": [
+      "screen_routes",
+      "surface_hints"
+    ],
+    "designTokens": "ui_contract",
+    "messages": "ui_contract",
+    "widgetPlacement": "ui_contract"
+  },
+  "projection": {
+    "id": "proj_web_surface",
+    "name": "Sample Workspace Web UI",
+    "type": "web_surface"
+  },
+  "screens": [
+    {
+      "accessibility": [],
+      "accessibilityRealization": [],
+      "actions": {
+        "destructive": null,
+        "primary": {
+          "id": "cap_create_collection",
+          "kind": "capability"
+        },
+        "screen": [
+          {
+            "capability": {
+              "id": "cap_create_collection",
+              "kind": "capability"
+            },
+            "placement": "toolbar",
+            "prominence": "primary"
+          }
+        ],
+        "secondary": null,
+        "terminal": null
+      },
+      "displayFields": [
+        {
+          "label": "Id",
+          "name": "id",
+          "required": true,
+          "requiredness": "required",
+          "role": "identifier",
+          "sourceName": "id",
+          "type": "uuid"
+        },
+        {
+          "label": "Name",
+          "name": "name",
+          "required": true,
+          "requiredness": "required",
+          "role": "primary",
+          "sourceName": "name",
+          "type": "string"
+        },
+        {
+          "label": "Description",
+          "name": "description",
+          "required": false,
+          "requiredness": "optional",
+          "role": "metadata",
+          "sourceName": "description",
+          "type": "text"
+        },
+        {
+          "label": "Status",
+          "name": "status",
+          "required": true,
+          "requiredness": "required",
+          "role": "metadata",
+          "sourceName": "status",
+          "type": "collection_status"
+        },
+        {
+          "label": "Owner Id",
+          "name": "owner_id",
+          "required": false,
+          "requiredness": "optional",
+          "role": "identifier",
+          "sourceName": "owner_id",
+          "type": "uuid"
+        }
+      ],
+      "i18nRealization": [],
+      "id": "collection_list",
+      "kind": "list",
+      "messages": [],
+      "regions": [
+        {
+          "pattern": "resource_table",
+          "placement": "primary",
+          "region": "results",
+          "state": null,
+          "title": null,
+          "variant": null
+        }
+      ],
+      "route": "/collections",
+      "title": "Collections",
+      "visibility": [
+        {
+          "capability": {
+            "id": "cap_create_collection",
+            "kind": "capability"
+          },
+          "claimValue": null,
+          "ownershipField": null,
+          "predicate": "permission",
+          "value": "collections.create"
+        }
+      ],
+      "widgets": []
+    },
+    {
+      "accessibility": [],
+      "accessibilityRealization": [],
+      "actions": {
+        "destructive": null,
+        "primary": {
+          "id": "cap_update_collection",
+          "kind": "capability"
+        },
+        "screen": [],
+        "secondary": null,
+        "terminal": null
+      },
+      "displayFields": [
+        {
+          "label": "Id",
+          "name": "id",
+          "required": true,
+          "requiredness": "required",
+          "role": "identifier",
+          "sourceName": "id",
+          "type": "uuid"
+        },
+        {
+          "label": "Name",
+          "name": "name",
+          "required": true,
+          "requiredness": "required",
+          "role": "primary",
+          "sourceName": "name",
+          "type": "string"
+        },
+        {
+          "label": "Description",
+          "name": "description",
+          "required": false,
+          "requiredness": "optional",
+          "role": "metadata",
+          "sourceName": "description",
+          "type": "text"
+        },
+        {
+          "label": "Status",
+          "name": "status",
+          "required": true,
+          "requiredness": "required",
+          "role": "metadata",
+          "sourceName": "status",
+          "type": "collection_status"
+        },
+        {
+          "label": "Owner Id",
+          "name": "owner_id",
+          "required": false,
+          "requiredness": "optional",
+          "role": "identifier",
+          "sourceName": "owner_id",
+          "type": "uuid"
+        },
+        {
+          "label": "Created At",
+          "name": "created_at",
+          "required": true,
+          "requiredness": "required",
+          "role": "date",
+          "sourceName": "created_at",
+          "type": "datetime"
+        }
+      ],
+      "i18nRealization": [],
+      "id": "collection_detail",
+      "kind": "detail",
+      "messages": [],
+      "regions": [],
+      "route": "/collections/:id",
+      "title": "Collection Details",
+      "visibility": [
+        {
+          "capability": {
+            "id": "cap_update_collection",
+            "kind": "capability"
+          },
+          "claimValue": null,
+          "ownershipField": null,
+          "predicate": "permission",
+          "value": "collections.update"
+        }
+      ],
+      "widgets": []
+    },
+    {
+      "accessibility": [],
+      "accessibilityRealization": [],
+      "actions": {
+        "destructive": null,
+        "primary": null,
+        "screen": [],
+        "secondary": null,
+        "terminal": null
+      },
+      "displayFields": [
+        {
+          "label": "Name",
+          "name": "name",
+          "required": true,
+          "requiredness": "required",
+          "role": "primary",
+          "sourceName": "name",
+          "type": "string"
+        },
+        {
+          "label": "Description",
+          "name": "description",
+          "required": false,
+          "requiredness": "optional",
+          "role": "metadata",
+          "sourceName": "description",
+          "type": "text"
+        },
+        {
+          "label": "Status",
+          "name": "status",
+          "required": true,
+          "requiredness": "required",
+          "role": "metadata",
+          "sourceName": "status",
+          "type": "collection_status"
+        },
+        {
+          "label": "Owner Id",
+          "name": "owner_id",
+          "required": false,
+          "requiredness": "optional",
+          "role": "identifier",
+          "sourceName": "owner_id",
+          "type": "uuid"
+        }
+      ],
+      "i18nRealization": [],
+      "id": "collection_create",
+      "kind": "form",
+      "messages": [],
+      "regions": [],
+      "route": "/collections/new",
+      "title": "Create Collection",
+      "visibility": [],
+      "widgets": []
+    },
+    {
+      "accessibility": [],
+      "accessibilityRealization": [],
+      "actions": {
+        "destructive": null,
+        "primary": null,
+        "screen": [],
+        "secondary": null,
+        "terminal": null
+      },
+      "displayFields": [
+        {
+          "label": "Collection Id",
+          "name": "collection_id",
+          "required": true,
+          "requiredness": "required",
+          "role": "identifier",
+          "sourceName": "collection_id",
+          "type": "uuid"
+        },
+        {
+          "label": "Name",
+          "name": "name",
+          "required": false,
+          "requiredness": "optional",
+          "role": "primary",
+          "sourceName": "name",
+          "type": "string"
+        },
+        {
+          "label": "Description",
+          "name": "description",
+          "required": false,
+          "requiredness": "optional",
+          "role": "metadata",
+          "sourceName": "description",
+          "type": "text"
+        },
+        {
+          "label": "Status",
+          "name": "status",
+          "required": false,
+          "requiredness": "optional",
+          "role": "metadata",
+          "sourceName": "status",
+          "type": "collection_status"
+        },
+        {
+          "label": "Owner Id",
+          "name": "owner_id",
+          "required": false,
+          "requiredness": "optional",
+          "role": "identifier",
+          "sourceName": "owner_id",
+          "type": "uuid"
+        }
+      ],
+      "i18nRealization": [],
+      "id": "collection_edit",
+      "kind": "form",
+      "messages": [],
+      "regions": [],
+      "route": "/collections/:id/edit",
+      "title": "Edit Collection",
+      "visibility": [],
+      "widgets": []
+    },
+    {
+      "accessibility": [],
+      "accessibilityRealization": [],
+      "actions": {
+        "destructive": null,
+        "primary": {
+          "id": "cap_create_member",
+          "kind": "capability"
+        },
+        "screen": [
+          {
+            "capability": {
+              "id": "cap_create_member",
+              "kind": "capability"
+            },
+            "placement": "toolbar",
+            "prominence": "primary"
+          }
+        ],
+        "secondary": null,
+        "terminal": null
+      },
+      "displayFields": [
+        {
+          "label": "Id",
+          "name": "id",
+          "required": true,
+          "requiredness": "required",
+          "role": "identifier",
+          "sourceName": "id",
+          "type": "uuid"
+        },
+        {
+          "label": "Display Name",
+          "name": "display_name",
+          "required": true,
+          "requiredness": "required",
+          "role": "primary",
+          "sourceName": "display_name",
+          "type": "string"
+        },
+        {
+          "label": "Email",
+          "name": "email",
+          "required": true,
+          "requiredness": "required",
+          "role": "metadata",
+          "sourceName": "email",
+          "type": "string"
+        },
+        {
+          "label": "Is Active",
+          "name": "is_active",
+          "required": true,
+          "requiredness": "required",
+          "role": "flag",
+          "sourceName": "is_active",
+          "type": "boolean"
+        }
+      ],
+      "i18nRealization": [],
+      "id": "member_list",
+      "kind": "list",
+      "messages": [],
+      "regions": [
+        {
+          "pattern": "resource_table",
+          "placement": "primary",
+          "region": "results",
+          "state": null,
+          "title": null,
+          "variant": null
+        }
+      ],
+      "route": "/members",
+      "title": "Members",
+      "visibility": [
+        {
+          "capability": {
+            "id": "cap_create_member",
+            "kind": "capability"
+          },
+          "claimValue": null,
+          "ownershipField": null,
+          "predicate": "permission",
+          "value": "members.create"
+        }
+      ],
+      "widgets": []
+    },
+    {
+      "accessibility": [],
+      "accessibilityRealization": [],
+      "actions": {
+        "destructive": null,
+        "primary": {
+          "id": "cap_update_member",
+          "kind": "capability"
+        },
+        "screen": [],
+        "secondary": null,
+        "terminal": null
+      },
+      "displayFields": [
+        {
+          "label": "Id",
+          "name": "id",
+          "required": true,
+          "requiredness": "required",
+          "role": "identifier",
+          "sourceName": "id",
+          "type": "uuid"
+        },
+        {
+          "label": "Email",
+          "name": "email",
+          "required": true,
+          "requiredness": "required",
+          "role": "metadata",
+          "sourceName": "email",
+          "type": "string"
+        },
+        {
+          "label": "Display Name",
+          "name": "display_name",
+          "required": true,
+          "requiredness": "required",
+          "role": "primary",
+          "sourceName": "display_name",
+          "type": "string"
+        },
+        {
+          "label": "Is Active",
+          "name": "is_active",
+          "required": true,
+          "requiredness": "required",
+          "role": "flag",
+          "sourceName": "is_active",
+          "type": "boolean"
+        },
+        {
+          "label": "Created At",
+          "name": "created_at",
+          "required": true,
+          "requiredness": "required",
+          "role": "date",
+          "sourceName": "created_at",
+          "type": "datetime"
+        }
+      ],
+      "i18nRealization": [],
+      "id": "member_detail",
+      "kind": "detail",
+      "messages": [],
+      "regions": [],
+      "route": "/members/:id",
+      "title": "Member Details",
+      "visibility": [
+        {
+          "capability": {
+            "id": "cap_update_member",
+            "kind": "capability"
+          },
+          "claimValue": null,
+          "ownershipField": null,
+          "predicate": "permission",
+          "value": "members.update"
+        }
+      ],
+      "widgets": []
+    },
+    {
+      "accessibility": [],
+      "accessibilityRealization": [],
+      "actions": {
+        "destructive": null,
+        "primary": null,
+        "screen": [],
+        "secondary": null,
+        "terminal": null
+      },
+      "displayFields": [
+        {
+          "label": "Email",
+          "name": "email",
+          "required": true,
+          "requiredness": "required",
+          "role": "metadata",
+          "sourceName": "email",
+          "type": "string"
+        },
+        {
+          "label": "Display Name",
+          "name": "display_name",
+          "required": true,
+          "requiredness": "required",
+          "role": "primary",
+          "sourceName": "display_name",
+          "type": "string"
+        },
+        {
+          "label": "Is Active",
+          "name": "is_active",
+          "required": true,
+          "requiredness": "required",
+          "role": "flag",
+          "sourceName": "is_active",
+          "type": "boolean"
+        }
+      ],
+      "i18nRealization": [],
+      "id": "member_create",
+      "kind": "form",
+      "messages": [],
+      "regions": [],
+      "route": "/members/new",
+      "title": "Create Member",
+      "visibility": [],
+      "widgets": []
+    },
+    {
+      "accessibility": [],
+      "accessibilityRealization": [],
+      "actions": {
+        "destructive": null,
+        "primary": null,
+        "screen": [],
+        "secondary": null,
+        "terminal": null
+      },
+      "displayFields": [
+        {
+          "label": "Member Id",
+          "name": "member_id",
+          "required": true,
+          "requiredness": "required",
+          "role": "identifier",
+          "sourceName": "member_id",
+          "type": "uuid"
+        },
+        {
+          "label": "Email",
+          "name": "email",
+          "required": false,
+          "requiredness": "optional",
+          "role": "metadata",
+          "sourceName": "email",
+          "type": "string"
+        },
+        {
+          "label": "Display Name",
+          "name": "display_name",
+          "required": false,
+          "requiredness": "optional",
+          "role": "primary",
+          "sourceName": "display_name",
+          "type": "string"
+        },
+        {
+          "label": "Is Active",
+          "name": "is_active",
+          "required": false,
+          "requiredness": "optional",
+          "role": "flag",
+          "sourceName": "is_active",
+          "type": "boolean"
+        }
+      ],
+      "i18nRealization": [],
+      "id": "member_edit",
+      "kind": "form",
+      "messages": [],
+      "regions": [],
+      "route": "/members/:id/edit",
+      "title": "Edit Member",
+      "visibility": [],
+      "widgets": []
+    },
+    {
+      "accessibility": [
+        {
+          "focus": "visible",
+          "keyboard": "standard",
+          "live": "off",
+          "nameFrom": {
+            "source": "message",
+            "value": "msg_item_list_title"
+          },
+          "role": "main",
+          "targetId": "item_list",
+          "targetKind": "screen"
+        },
+        {
+          "focus": "roving_tabindex",
+          "keyboard": "data_grid",
+          "live": "off",
+          "nameFrom": {
+            "source": "message",
+            "value": "msg_items_table_label"
+          },
+          "role": "grid",
+          "targetId": "widget_data_grid",
+          "targetKind": "widget"
+        },
+        {
+          "focus": "visible",
+          "keyboard": "button",
+          "live": "off",
+          "nameFrom": {
+            "source": "message",
+            "value": "msg_create_item_label"
+          },
+          "role": "button",
+          "targetId": "cap_create_item",
+          "targetKind": "action"
+        }
+      ],
+      "accessibilityRealization": [
+        {
+          "focus": "visible",
+          "keyboard": "standard",
+          "live": "off",
+          "nameFrom": {
+            "source": "message",
+            "value": "msg_item_list_title"
+          },
+          "proof": "static_generated_markup",
+          "requiredMarkers": {
+            "focus": "data-topogram-focus-model=\"visible\"",
+            "keyboard": "data-topogram-keyboard-model=\"standard\"",
+            "live": "data-topogram-live=\"off\"",
+            "target": "data-topogram-accessibility-target=\"screen:item_list\""
+          },
+          "role": "main",
+          "scope": {
+            "scope": "screen",
+            "screen": "item_list"
+          },
+          "status": "rendered",
+          "targetId": "item_list",
+          "targetKind": "screen"
+        },
+        {
+          "focus": "roving_tabindex",
+          "keyboard": "data_grid",
+          "live": "off",
+          "nameFrom": {
+            "source": "message",
+            "value": "msg_items_table_label"
+          },
+          "proof": "static_markers_only_behavior_requires_runtime_or_manual_audit",
+          "requiredMarkers": {
+            "focus": "data-topogram-focus-model=\"roving_tabindex\"",
+            "keyboard": "data-topogram-keyboard-model=\"data_grid\"",
+            "live": "data-topogram-live=\"off\"",
+            "target": "data-topogram-accessibility-target=\"widget:widget_data_grid\""
+          },
+          "role": "grid",
+          "scope": {
+            "scope": "screen",
+            "screen": "item_list"
+          },
+          "status": "contract_only",
+          "targetId": "widget_data_grid",
+          "targetKind": "widget"
+        },
+        {
+          "focus": "visible",
+          "keyboard": "button",
+          "live": "off",
+          "nameFrom": {
+            "source": "message",
+            "value": "msg_create_item_label"
+          },
+          "proof": "static_generated_markup",
+          "requiredMarkers": {
+            "focus": "data-topogram-focus-model=\"visible\"",
+            "keyboard": "data-topogram-keyboard-model=\"button\"",
+            "live": "data-topogram-live=\"off\"",
+            "target": "data-topogram-accessibility-target=\"action:cap_create_item\""
+          },
+          "role": "button",
+          "scope": {
+            "scope": "screen",
+            "screen": "item_list"
+          },
+          "status": "rendered",
+          "targetId": "cap_create_item",
+          "targetKind": "action"
+        }
+      ],
+      "actions": {
+        "destructive": null,
+        "primary": {
+          "id": "cap_create_item",
+          "kind": "capability"
+        },
+        "screen": [
+          {
+            "capability": {
+              "id": "cap_export_items",
+              "kind": "capability"
+            },
+            "placement": "toolbar",
+            "prominence": "secondary"
+          }
+        ],
+        "secondary": null,
+        "terminal": null
+      },
+      "displayFields": [
+        {
+          "label": "Title",
+          "name": "title",
+          "required": false,
+          "requiredness": "optional",
+          "role": "primary",
+          "sourceName": "title",
+          "type": "string"
+        },
+        {
+          "label": "Status",
+          "name": "status",
+          "required": true,
+          "requiredness": "required",
+          "role": "metadata",
+          "sourceName": "status",
+          "type": "item_status"
+        },
+        {
+          "label": "Priority",
+          "name": "priority",
+          "required": true,
+          "requiredness": "required",
+          "role": "metadata",
+          "sourceName": "priority",
+          "type": "item_priority"
+        },
+        {
+          "label": "Due At",
+          "name": "dueAt",
+          "required": false,
+          "requiredness": "optional",
+          "role": "date",
+          "sourceName": "due_at",
+          "type": "datetime"
+        },
+        {
+          "label": "Owner Id",
+          "name": "ownerId",
+          "required": true,
+          "requiredness": "required",
+          "role": "identifier",
+          "sourceName": "owner_id",
+          "type": "uuid"
+        }
+      ],
+      "i18nRealization": [
+        {
+          "actionId": null,
+          "context": "screen_title",
+          "id": "msg_item_list_title",
+          "key": "items.list.title",
+          "proof": "static_generated_marker",
+          "requiredMarkers": {
+            "messageId": "data-topogram-message-id=\"msg_item_list_title\"",
+            "messageKey": "data-topogram-message-key=\"items.list.title\""
+          },
+          "screenId": "item_list",
+          "status": "rendered",
+          "widgetId": null
+        },
+        {
+          "actionId": null,
+          "context": "widget_label",
+          "id": "msg_items_table_label",
+          "key": "items.table.label",
+          "proof": "static_generated_marker",
+          "requiredMarkers": {
+            "messageId": "data-topogram-message-id=\"msg_items_table_label\"",
+            "messageKey": "data-topogram-message-key=\"items.table.label\""
+          },
+          "screenId": "item_list",
+          "status": "rendered",
+          "widgetId": "widget_data_grid"
+        },
+        {
+          "actionId": "cap_create_item",
+          "context": "action_label",
+          "id": "msg_create_item_label",
+          "key": "items.create.label",
+          "proof": "static_generated_marker",
+          "requiredMarkers": {
+            "messageId": "data-topogram-message-id=\"msg_create_item_label\"",
+            "messageKey": "data-topogram-message-key=\"items.create.label\""
+          },
+          "screenId": "item_list",
+          "status": "rendered",
+          "widgetId": null
+        }
+      ],
+      "id": "item_list",
+      "kind": "list",
+      "messages": [
+        {
+          "actionId": null,
+          "context": "screen_title",
+          "defaultText": "Items",
+          "id": "msg_item_list_title",
+          "key": "items.list.title",
+          "screenId": "item_list",
+          "terms": [],
+          "variables": [],
+          "widgetId": null
+        },
+        {
+          "actionId": null,
+          "context": "widget_label",
+          "defaultText": "Items table",
+          "id": "msg_items_table_label",
+          "key": "items.table.label",
+          "screenId": null,
+          "terms": [],
+          "variables": [],
+          "widgetId": "widget_data_grid"
+        },
+        {
+          "actionId": "cap_create_item",
+          "context": "action_label",
+          "defaultText": "Create item",
+          "id": "msg_create_item_label",
+          "key": "items.create.label",
+          "screenId": null,
+          "terms": [],
+          "variables": [],
+          "widgetId": null
+        }
+      ],
+      "regions": [
+        {
+          "pattern": "summary_stats",
+          "placement": "primary",
+          "region": "hero",
+          "state": null,
+          "title": null,
+          "variant": null
+        },
+        {
+          "pattern": "action_bar",
+          "placement": "primary",
+          "region": "toolbar",
+          "state": null,
+          "title": null,
+          "variant": null
+        },
+        {
+          "pattern": "resource_table",
+          "placement": "primary",
+          "region": "results",
+          "state": null,
+          "title": null,
+          "variant": null
+        }
+      ],
+      "route": "/items",
+      "title": "Items",
+      "visibility": [
+        {
+          "capability": {
+            "id": "cap_export_items",
+            "kind": "capability"
+          },
+          "claimValue": null,
+          "ownershipField": null,
+          "predicate": "permission",
+          "value": "items.export"
+        }
+      ],
+      "widgets": [
+        {
+          "accessibility": [
+            {
+              "focus": "roving_tabindex",
+              "keyboard": "data_grid",
+              "live": "off",
+              "nameFrom": {
+                "source": "message",
+                "value": "msg_items_table_label"
+              },
+              "role": "grid",
+              "targetId": "widget_data_grid",
+              "targetKind": "widget"
+            }
+          ],
+          "accessibilityRealization": [
+            {
+              "focus": "roving_tabindex",
+              "keyboard": "data_grid",
+              "live": "off",
+              "nameFrom": {
+                "source": "message",
+                "value": "msg_items_table_label"
+              },
+              "proof": "static_markers_only_behavior_requires_runtime_or_manual_audit",
+              "requiredMarkers": {
+                "focus": "data-topogram-focus-model=\"roving_tabindex\"",
+                "keyboard": "data-topogram-keyboard-model=\"data_grid\"",
+                "live": "data-topogram-live=\"off\"",
+                "target": "data-topogram-accessibility-target=\"widget:widget_data_grid\""
+              },
+              "role": "grid",
+              "scope": {
+                "scope": "widget_usage",
+                "screen": "item_list",
+                "widget": "widget_data_grid"
+              },
+              "status": "contract_only",
+              "targetId": "widget_data_grid",
+              "targetKind": "widget"
+            }
+          ],
+          "behaviorRealizations": [
+            {
+              "actions": [],
+              "dataDependencies": [
+                {
+                  "prop": "rows",
+                  "source": {
+                    "id": "cap_list_items",
+                    "kind": "capability"
+                  }
+                }
+              ],
+              "directives": {
+                "emits": "row_select",
+                "mode": "multi",
+                "state": "selected_ids"
+              },
+              "effects": [
+                {
+                  "event": "row_select",
+                  "target": {
+                    "id": "item_detail",
+                    "kind": "screen"
+                  },
+                  "type": "navigation"
+                }
+              ],
+              "emits": [
+                {
+                  "bindings": [
+                    {
+                      "action": "navigate",
+                      "event": "row_select",
+                      "target": {
+                        "id": "item_detail",
+                        "kind": "screen"
+                      }
+                    }
+                  ],
+                  "bound": true,
+                  "effects": [
+                    {
+                      "event": "row_select",
+                      "target": {
+                        "id": "item_detail",
+                        "kind": "screen"
+                      },
+                      "type": "navigation"
+                    }
+                  ],
+                  "event": "row_select"
+                }
+              ],
+              "kind": "selection",
+              "source": "structured",
+              "state": {
+                "bound": false,
+                "defaultValue": [],
+                "prop": "selected_ids",
+                "requiredness": "optional",
+                "source": null
+              },
+              "status": "realized"
+            },
+            {
+              "actions": [],
+              "dataDependencies": [
+                {
+                  "prop": "rows",
+                  "source": {
+                    "id": "cap_list_items",
+                    "kind": "capability"
+                  }
+                }
+              ],
+              "directives": {
+                "default": [
+                  "created_at",
+                  "desc"
+                ],
+                "fields": [
+                  "title",
+                  "status",
+                  "created_at"
+                ]
+              },
+              "effects": [],
+              "emits": [],
+              "kind": "sorting",
+              "source": "structured",
+              "state": null,
+              "status": "realized"
+            }
+          ],
+          "display": {
+            "diagnostics": [],
+            "fields": [
+              {
+                "label": "Title",
+                "name": "title",
+                "required": false,
+                "requiredness": "optional",
+                "role": "primary",
+                "sourceName": "title",
+                "type": "string"
+              },
+              {
+                "label": "Status",
+                "name": "status",
+                "required": true,
+                "requiredness": "required",
+                "role": "metadata",
+                "sourceName": "status",
+                "type": "item_status"
+              },
+              {
+                "label": "Priority",
+                "name": "priority",
+                "required": true,
+                "requiredness": "required",
+                "role": "metadata",
+                "sourceName": "priority",
+                "type": "item_priority"
+              },
+              {
+                "label": "Due At",
+                "name": "dueAt",
+                "required": false,
+                "requiredness": "optional",
+                "role": "date",
+                "sourceName": "due_at",
+                "type": "datetime"
+              },
+              {
+                "label": "Owner Id",
+                "name": "ownerId",
+                "required": true,
+                "requiredness": "required",
+                "role": "identifier",
+                "sourceName": "owner_id",
+                "type": "uuid"
+              }
+            ],
+            "prop": "rows",
+            "source": {
+              "id": "cap_list_items",
+              "kind": "capability"
+            },
+            "sourceShape": {
+              "id": "shape_output_item_card",
+              "kind": "shape"
+            }
+          },
+          "displayFields": [
+            {
+              "label": "Title",
+              "name": "title",
+              "required": false,
+              "requiredness": "optional",
+              "role": "primary",
+              "sourceName": "title",
+              "type": "string"
+            },
+            {
+              "label": "Status",
+              "name": "status",
+              "required": true,
+              "requiredness": "required",
+              "role": "metadata",
+              "sourceName": "status",
+              "type": "item_status"
+            },
+            {
+              "label": "Priority",
+              "name": "priority",
+              "required": true,
+              "requiredness": "required",
+              "role": "metadata",
+              "sourceName": "priority",
+              "type": "item_priority"
+            },
+            {
+              "label": "Due At",
+              "name": "dueAt",
+              "required": false,
+              "requiredness": "optional",
+              "role": "date",
+              "sourceName": "due_at",
+              "type": "datetime"
+            },
+            {
+              "label": "Owner Id",
+              "name": "ownerId",
+              "required": true,
+              "requiredness": "required",
+              "role": "identifier",
+              "sourceName": "owner_id",
+              "type": "uuid"
+            }
+          ],
+          "i18nRealization": [
+            {
+              "actionId": null,
+              "context": "widget_label",
+              "id": "msg_items_table_label",
+              "key": "items.table.label",
+              "proof": "static_generated_marker",
+              "requiredMarkers": {
+                "messageId": "data-topogram-message-id=\"msg_items_table_label\"",
+                "messageKey": "data-topogram-message-key=\"items.table.label\""
+              },
+              "screenId": "item_list",
+              "status": "rendered",
+              "widgetId": "widget_data_grid"
+            }
+          ],
+          "messages": [
+            {
+              "actionId": null,
+              "context": "widget_label",
+              "defaultText": "Items table",
+              "id": "msg_items_table_label",
+              "key": "items.table.label",
+              "screenId": null,
+              "terms": [],
+              "variables": [],
+              "widgetId": "widget_data_grid"
+            }
+          ],
+          "pattern": "resource_table",
+          "region": "results",
+          "requiredMarkers": {
+            "displayField": "data-topogram-display-field",
+            "region": "data-topogram-region=\"results\"",
+            "screen": "data-topogram-screen=\"item_list\"",
+            "widget": "data-topogram-widget=\"widget_data_grid\""
+          },
+          "route": "/items",
+          "screen": "item_list",
+          "status": "rendered",
+          "supported": true,
+          "widget": "widget_data_grid"
+        }
+      ]
+    },
+    {
+      "accessibility": [
+        {
+          "focus": "visible",
+          "keyboard": "button",
+          "live": "off",
+          "nameFrom": {
+            "source": "message",
+            "value": "msg_create_item_label"
+          },
+          "role": "button",
+          "targetId": "cap_create_item",
+          "targetKind": "action"
+        }
+      ],
+      "accessibilityRealization": [
+        {
+          "focus": "visible",
+          "keyboard": "button",
+          "live": "off",
+          "nameFrom": {
+            "source": "message",
+            "value": "msg_create_item_label"
+          },
+          "proof": "static_generated_markup",
+          "requiredMarkers": {
+            "focus": "data-topogram-focus-model=\"visible\"",
+            "keyboard": "data-topogram-keyboard-model=\"button\"",
+            "live": "data-topogram-live=\"off\"",
+            "target": "data-topogram-accessibility-target=\"action:cap_create_item\""
+          },
+          "role": "button",
+          "scope": {
+            "scope": "screen",
+            "screen": "item_board"
+          },
+          "status": "rendered",
+          "targetId": "cap_create_item",
+          "targetKind": "action"
+        }
+      ],
+      "actions": {
+        "destructive": null,
+        "primary": {
+          "id": "cap_create_item",
+          "kind": "capability"
+        },
+        "screen": [],
+        "secondary": null,
+        "terminal": null
+      },
+      "displayFields": [
+        {
+          "label": "Title",
+          "name": "title",
+          "required": false,
+          "requiredness": "optional",
+          "role": "primary",
+          "sourceName": "title",
+          "type": "string"
+        },
+        {
+          "label": "Status",
+          "name": "status",
+          "required": true,
+          "requiredness": "required",
+          "role": "metadata",
+          "sourceName": "status",
+          "type": "item_status"
+        },
+        {
+          "label": "Priority",
+          "name": "priority",
+          "required": true,
+          "requiredness": "required",
+          "role": "metadata",
+          "sourceName": "priority",
+          "type": "item_priority"
+        },
+        {
+          "label": "Due At",
+          "name": "dueAt",
+          "required": false,
+          "requiredness": "optional",
+          "role": "date",
+          "sourceName": "due_at",
+          "type": "datetime"
+        },
+        {
+          "label": "Owner Id",
+          "name": "ownerId",
+          "required": true,
+          "requiredness": "required",
+          "role": "identifier",
+          "sourceName": "owner_id",
+          "type": "uuid"
+        }
+      ],
+      "i18nRealization": [
+        {
+          "actionId": "cap_create_item",
+          "context": "action_label",
+          "id": "msg_create_item_label",
+          "key": "items.create.label",
+          "proof": "static_generated_marker",
+          "requiredMarkers": {
+            "messageId": "data-topogram-message-id=\"msg_create_item_label\"",
+            "messageKey": "data-topogram-message-key=\"items.create.label\""
+          },
+          "screenId": "item_board",
+          "status": "rendered",
+          "widgetId": null
+        }
+      ],
+      "id": "item_board",
+      "kind": "board",
+      "messages": [
+        {
+          "actionId": "cap_create_item",
+          "context": "action_label",
+          "defaultText": "Create item",
+          "id": "msg_create_item_label",
+          "key": "items.create.label",
+          "screenId": null,
+          "terms": [],
+          "variables": [],
+          "widgetId": null
+        }
+      ],
+      "regions": [
+        {
+          "pattern": "action_bar",
+          "placement": "primary",
+          "region": "toolbar",
+          "state": null,
+          "title": null,
+          "variant": null
+        },
+        {
+          "pattern": "board_view",
+          "placement": "primary",
+          "region": "results",
+          "state": null,
+          "title": null,
+          "variant": null
+        }
+      ],
+      "route": "/items/board",
+      "title": "Item Board",
+      "visibility": [],
+      "widgets": []
+    },
+    {
+      "accessibility": [
+        {
+          "focus": "visible",
+          "keyboard": "button",
+          "live": "off",
+          "nameFrom": {
+            "source": "message",
+            "value": "msg_create_item_label"
+          },
+          "role": "button",
+          "targetId": "cap_create_item",
+          "targetKind": "action"
+        }
+      ],
+      "accessibilityRealization": [
+        {
+          "focus": "visible",
+          "keyboard": "button",
+          "live": "off",
+          "nameFrom": {
+            "source": "message",
+            "value": "msg_create_item_label"
+          },
+          "proof": "static_generated_markup",
+          "requiredMarkers": {
+            "focus": "data-topogram-focus-model=\"visible\"",
+            "keyboard": "data-topogram-keyboard-model=\"button\"",
+            "live": "data-topogram-live=\"off\"",
+            "target": "data-topogram-accessibility-target=\"action:cap_create_item\""
+          },
+          "role": "button",
+          "scope": {
+            "scope": "screen",
+            "screen": "item_calendar"
+          },
+          "status": "rendered",
+          "targetId": "cap_create_item",
+          "targetKind": "action"
+        }
+      ],
+      "actions": {
+        "destructive": null,
+        "primary": {
+          "id": "cap_create_item",
+          "kind": "capability"
+        },
+        "screen": [],
+        "secondary": null,
+        "terminal": null
+      },
+      "displayFields": [
+        {
+          "label": "Title",
+          "name": "title",
+          "required": false,
+          "requiredness": "optional",
+          "role": "primary",
+          "sourceName": "title",
+          "type": "string"
+        },
+        {
+          "label": "Status",
+          "name": "status",
+          "required": true,
+          "requiredness": "required",
+          "role": "metadata",
+          "sourceName": "status",
+          "type": "item_status"
+        },
+        {
+          "label": "Priority",
+          "name": "priority",
+          "required": true,
+          "requiredness": "required",
+          "role": "metadata",
+          "sourceName": "priority",
+          "type": "item_priority"
+        },
+        {
+          "label": "Due At",
+          "name": "dueAt",
+          "required": false,
+          "requiredness": "optional",
+          "role": "date",
+          "sourceName": "due_at",
+          "type": "datetime"
+        },
+        {
+          "label": "Owner Id",
+          "name": "ownerId",
+          "required": true,
+          "requiredness": "required",
+          "role": "identifier",
+          "sourceName": "owner_id",
+          "type": "uuid"
+        }
+      ],
+      "i18nRealization": [
+        {
+          "actionId": "cap_create_item",
+          "context": "action_label",
+          "id": "msg_create_item_label",
+          "key": "items.create.label",
+          "proof": "static_generated_marker",
+          "requiredMarkers": {
+            "messageId": "data-topogram-message-id=\"msg_create_item_label\"",
+            "messageKey": "data-topogram-message-key=\"items.create.label\""
+          },
+          "screenId": "item_calendar",
+          "status": "rendered",
+          "widgetId": null
+        }
+      ],
+      "id": "item_calendar",
+      "kind": "calendar",
+      "messages": [
+        {
+          "actionId": "cap_create_item",
+          "context": "action_label",
+          "defaultText": "Create item",
+          "id": "msg_create_item_label",
+          "key": "items.create.label",
+          "screenId": null,
+          "terms": [],
+          "variables": [],
+          "widgetId": null
+        }
+      ],
+      "regions": [
+        {
+          "pattern": "action_bar",
+          "placement": "primary",
+          "region": "toolbar",
+          "state": null,
+          "title": null,
+          "variant": null
+        },
+        {
+          "pattern": "calendar_view",
+          "placement": "primary",
+          "region": "results",
+          "state": null,
+          "title": null,
+          "variant": null
+        }
+      ],
+      "route": "/items/calendar",
+      "title": "Item Calendar",
+      "visibility": [],
+      "widgets": []
+    },
+    {
+      "accessibility": [],
+      "accessibilityRealization": [],
+      "actions": {
+        "destructive": {
+          "id": "cap_delete_item",
+          "kind": "capability"
+        },
+        "primary": {
+          "id": "cap_update_item",
+          "kind": "capability"
+        },
+        "screen": [
+          {
+            "capability": {
+              "id": "cap_complete_item",
+              "kind": "capability"
+            },
+            "placement": "footer",
+            "prominence": "primary"
+          },
+          {
+            "capability": {
+              "id": "cap_delete_item",
+              "kind": "capability"
+            },
+            "placement": "footer",
+            "prominence": "destructive"
+          }
+        ],
+        "secondary": {
+          "id": "cap_complete_item",
+          "kind": "capability"
+        },
+        "terminal": null
+      },
+      "displayFields": [
+        {
+          "label": "Id",
+          "name": "id",
+          "required": true,
+          "requiredness": "required",
+          "role": "identifier",
+          "sourceName": "id",
+          "type": "uuid"
+        },
+        {
+          "label": "Title",
+          "name": "title",
+          "required": true,
+          "requiredness": "required",
+          "role": "primary",
+          "sourceName": "title",
+          "type": "string"
+        },
+        {
+          "label": "Description",
+          "name": "description",
+          "required": false,
+          "requiredness": "optional",
+          "role": "metadata",
+          "sourceName": "description",
+          "type": "text"
+        },
+        {
+          "label": "Status",
+          "name": "status",
+          "required": true,
+          "requiredness": "required",
+          "role": "metadata",
+          "sourceName": "status",
+          "type": "item_status"
+        },
+        {
+          "label": "Priority",
+          "name": "priority",
+          "required": true,
+          "requiredness": "required",
+          "role": "metadata",
+          "sourceName": "priority",
+          "type": "item_priority"
+        },
+        {
+          "label": "Owner Id",
+          "name": "owner_id",
+          "required": false,
+          "requiredness": "optional",
+          "role": "identifier",
+          "sourceName": "owner_id",
+          "type": "uuid"
+        },
+        {
+          "label": "Collection Id",
+          "name": "collection_id",
+          "required": true,
+          "requiredness": "required",
+          "role": "identifier",
+          "sourceName": "collection_id",
+          "type": "uuid"
+        },
+        {
+          "label": "Created At",
+          "name": "created_at",
+          "required": true,
+          "requiredness": "required",
+          "role": "date",
+          "sourceName": "created_at",
+          "type": "datetime"
+        },
+        {
+          "label": "Updated At",
+          "name": "updated_at",
+          "required": true,
+          "requiredness": "required",
+          "role": "date",
+          "sourceName": "updated_at",
+          "type": "datetime"
+        },
+        {
+          "label": "Completed At",
+          "name": "completed_at",
+          "required": false,
+          "requiredness": "optional",
+          "role": "date",
+          "sourceName": "completed_at",
+          "type": "datetime"
+        },
+        {
+          "label": "Due At",
+          "name": "due_at",
+          "required": false,
+          "requiredness": "optional",
+          "role": "date",
+          "sourceName": "due_at",
+          "type": "datetime"
+        }
+      ],
+      "i18nRealization": [],
+      "id": "item_detail",
+      "kind": "detail",
+      "messages": [],
+      "regions": [
+        {
+          "pattern": "detail_panel",
+          "placement": "primary",
+          "region": "summary",
+          "state": null,
+          "title": null,
+          "variant": null
+        },
+        {
+          "pattern": "activity_feed",
+          "placement": "supporting",
+          "region": "activity",
+          "state": null,
+          "title": null,
+          "variant": null
+        }
+      ],
+      "route": "/items/:id",
+      "title": "Item Details",
+      "visibility": [
+        {
+          "capability": {
+            "id": "cap_delete_item",
+            "kind": "capability"
+          },
+          "claimValue": null,
+          "ownershipField": null,
+          "predicate": "permission",
+          "value": "items.delete"
+        },
+        {
+          "capability": {
+            "id": "cap_update_item",
+            "kind": "capability"
+          },
+          "claimValue": null,
+          "ownershipField": "owner_id",
+          "predicate": "ownership",
+          "value": "owner_or_admin"
+        },
+        {
+          "capability": {
+            "id": "cap_complete_item",
+            "kind": "capability"
+          },
+          "claimValue": null,
+          "ownershipField": "owner_id",
+          "predicate": "ownership",
+          "value": "owner_or_admin"
+        }
+      ],
+      "widgets": []
+    },
+    {
+      "accessibility": [],
+      "accessibilityRealization": [],
+      "actions": {
+        "destructive": null,
+        "primary": null,
+        "screen": [],
+        "secondary": null,
+        "terminal": null
+      },
+      "displayFields": [
+        {
+          "label": "Title",
+          "name": "title",
+          "required": true,
+          "requiredness": "required",
+          "role": "primary",
+          "sourceName": "title",
+          "type": "string"
+        },
+        {
+          "label": "Description",
+          "name": "description",
+          "required": false,
+          "requiredness": "optional",
+          "role": "metadata",
+          "sourceName": "description",
+          "type": "text"
+        },
+        {
+          "label": "Priority",
+          "name": "priority",
+          "required": true,
+          "requiredness": "required",
+          "role": "metadata",
+          "sourceName": "priority",
+          "type": "item_priority"
+        },
+        {
+          "label": "Owner Id",
+          "name": "owner_id",
+          "required": false,
+          "requiredness": "optional",
+          "role": "identifier",
+          "sourceName": "owner_id",
+          "type": "uuid"
+        },
+        {
+          "label": "Collection Id",
+          "name": "collection_id",
+          "required": true,
+          "requiredness": "required",
+          "role": "identifier",
+          "sourceName": "collection_id",
+          "type": "uuid"
+        },
+        {
+          "label": "Due At",
+          "name": "due_at",
+          "required": false,
+          "requiredness": "optional",
+          "role": "date",
+          "sourceName": "due_at",
+          "type": "datetime"
+        }
+      ],
+      "i18nRealization": [],
+      "id": "item_create",
+      "kind": "wizard",
+      "messages": [],
+      "regions": [],
+      "route": "/items/new",
+      "title": "Create Item",
+      "visibility": [],
+      "widgets": []
+    },
+    {
+      "accessibility": [],
+      "accessibilityRealization": [],
+      "actions": {
+        "destructive": null,
+        "primary": null,
+        "screen": [],
+        "secondary": null,
+        "terminal": null
+      },
+      "displayFields": [
+        {
+          "label": "Item Id",
+          "name": "item_id",
+          "required": true,
+          "requiredness": "required",
+          "role": "identifier",
+          "sourceName": "item_id",
+          "type": "uuid"
+        },
+        {
+          "label": "Title",
+          "name": "title",
+          "required": false,
+          "requiredness": "optional",
+          "role": "primary",
+          "sourceName": "title",
+          "type": "string"
+        },
+        {
+          "label": "Description",
+          "name": "description",
+          "required": false,
+          "requiredness": "optional",
+          "role": "metadata",
+          "sourceName": "description",
+          "type": "text"
+        },
+        {
+          "label": "Priority",
+          "name": "priority",
+          "required": false,
+          "requiredness": "optional",
+          "role": "metadata",
+          "sourceName": "priority",
+          "type": "item_priority"
+        },
+        {
+          "label": "Owner Id",
+          "name": "owner_id",
+          "required": false,
+          "requiredness": "optional",
+          "role": "identifier",
+          "sourceName": "owner_id",
+          "type": "uuid"
+        },
+        {
+          "label": "Due At",
+          "name": "due_at",
+          "required": false,
+          "requiredness": "optional",
+          "role": "date",
+          "sourceName": "due_at",
+          "type": "datetime"
+        },
+        {
+          "label": "Status",
+          "name": "status",
+          "required": false,
+          "requiredness": "optional",
+          "role": "metadata",
+          "sourceName": "status",
+          "type": "item_status"
+        }
+      ],
+      "i18nRealization": [],
+      "id": "item_edit",
+      "kind": "form",
+      "messages": [],
+      "regions": [],
+      "route": "/items/:id/edit",
+      "title": "Edit Item",
+      "visibility": [],
+      "widgets": []
+    },
+    {
+      "accessibility": [],
+      "accessibilityRealization": [],
+      "actions": {
+        "destructive": null,
+        "primary": null,
+        "screen": [],
+        "secondary": null,
+        "terminal": {
+          "id": "cap_download_item_export",
+          "kind": "capability"
+        }
+      },
+      "displayFields": [
+        {
+          "label": "Job Id",
+          "name": "job_id",
+          "required": true,
+          "requiredness": "required",
+          "role": "identifier",
+          "sourceName": "job_id",
+          "type": "uuid"
+        },
+        {
+          "label": "Status",
+          "name": "status",
+          "required": true,
+          "requiredness": "required",
+          "role": "metadata",
+          "sourceName": "status",
+          "type": "export_job_status"
+        },
+        {
+          "label": "Status Url",
+          "name": "status_url",
+          "required": true,
+          "requiredness": "required",
+          "role": "status",
+          "sourceName": "status_url",
+          "type": "text"
+        },
+        {
+          "label": "Submitted At",
+          "name": "submitted_at",
+          "required": true,
+          "requiredness": "required",
+          "role": "date",
+          "sourceName": "submitted_at",
+          "type": "datetime"
+        },
+        {
+          "label": "Completed At",
+          "name": "completed_at",
+          "required": false,
+          "requiredness": "optional",
+          "role": "date",
+          "sourceName": "completed_at",
+          "type": "datetime"
+        },
+        {
+          "label": "Expires At",
+          "name": "expires_at",
+          "required": false,
+          "requiredness": "optional",
+          "role": "date",
+          "sourceName": "expires_at",
+          "type": "datetime"
+        },
+        {
+          "label": "Download Url",
+          "name": "download_url",
+          "required": false,
+          "requiredness": "optional",
+          "role": "metadata",
+          "sourceName": "download_url",
+          "type": "text"
+        },
+        {
+          "label": "Error Message",
+          "name": "error_message",
+          "required": false,
+          "requiredness": "optional",
+          "role": "metadata",
+          "sourceName": "error_message",
+          "type": "text"
+        }
+      ],
+      "i18nRealization": [],
+      "id": "item_exports",
+      "kind": "job_status",
+      "messages": [],
+      "regions": [],
+      "route": "/item-exports/:job_id",
+      "title": "Export Status",
+      "visibility": [],
+      "widgets": []
+    }
+  ],
+  "summary": {
+    "accessibility_obligations": 6,
+    "contract_only": 0,
+    "contract_only_accessibility_obligations": 2,
+    "design_contract_token_mappings": 4,
+    "design_contracts": 1,
+    "design_realization_components": 2,
+    "design_realization_sets": 1,
+    "design_realization_unmapped_widget_usages": 0,
+    "diagnostics": 1,
+    "errors": 0,
+    "failed": 0,
+    "i18n_messages": 5,
+    "rendered": 1,
+    "rendered_accessibility_obligations": 4,
+    "rendered_i18n_messages": 5,
+    "routed_screens": 15,
+    "screens": 15,
+    "unsupported": 0,
+    "warnings": 1,
+    "widget_realizations": 2,
+    "widget_usages": 1
+  },
+  "surface": "web",
+  "type": "ui_realization_report",
+  "uiContract": {
+    "id": "proj_ui_contract",
+    "name": "Sample Workspace Shared UI",
+    "type": "ui_contract"
+  },
+  "version": 1,
+  "widgetUsages": [
+    {
+      "accessibility": [
+        {
+          "focus": "roving_tabindex",
+          "keyboard": "data_grid",
+          "live": "off",
+          "nameFrom": {
+            "source": "message",
+            "value": "msg_items_table_label"
+          },
+          "role": "grid",
+          "targetId": "widget_data_grid",
+          "targetKind": "widget"
+        }
+      ],
+      "accessibilityRealization": [
+        {
+          "focus": "roving_tabindex",
+          "keyboard": "data_grid",
+          "live": "off",
+          "nameFrom": {
+            "source": "message",
+            "value": "msg_items_table_label"
+          },
+          "proof": "static_markers_only_behavior_requires_runtime_or_manual_audit",
+          "requiredMarkers": {
+            "focus": "data-topogram-focus-model=\"roving_tabindex\"",
+            "keyboard": "data-topogram-keyboard-model=\"data_grid\"",
+            "live": "data-topogram-live=\"off\"",
+            "target": "data-topogram-accessibility-target=\"widget:widget_data_grid\""
+          },
+          "role": "grid",
+          "scope": {
+            "scope": "widget_usage",
+            "screen": "item_list",
+            "widget": "widget_data_grid"
+          },
+          "status": "contract_only",
+          "targetId": "widget_data_grid",
+          "targetKind": "widget"
+        }
+      ],
+      "behaviorRealizations": [
+        {
+          "actions": [],
+          "dataDependencies": [
+            {
+              "prop": "rows",
+              "source": {
+                "id": "cap_list_items",
+                "kind": "capability"
+              }
+            }
+          ],
+          "directives": {
+            "emits": "row_select",
+            "mode": "multi",
+            "state": "selected_ids"
+          },
+          "effects": [
+            {
+              "event": "row_select",
+              "target": {
+                "id": "item_detail",
+                "kind": "screen"
+              },
+              "type": "navigation"
+            }
+          ],
+          "emits": [
+            {
+              "bindings": [
+                {
+                  "action": "navigate",
+                  "event": "row_select",
+                  "target": {
+                    "id": "item_detail",
+                    "kind": "screen"
+                  }
+                }
+              ],
+              "bound": true,
+              "effects": [
+                {
+                  "event": "row_select",
+                  "target": {
+                    "id": "item_detail",
+                    "kind": "screen"
+                  },
+                  "type": "navigation"
+                }
+              ],
+              "event": "row_select"
+            }
+          ],
+          "kind": "selection",
+          "source": "structured",
+          "state": {
+            "bound": false,
+            "defaultValue": [],
+            "prop": "selected_ids",
+            "requiredness": "optional",
+            "source": null
+          },
+          "status": "realized"
+        },
+        {
+          "actions": [],
+          "dataDependencies": [
+            {
+              "prop": "rows",
+              "source": {
+                "id": "cap_list_items",
+                "kind": "capability"
+              }
+            }
+          ],
+          "directives": {
+            "default": [
+              "created_at",
+              "desc"
+            ],
+            "fields": [
+              "title",
+              "status",
+              "created_at"
+            ]
+          },
+          "effects": [],
+          "emits": [],
+          "kind": "sorting",
+          "source": "structured",
+          "state": null,
+          "status": "realized"
+        }
+      ],
+      "display": {
+        "diagnostics": [],
+        "fields": [
+          {
+            "label": "Title",
+            "name": "title",
+            "required": false,
+            "requiredness": "optional",
+            "role": "primary",
+            "sourceName": "title",
+            "type": "string"
+          },
+          {
+            "label": "Status",
+            "name": "status",
+            "required": true,
+            "requiredness": "required",
+            "role": "metadata",
+            "sourceName": "status",
+            "type": "item_status"
+          },
+          {
+            "label": "Priority",
+            "name": "priority",
+            "required": true,
+            "requiredness": "required",
+            "role": "metadata",
+            "sourceName": "priority",
+            "type": "item_priority"
+          },
+          {
+            "label": "Due At",
+            "name": "dueAt",
+            "required": false,
+            "requiredness": "optional",
+            "role": "date",
+            "sourceName": "due_at",
+            "type": "datetime"
+          },
+          {
+            "label": "Owner Id",
+            "name": "ownerId",
+            "required": true,
+            "requiredness": "required",
+            "role": "identifier",
+            "sourceName": "owner_id",
+            "type": "uuid"
+          }
+        ],
+        "prop": "rows",
+        "source": {
+          "id": "cap_list_items",
+          "kind": "capability"
+        },
+        "sourceShape": {
+          "id": "shape_output_item_card",
+          "kind": "shape"
+        }
+      },
+      "displayFields": [
+        {
+          "label": "Title",
+          "name": "title",
+          "required": false,
+          "requiredness": "optional",
+          "role": "primary",
+          "sourceName": "title",
+          "type": "string"
+        },
+        {
+          "label": "Status",
+          "name": "status",
+          "required": true,
+          "requiredness": "required",
+          "role": "metadata",
+          "sourceName": "status",
+          "type": "item_status"
+        },
+        {
+          "label": "Priority",
+          "name": "priority",
+          "required": true,
+          "requiredness": "required",
+          "role": "metadata",
+          "sourceName": "priority",
+          "type": "item_priority"
+        },
+        {
+          "label": "Due At",
+          "name": "dueAt",
+          "required": false,
+          "requiredness": "optional",
+          "role": "date",
+          "sourceName": "due_at",
+          "type": "datetime"
+        },
+        {
+          "label": "Owner Id",
+          "name": "ownerId",
+          "required": true,
+          "requiredness": "required",
+          "role": "identifier",
+          "sourceName": "owner_id",
+          "type": "uuid"
+        }
+      ],
+      "i18nRealization": [
+        {
+          "actionId": null,
+          "context": "widget_label",
+          "id": "msg_items_table_label",
+          "key": "items.table.label",
+          "proof": "static_generated_marker",
+          "requiredMarkers": {
+            "messageId": "data-topogram-message-id=\"msg_items_table_label\"",
+            "messageKey": "data-topogram-message-key=\"items.table.label\""
+          },
+          "screenId": "item_list",
+          "status": "rendered",
+          "widgetId": "widget_data_grid"
+        }
+      ],
+      "messages": [
+        {
+          "actionId": null,
+          "context": "widget_label",
+          "defaultText": "Items table",
+          "id": "msg_items_table_label",
+          "key": "items.table.label",
+          "screenId": null,
+          "terms": [],
+          "variables": [],
+          "widgetId": "widget_data_grid"
+        }
+      ],
+      "pattern": "resource_table",
+      "region": "results",
+      "requiredMarkers": {
+        "displayField": "data-topogram-display-field",
+        "region": "data-topogram-region=\"results\"",
+        "screen": "data-topogram-screen=\"item_list\"",
+        "widget": "data-topogram-widget=\"widget_data_grid\""
+      },
+      "route": "/items",
+      "screen": "item_list",
+      "status": "rendered",
+      "supported": true,
+      "widget": "widget_data_grid"
+    }
+  ]
+}

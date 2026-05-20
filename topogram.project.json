@@ -1,0 +1,24 @@
+{
+  "version": "0.1",
+  "workspace": "./topo",
+  "outputs": {
+    "app": {
+      "path": "./app",
+      "ownership": "generated"
+    }
+  },
+  "topology": {
+    "runtimes": [
+      {
+        "id": "app_sveltekit",
+        "projection": "proj_web_surface",
+        "generator": {
+          "id": "topogram/sveltekit",
+          "version": "1"
+        },
+        "port": 5173,
+        "kind": "web_surface"
+      }
+    ]
+  }
+}

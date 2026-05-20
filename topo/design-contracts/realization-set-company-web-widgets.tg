@@ -1,0 +1,51 @@
+design_realization_set realization_set_company_web_widgets {
+  name "Company Product UI Widget Realizations"
+  description "Maps shared sample workspace widgets to company platform component refs."
+  design_contract design_company_web
+  status active
+
+  widget_realization {
+    id data_grid_wide
+    widget widget_data_grid
+    platform web
+    viewport wide
+    component_ref "company.dataGrid"
+    pattern resource_table
+    status rendered
+    behaviors_rendered [selection]
+    behaviors_contract_only [sorting]
+  }
+
+  widget_realization {
+    id data_cards_narrow
+    widget widget_data_grid
+    platform web
+    viewport narrow
+    component_ref "company.dataCards"
+    pattern resource_table
+    status contract_only
+  }
+
+  widget_realization {
+    id data_list_ios
+    widget widget_data_grid
+    platform ios
+    viewport any
+    component_ref "company.itemList"
+    pattern resource_table
+    status implementation_owned
+    behaviors_rendered [selection]
+    behaviors_implementation_owned [sorting]
+  }
+
+  widget_realization {
+    id data_cards_android
+    widget widget_data_grid
+    platform android
+    viewport any
+    component_ref "company.itemCards"
+    pattern resource_table
+    status unsupported
+    behaviors_unsupported [sorting]
+  }
+}

@@ -1,0 +1,16 @@
+verification ver_runtime_smoke {
+  name "Sample Workspace runtime smoke"
+  description "Covers the minimum web and API checks for the generated sample-workspace stack."
+
+  validates [cap_create_item, cap_get_item, cap_list_items]
+  method smoke
+
+  scenarios [
+    items_page_responds,
+    create_item_smoke,
+    get_created_item_smoke,
+    list_items_smoke
+  ]
+
+  status active
+}
